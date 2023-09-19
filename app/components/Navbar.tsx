@@ -45,7 +45,7 @@ export default function Navbar() {
                 </Link>
                 <ul className="nav justify-content-end">
                     <li className="nav-item">
-                        <Link className="nav-link nav-router-link" href="/">Montacargas</Link>
+                        <Link className="nav-link nav-router-link" href="/montacargas">Montacargas</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link nav-router-link" href="/">Automatización</Link>

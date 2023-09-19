@@ -1,6 +1,6 @@
 import logo from "../src/img/toyota_equipos_industriales_logo_footer.png"
 import facebook from "../src/img/facebook-icon.svg"
-import instagram from "../src/img/instagram-icon.svg"
+import linkedin from "../src/img/linkedin-icon.svg"
 import youtube from "../src/img/youtube-icon.svg"
 import republica from "../src/img/banner_sucursales.svg"
 import '../globals.css'
@@ -42,9 +42,15 @@ export default function Footer() {
                 <div className="col-3">
                     <h4 className="footer-header">Síguenos</h4>
                     <div className="d-flex my-3">
-                        <img src={facebook.src} alt="" />
-                        <img src={instagram.src} alt="" className="mx-4" />
-                        <img src={youtube.src} alt="" />
+                        <Link href="https://www.facebook.com/toyotaindustriales" target="_blank">
+                            <img src={facebook.src} alt="" />
+                        </Link>
+                        <Link href="https://www.linkedin.com/company/toyota-equipos-industriales" target="_blank">
+                            <img className="mx-4" src={linkedin.src} alt="" />
+                        </Link>
+                        <Link href="https://www.youtube.com/channel/UCjFTFqE817Q8urJfo8kwk6A" target="_blank">
+                            <img src={youtube.src} alt="" />
+                        </Link>
                     </div>
                 </div>
             </div>

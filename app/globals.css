@@ -82,6 +82,17 @@
     line-height: 22px;
 }
 
+.red-button-border {
+    background-color: #CD1332;
+    color: #FFF;
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
 .white-button {
     background-color: #FFF;
     color: #CD1332;
@@ -91,6 +102,18 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
+}
+
+.white-button-border {
+    background-color: #FFF;
+    color: #CD1332;
+    width: 100%;
+    height: 38px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    border: 1px solid #CD1332;
 }
 
 .offer-section {
@@ -136,6 +159,10 @@
     color: #CD1332;
 }
 
+.black-text {
+    color: #292B32;
+}
+
 .bg-red {
     background-color: #CD1332;
 }
@@ -167,4 +194,10 @@
     font-weight: bold;
     color: #FFF;
     text-decoration: none;
+}
+
+.montacargas-card {
+    border: 1px solid #55565A;
+    padding: 1em;
+    border-radius: 8px;
 }
