@@ -15,7 +15,7 @@ export default function Footer() {
                     <button className="branches-button">Ver sucursales</button>
                 </div>
             </section>
-            <div className="row p-5">
+            <div className="row g-0 p-5">
                 <div className="col-4 d-flex flex-column">
                     <img src={logo.src} alt="" width="315" />
                     <p className="footer-description">2021 TOYOTA TSUSHO CORPORATION DE MÉXICO S.A DE C.V</p>

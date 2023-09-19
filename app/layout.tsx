@@ -9,11 +9,16 @@ export const metadata: Metadata = {
   description: 'Contamos con Venta y Renta de Equipos Industriales para el manejo de materiales, accesorios, refacciones y servicios de mantenimiento en montacargas.',
 }
 
-export default function RootLayout() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <body>
         <Navbar />
+        {children}
         <Footer />
       </body>
 

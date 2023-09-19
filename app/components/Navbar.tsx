@@ -1,4 +1,5 @@
 import Link from "next/link"
+import '../globals.css'
 import logo from "../src/img/toyota_equipos_industriales_logo.png"
 
 export default function Navbar() {
@@ -25,7 +26,7 @@ export default function Navbar() {
                     </li>
                 </ul>
             </div>
-            <div className="container-fluid px-3">
+            <div className="container-fluid px-4">
                 <Link className="navbar-brand" href="/">
                     <img src={logo.src} alt="Logo" className="d-inline-block align-text-top" />
                 </Link>

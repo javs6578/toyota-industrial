@@ -72,3 +72,32 @@
     font-weight: 600;
     line-height: 22px;
 }
+
+.perks-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0.65em;
+    text-align: left;
+    color: #CD1332;
+}
+
+.perks-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #292B32;
+}
+
+.perks-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+.red-text {
+    color: #CD1332;
+}
