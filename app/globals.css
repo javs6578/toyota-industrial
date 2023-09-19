@@ -9,11 +9,19 @@
     color: #FFF;
 }
 
+.nav-contact-link:hover {
+    color: #FFF;
+}
+
 .nav-router-link {
     font-size: 15px;
     font-weight: 700;
     text-align: center;
     color: #55565A;
+}
+
+.nav-router-link:hover {
+    color: #CD1332
 }
 
 .footer-header {
@@ -30,6 +38,7 @@
     line-height: 28px;
     text-align: left;
     color: #CD1332;
+    width: 150px;
 }
 
 .footer-description {
@@ -49,10 +58,10 @@
 }
 
 .branches-header {
+    color: #FFF;
     font-size: 40px;
     font-weight: 600;
     line-height: 50px;
-    text-align: center;
 }
 
 .branches-description {
@@ -62,7 +71,7 @@
     text-align: center;
 }
 
-.branches-button {
+.red-button {
     background-color: #CD1332;
     color: #FFF;
     width: 204px;
@@ -71,6 +80,31 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
+}
+
+.white-button {
+    background-color: #FFF;
+    color: #CD1332;
+    width: 204px;
+    height: 58px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.offer-section {
+    background-image: url('./src/img/banner-inicio.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 707px;
+}
+
+.offer-text {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #FFF;
 }
 
 .perks-text {
@@ -100,4 +134,37 @@
 
 .red-text {
     color: #CD1332;
+}
+
+.bg-red {
+    background-color: #CD1332;
+}
+
+.bg-dark {
+    background-color: #292B32;
+}
+
+.bg-orange {
+    background-color: #F04D32;
+}
+
+.collage-title {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.collage-text {
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFF;
+}
+
+.collage-link {
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
 }
