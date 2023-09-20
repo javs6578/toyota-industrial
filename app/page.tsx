@@ -1,3 +1,5 @@
+"use client";
+
 import Link from 'next/link'
 import './globals.css'
 import ventajas from './src/img/ventajas_ilustracion.png'
@@ -7,7 +9,14 @@ import red_arrow from './src/img/red-arrow.svg'
 import white_arrow from './src/img/white-arrow.svg'
 import montacargas1 from './src/img/montacargas-ilustracion-1.png'
 import montacargas2 from './src/img/montacargas-ilustracion-2.png'
+import montacargas_slider1 from './src/img/montacargas-female.png'
+import montacargas_slider2 from './src/img/montacargas-male.png'
+import orange_rectangle from './src/img/orange-rectangle.png'
 import colegas from './src/img/dos-colegas-fabrica.png'
+import { Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/scrollbar';
 
 export default function HomePage() {
   return (
@@ -58,7 +67,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* SERVICIOS */}
-      <section>
+      <section className='my-5 py-5'>
         <div className="row g-0 my-5">
           <div className="col-6 p-0 d-flex justify-content-start">
             <img src={servicios.src} alt="" />
@@ -88,7 +97,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* VER EQUIPOS */}
-      <section>
+      <section className='my-5 pb-5'>
         <div className="row g-0 my-5">
           <div className="col-4 my-auto p-5">
             <h2 className='perks-title'><span className='red-text'> Todo </span>
@@ -105,8 +114,59 @@ export default function HomePage() {
             </Link>
             <img src={red_arrow.src} alt="" className='mx-2' />
           </div>
-          <div className="col-8 p-0 d-flex justify-content-end">
-            <img src={ventajas.src} alt="" />
+          <div className="col-8 pe-0 ps-5 d-flex justify-content-end" style={{ position: 'relative' }}>
+            <img src={orange_rectangle.src} alt="" style={{ position: 'absolute', bottom: '-60px' }} />
+            <Swiper style={{ color: 'white' }}
+              modules={[A11y, Scrollbar]}
+              spaceBetween={130}
+              slidesPerView={3}
+              scrollbar={{ draggable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log('slide change')}
+            >
+              <SwiperSlide>
+                <div className="card montacargas-slider-card">
+                  <img src={montacargas_slider1.src} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <p className="card-text montacargas-slider-description">
+                      Si va a arrastrar directamente o
+                      realizará múltiples paradas en su
+                      ruta estos tractores cumplen su
+                      objetivo
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="card montacargas-slider-card">
+                  <img src={montacargas_slider2.src} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <p className="card-text montacargas-slider-description">
+                      Si va a arrastrar directamente o
+                      realizará múltiples paradas en su
+                      ruta estos tractores cumplen su
+                      objetivo
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="card montacargas-slider-card">
+                  <img src={montacargas_slider1.src} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <p className="card-text montacargas-slider-description">
+                      Si va a arrastrar directamente o
+                      realizará múltiples paradas en su
+                      ruta estos tractores cumplen su
+                      objetivo
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </section>

@@ -47,3 +47,84 @@
     font-size: 16px;
     line-height: 28px;
 }
+
+.valores-section {
+    margin-top: -16em;
+    padding-top: 22em;
+}
+
+.filosofia-title {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.filosofia-card {
+    background-color: #FFF;
+    border-radius: 12px;
+    height: 200px;
+}
+
+.filosofia-card-description {
+    font-size: 14px;
+    line-height: 22px;
+    color: #292B32;
+}
+
+.red-circle {
+    width: 165px;
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    z-index: -1;
+}
+
+.orange-circle {
+    width: 165px;
+    position: absolute;
+    z-index: -1;
+    left: -80px;
+    bottom: -50px;
+}
+
+.medio-ambiente-section {
+    background-image: url('../src/img/medio-ambiente-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 757px;
+}
+
+.medio-ambiente-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 30px;
+}
+
+.medio-ambiente-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.medio-ambiente-description {
+    font-size: 16px;
+    color: #FFF;
+    line-height: 28px;
+}
+
+.medio-ambiente-card {
+    background-color: rgba(41, 43, 50, .6);
+    border-radius: 16px;
+    width: 267px;
+    height: 316px;
+    border: 1px solid #A1AECE;
+    padding: 2em;
+}
+
+.medio-ambiente-card-description {
+    font-size: 14px;
+    color: #FFF;
+    line-height: 28px;
+    margin-top: 10px;
+}

@@ -1,3 +1,9 @@
+"use client";
+import { Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+
 import '../globals.css'
 import './styles.css'
 import thirty from '../src/img/30.svg'
@@ -7,6 +13,13 @@ import red_arrow from '../src/img/red-arrow.svg'
 import heart from '../src/img/heart-icon.svg'
 import location from '../src/img/location-icon.svg'
 import team from '../src/img/team-icon.svg'
+import red_circle from '../src/img/red-circle.svg'
+import orange_circle from '../src/img/orange-circle.svg'
+import nature_icon_1 from '../src/img/nature-icon-1.svg'
+import nature_icon_2 from '../src/img/nature-icon-2.svg'
+import nature_icon_3 from '../src/img/nature-icon-3.svg'
+import nature_icon_4 from '../src/img/nature-icon-4.svg'
+import nature_icon_5 from '../src/img/nature-icon-5.svg'
 
 export default function Empresa() {
     return (
@@ -109,7 +122,7 @@ export default function Empresa() {
                 </div>
             </section>
             {/* NUESTROS VALORES */}
-            <section className='bg-dark py-5'>
+            <section className='bg-dark pb-5 valores-section'>
                 <div className='container'>
                     <h3 style={{ fontSize: '40px' }} className='valores-title text-center'>Nuestros valores</h3>
                     <div className="row g-0 py-5">
@@ -141,6 +154,134 @@ export default function Empresa() {
                                 valorarán a nuestros clientes.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </section>
+            {/* FILOSOFIA / HISTORIA */}
+            <section className='my-5 p-5'>
+                <div className="row">
+                    <div className="col-5 px-5 my-auto">
+                        <h3 className='filosofia-title'>
+                            <span className='red-text'>Vivir y prosperar conjuntamente </span>con
+                            las personas, la
+                            sociedad y el planeta
+                        </h3>
+                        <p>
+                            Nuestro objetivo es ser una empresa generadora de
+                            valor que contribuya a la creación de una sociedad
+                            más próspera.
+                        </p>
+                        <Link href="/" className='footer-link' style={{ textDecoration: 'none' }}>Ver código de conducta y ética</Link>
+                        <img className='ms-2' src={red_arrow.src} alt="" />
+                    </div>
+                    <div className="col-1"></div>
+                    <div className="col-5">
+                        <div className="row" style={{ position: 'relative' }}>
+                            <img className='red-circle' src={red_circle.src} alt="" />
+                            <div className="col-5 filosofia-card p-4 shadow-lg">
+                                <span className='red-text fw-bold' style={{ fontSize: '30px' }}>01</span>
+                                <p className='filosofia-card-description'>Debemos luchar por actividades comerciales abiertas y equitativas</p>
+                            </div>
+                            <div className="col-1"></div>
+                            <div className="col-5 filosofia-card p-4 shadow-lg">
+                                <span className='red-text fw-bold' style={{ fontSize: '30px' }}>02</span>
+                                <p className='filosofia-card-description'>Debemos ser socialmente responsables y comprometidos con la conservación del medioambiente</p>
+                            </div>
+                        </div>
+                        <div className="row mt-4" style={{ position: 'relative' }}>
+                            <div className="col-5 filosofia-card p-4 shadow-lg">
+                                <span className='red-text fw-bold' style={{ fontSize: '30px' }}>03</span>
+                                <p className='filosofia-card-description'>Debemos ser creativos y comprometidos a ofrecer valor agregado</p>
+                            </div>
+                            <div className="col-1"></div>
+                            <div className="col-5 filosofia-card p-4 shadow-lg">
+                                <span className='red-text fw-bold' style={{ fontSize: '30px' }}>04</span>
+                                <p className='filosofia-card-description'>Debemos respetar a las personas y trabajar para crear un ambiente de trabajo atractivo</p>
+                            </div>
+                            <img className='orange-circle' src={orange_circle.src} alt="" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* MEDIO AMBIENTE */}
+            <section className='medio-ambiente-section'>
+                <div className="row g-0 py-5">
+                    <div className="col-5 p-5">
+                        <span className='medio-ambiente-text'>Toyota Tsusho Corporation de México, comprometios con el</span>
+                        <h3 className='medio-ambiente-title'>medio ambiente</h3>
+                        <p className='medio-ambiente-description'>
+                            En Toyota Tsusho Corporation de México proveemos
+                            soluciones logísticas a través del diseño de propuestas
+                            que optimicen las operaciones de nuestros clientes
+                            aplicando buenas prácticas ambientales
+                        </p>
+                    </div>
+                    <div className="col-7 my-auto">
+                        <Swiper style={{ color: 'white' }}
+                            // install Swiper modules
+                            modules={[ A11y, Scrollbar]}
+                            spaceBetween={150}
+                            slidesPerView={3}                        
+                            scrollbar={{ draggable: true }}
+                            onSwiper={(swiper) => console.log(swiper)}
+                            onSlideChange={() => console.log('slide change')}
+                        >
+                            <SwiperSlide>
+                                <div className="medio-ambiente-card">
+                                    <img src={nature_icon_1.src} alt="" />
+                                    <p className='medio-ambiente-card-description'>
+                                        Estamos comprometidos con el
+                                        desarrollo de montacargas
+                                        eléctricos que tengan las
+                                        mismas características y
+                                        funcionalidad que los modelos
+                                        de combustión interna.
+                                    </p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="medio-ambiente-card">
+                                    <img src={nature_icon_2.src} alt="" />
+                                    <p className='medio-ambiente-card-description'>
+                                        DPF-II (Filtro Diesel
+                                        antipartículas) reduce
+                                        emisiones de los motores diesel.
+                                    </p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="medio-ambiente-card">
+                                    <img src={nature_icon_3.src} alt="" />
+                                    <p className='medio-ambiente-card-description'>
+                                        El sistema de 3 vías del
+                                        convertidor catalítico utilizados
+                                        en los motores reduce las
+                                        emisiones pesadas.
+                                    </p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="medio-ambiente-card">
+                                    <img src={nature_icon_4.src} alt="" />
+                                    <p className='medio-ambiente-card-description'>
+                                        Vehículos que al utilizar
+                                        combustibles limpios como gas
+                                        LP o gas natural comprimido
+                                        emiten niveles muy bajos o nulos de ozono.
+                                    </p>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="medio-ambiente-card">
+                                    <img src={nature_icon_5.src} alt="" />
+                                    <p className='medio-ambiente-card-description'>
+                                        Todos nuestros montacargas 
+                                        están fabricados para ser 99% 
+                                        reciclables.
+                                    </p>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
                     </div>
                 </div>
             </section>

@@ -201,3 +201,26 @@
     padding: 1em;
     border-radius: 8px;
 }
+
+.card-body {
+    background-color: #292B32;
+    color: #FFF;
+}
+
+.montacargas-slider-card {
+    width: 312px;
+    height: 439px;
+}
+
+.montacargas-slider-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #FFF;
+}
+
+.montacargas-slider-description {
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFF
+}
