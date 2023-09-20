@@ -34,8 +34,8 @@ export default function Navbar() {
                             <Link className="nav-link nav-contact-link" href="/">Whatsapp</Link>
                         </div>
                     </li>
-                    <li className="nav-item bg-red px-4 py-2 my-auto">
-                        <p className="nav-contact-link mb-0">Contáctanos</p>
+                    <li className="nav-item bg-red px-4 my-auto">
+                        <Link className="nav-link nav-contact-link" href="/contacto">Contáctanos</Link> 
                     </li>
                 </ul>
             </div>

@@ -224,3 +224,12 @@
     line-height: 25px;
     color: #FFF
 }
+
+.form-field-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.asterisk {
+    color: #F04D32;
+}
