@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       {/* OFRECEMOS */}
-      <section className=''>
+      <section>
         <div className="row offer-section g-0 mb-5">
           <div className="col-5 p-5 my-auto">
             <h2 className='branches-header'>Ofrecemos soluciones integrales en equipos industriales</h2>

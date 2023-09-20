@@ -14,7 +14,7 @@ export default function Navbar() {
                 </Link>
                 <ul className="nav justify-content-end">
                     <li className="nav-item px-2">
-                        <Link className="nav-link nav-contact-link" href="/">Empresa</Link>
+                        <Link className="nav-link nav-contact-link" href="/empresa">Empresa</Link>
                     </li>
                     <li className="nav-item px-2">
                         <div className="d-flex">

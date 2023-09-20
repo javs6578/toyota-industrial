@@ -4,13 +4,13 @@ import montacargas from '../src/img/montacargas-banner.png'
 import montacargas_vehicle from '../src/img/montacargas.png'
 import SearchIcon from '@mui/icons-material/Search';
 
-export default function HomePage() {
+export default function Montacargas() {
     return (
         <>
             <img className='w-100' src={montacargas.src} alt="" />
             <section>
-                <div className="row p-5">
-                    <div className="col-3">
+                <div className="row g-0 p-5">
+                    <div className="col-lg-2 col-md-3">
                         <FormControl>
                             <FormLabel className='red-text mb-3' id="demo-radio-buttons-group-label"><strong>Seleccione el Montacargas</strong></FormLabel>
                             <RadioGroup
@@ -40,7 +40,8 @@ export default function HomePage() {
                         </FormControl>
                         <button className='red-button'>Aplicar</button>
                     </div>
-                    <div className="col-9">
+                    <div className="col-lg-1"></div>
+                    <div className="col-lg-9 col-md-9">
                         <div className='mb-3 d-flex justify-content-end'>
                             <TextField className='w-50' size='small' id="outlined-basic" label="Busca el equipo o modelo" variant="outlined" />
                             <button className='red-button-border w-25 rounded-end'>

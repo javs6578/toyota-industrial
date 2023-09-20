@@ -1,0 +1,49 @@
+.empresa-banner {
+    background-image: url('../src/img/empresa-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 503px;
+}
+
+.empresa-banner-text {
+    font-size: 16px;
+    line-height: 47px;
+    color: #Fff;
+    letter-spacing: 12px;
+}
+
+.empresa-banner-title {
+    font-size: 45px;
+    color: #Fff;
+    font-weight: bold;
+}
+
+.empresa-banner-description {
+    font-size: 18px;
+    color: #Fff;
+}
+
+.thirty-title {
+    color: #292B32;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+}
+
+.thirty-description {
+    font-size: 16px;
+    line-height: 28px;
+    color: #292B32;
+}
+
+.valores-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.valores-description {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 28px;
+}
