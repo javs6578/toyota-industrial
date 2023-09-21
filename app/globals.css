@@ -37,8 +37,9 @@
     font-weight: 700;
     line-height: 28px;
     text-align: left;
-    color: #CD1332;
+    color: #CD1332 !important;
     width: 150px;
+    text-transform: capitalize;
 }
 
 .footer-description {
@@ -252,4 +253,8 @@
     color: #292B32;
     font-size: 18px;
     font-weight: bold;
+}
+
+.border-counter {
+    border: 1px solid #A1AECE;
 }

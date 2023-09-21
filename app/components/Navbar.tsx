@@ -54,7 +54,7 @@ export default function Navbar() {
                         <Link className="nav-link nav-router-link" href="/">Servicios</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link nav-router-link" href="/">Refacciones</Link>
+                        <Link className="nav-link nav-router-link" href="/refacciones">Refacciones</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link nav-router-link" href="/">Sucursales</Link>
