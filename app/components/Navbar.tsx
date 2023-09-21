@@ -19,13 +19,13 @@ export default function Navbar() {
                     <li className="nav-item px-2">
                         <div className="d-flex">
                             <img src={mail.src} alt="" />
-                            <Link className="nav-link nav-contact-link" href="/">contacto@toyotafl.com.mx</Link>
+                            <Link className="nav-link nav-contact-link" href="mailto:contacto@toyotafl.com.mx">contacto@toyotafl.com.mx</Link>
                         </div>
                     </li>
                     <li className="nav-item px-2">
                         <div className="d-flex">
                             <img src={phone.src} alt="" />
-                            <Link className="nav-link nav-contact-link" href="/">800 717 5667</Link>
+                            <Link className="nav-link nav-contact-link" href="tel:800 717 5667">800 717 5667</Link>
                         </div>
                     </li>
                     <li className="nav-item px-2">
@@ -35,7 +35,7 @@ export default function Navbar() {
                         </div>
                     </li>
                     <li className="nav-item bg-red px-4 my-auto">
-                        <Link className="nav-link nav-contact-link" href="/contacto">Contáctanos</Link> 
+                        <Link className="nav-link nav-contact-link" href="/contacto">Contáctanos</Link>
                     </li>
                 </ul>
             </div>

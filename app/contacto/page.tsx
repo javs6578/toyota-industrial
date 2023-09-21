@@ -75,7 +75,9 @@ export default function Contacto() {
                         rows={4}
                     />
                     <div className="d-flex justify-content-end mt-3">
-                        <button className="red-button">Enviar</button>
+                        <Link href="contacto/datos-enviados">
+                            <button className="red-button">Enviar</button>
+                        </Link>
                     </div>
                 </div>
             </div>

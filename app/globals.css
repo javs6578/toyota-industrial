@@ -233,3 +233,23 @@
 .asterisk {
     color: #F04D32;
 }
+
+.link-contact {
+    text-decoration: none;
+    color: inherit;
+}
+
+.data-send-title {
+    color: #E50020;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 0;
+}
+
+.data-send-description {
+    color: #292B32;
+    font-size: 18px;
+    font-weight: bold;
+}

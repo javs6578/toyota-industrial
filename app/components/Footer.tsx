@@ -32,11 +32,11 @@ export default function Footer() {
                     <h4 className="footer-header my-3">Contacto</h4>
                     <div className="d-flex mb-2">
                         <img className="me-3" src={gray_mail.src} alt="" />
-                        <p className="mb-0">contacto@toyotafl.com.mx</p>
+                        <Link href="mailto:contacto@toyotafl.com.mx" className="mb-0 link-contact">contacto@toyotafl.com.mx</Link>
                     </div>
                     <div className="d-flex ">
                         <img className="me-3" width="20" src={gray_phone.src} alt="" />
-                        <p className="mb-0">800 717 5667</p>
+                        <Link href="tel:800 717 5667" className="mb-0 link-contact">800 717 5667</Link>
                     </div>
                 </div>
                 <div className="col-3">
