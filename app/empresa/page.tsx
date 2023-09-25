@@ -1,11 +1,6 @@
 "use client";
-import { Scrollbar, A11y } from 'swiper/modules';
+import { A11y, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/scrollbar';
-
-import '../globals.css'
-import './styles.css'
 import thirty from '../src/img/30.svg'
 import years from '../src/img/años_de_experiencia.svg'
 import Link from 'next/link'
@@ -20,8 +15,55 @@ import nature_icon_2 from '../src/img/nature-icon-2.svg'
 import nature_icon_3 from '../src/img/nature-icon-3.svg'
 import nature_icon_4 from '../src/img/nature-icon-4.svg'
 import nature_icon_5 from '../src/img/nature-icon-5.svg'
+import nuestra_historia from '../src/img/nuestra_historia_img.png'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import '../globals.css'
+import './styles.css'
+import { Box, Tab, Tabs, Typography } from '@mui/material';
+import React from 'react';
+
+interface TabPanelProps {
+    children?: React.ReactNode;
+    index: number;
+    value: number;
+}
+
+function CustomTabPanel(props: TabPanelProps) {
+    const { children, value, index, ...other } = props;
+
+    return (
+        <div
+            role="tabpanel"
+            hidden={value !== index}
+            id={`simple-tabpanel-${index}`}
+            aria-labelledby={`simple-tab-${index}`}
+            {...other}
+        >
+            {value === index && (
+                <Box sx={{ p: 3 }}>
+                    <Typography>{children}</Typography>
+                </Box>
+            )}
+        </div>
+    );
+}
+
+function a11yProps(index: number) {
+    return {
+        id: `simple-tab-${index}`,
+        'aria-controls': `simple-tabpanel-${index}`,
+    };
+}
 
 export default function Empresa() {
+
+    const [value, setValue] = React.useState(0);
+
+    const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+        setValue(newValue);
+    };
+
     return (
         <>
             {/* EMPRESA BANNER */}
@@ -159,49 +201,82 @@ export default function Empresa() {
             </section>
             {/* FILOSOFIA / HISTORIA */}
             <section className='my-5 p-5'>
-                <div className="row">
-                    <div className="col-5 px-5 my-auto">
-                        <h3 className='filosofia-title'>
-                            <span className='red-text'>Vivir y prosperar conjuntamente </span>con
-                            las personas, la
-                            sociedad y el planeta
-                        </h3>
-                        <p>
-                            Nuestro objetivo es ser una empresa generadora de
-                            valor que contribuya a la creación de una sociedad
-                            más próspera.
-                        </p>
-                        <Link href="/" className='footer-link' style={{ textDecoration: 'none' }}>Ver código de conducta y ética</Link>
-                        <img className='ms-2' src={red_arrow.src} alt="" />
+                <Box sx={{ width: '100%' }}>
+                    <div className='shadow-bg w-50 px-5 rounded ' style={{ height: '84px' }}>
+                        <Tabs className='shadow-lg px-4 h-100' value={value} onChange={handleChange} aria-label="basic tabs example">
+                            <Tab className='custom-tab pt-4' label="Filosofía empresarial" {...a11yProps(0)} />
+                            <Tab className='custom-tab pt-4' label="Nuestra historia" {...a11yProps(1)} />
+                        </Tabs>
                     </div>
-                    <div className="col-1"></div>
-                    <div className="col-5">
-                        <div className="row" style={{ position: 'relative' }}>
-                            <img className='red-circle' src={red_circle.src} alt="" />
-                            <div className="col-5 filosofia-card p-4 shadow-lg">
-                                <span className='red-text fw-bold' style={{ fontSize: '30px' }}>01</span>
-                                <p className='filosofia-card-description'>Debemos luchar por actividades comerciales abiertas y equitativas</p>
+                    <CustomTabPanel value={value} index={0}>
+                        <div className="row mt-5">
+                            <div className="col-5 px-4 my-auto">
+                                <h3 className='filosofia-title'>
+                                    <span className='red-text'>Vivir y prosperar conjuntamente </span>con
+                                    las personas, la
+                                    sociedad y el planeta
+                                </h3>
+                                <p className='filosofia-subtitle my-4'>
+                                    Nuestro objetivo es ser una empresa generadora de
+                                    valor que contribuya a la creación de una sociedad
+                                    más próspera.
+                                </p>
+                                <Link href="/" className='footer-link' style={{ textDecoration: 'none' }}>Ver código de conducta y ética</Link>
+                                <img className='ms-2' src={red_arrow.src} alt="" />
                             </div>
                             <div className="col-1"></div>
-                            <div className="col-5 filosofia-card p-4 shadow-lg">
-                                <span className='red-text fw-bold' style={{ fontSize: '30px' }}>02</span>
-                                <p className='filosofia-card-description'>Debemos ser socialmente responsables y comprometidos con la conservación del medioambiente</p>
+                            <div className="col-5">
+                                <div className="row" style={{ position: 'relative' }}>
+                                    <img className='red-circle' src={red_circle.src} alt="" />
+                                    <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                                        <span className='red-text fw-bold' style={{ fontSize: '30px' }}>01</span>
+                                        <p className='filosofia-card-description'>Debemos luchar por actividades comerciales abiertas y equitativas</p>
+                                    </div>
+                                    <div className="col-1"></div>
+                                    <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                                        <span className='red-text fw-bold' style={{ fontSize: '30px' }}>02</span>
+                                        <p className='filosofia-card-description'>Debemos ser socialmente responsables y comprometidos con la conservación del medioambiente</p>
+                                    </div>
+                                </div>
+                                <div className="row mt-4" style={{ position: 'relative' }}>
+                                    <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                                        <span className='red-text fw-bold' style={{ fontSize: '30px' }}>03</span>
+                                        <p className='filosofia-card-description'>Debemos ser creativos y comprometidos a ofrecer valor agregado</p>
+                                    </div>
+                                    <div className="col-1"></div>
+                                    <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                                        <span className='red-text fw-bold' style={{ fontSize: '30px' }}>04</span>
+                                        <p className='filosofia-card-description'>Debemos respetar a las personas y trabajar para crear un ambiente de trabajo atractivo</p>
+                                    </div>
+                                    <img className='orange-circle' src={orange_circle.src} alt="" />
+                                </div>
                             </div>
                         </div>
-                        <div className="row mt-4" style={{ position: 'relative' }}>
-                            <div className="col-5 filosofia-card p-4 shadow-lg">
-                                <span className='red-text fw-bold' style={{ fontSize: '30px' }}>03</span>
-                                <p className='filosofia-card-description'>Debemos ser creativos y comprometidos a ofrecer valor agregado</p>
+                    </CustomTabPanel>
+                    <CustomTabPanel value={value} index={1}>
+                        <div className="row">
+                            <div className="col-5 px-4 my-auto">
+                                <h3 className='filosofia-title'>
+                                    <span className='red-text'>Más de 30 años </span>
+                                    de experiencia en México nos respaldan.
+                                </h3>
+                                <p className='filosofia-subtitle my-4'>
+                                    Conoce la trayectoria que nos hace líderes en
+                                    soluciones para el manejo de materiales con la
+                                    más completa línea de productos y servicios
+                                    para su negocio.
+                                </p>
+                                <Link href="/" className='footer-link' style={{ textDecoration: 'none' }}>Conoce nuestra historia</Link>
+                                <img className='ms-2' src={red_arrow.src} alt="" />
                             </div>
                             <div className="col-1"></div>
-                            <div className="col-5 filosofia-card p-4 shadow-lg">
-                                <span className='red-text fw-bold' style={{ fontSize: '30px' }}>04</span>
-                                <p className='filosofia-card-description'>Debemos respetar a las personas y trabajar para crear un ambiente de trabajo atractivo</p>
+                            <div className="col-5">
+                                <img className='w-100' src={nuestra_historia.src} alt="" />
                             </div>
-                            <img className='orange-circle' src={orange_circle.src} alt="" />
                         </div>
-                    </div>
-                </div>
+                    </CustomTabPanel>
+                </Box>
+
             </section>
             {/* MEDIO AMBIENTE */}
             <section className='medio-ambiente-section'>
@@ -217,14 +292,12 @@ export default function Empresa() {
                         </p>
                     </div>
                     <div className="col-7 my-auto">
-                        <Swiper style={{ color: 'white' }}
-                            // install Swiper modules
-                            modules={[ A11y, Scrollbar]}
-                            spaceBetween={150}
-                            slidesPerView={3}                        
-                            scrollbar={{ draggable: true }}
-                            onSwiper={(swiper) => console.log(swiper)}
-                            onSlideChange={() => console.log('slide change')}
+                        <Swiper style={{ minHeight: '380px' }}
+                            modules={[A11y, Navigation]}
+                            navigation
+                            spaceBetween={130}
+                            slidesPerView={3}
+                            className='w-100'
                         >
                             <SwiperSlide>
                                 <div className="medio-ambiente-card">
@@ -275,11 +348,13 @@ export default function Empresa() {
                                 <div className="medio-ambiente-card">
                                     <img src={nature_icon_5.src} alt="" />
                                     <p className='medio-ambiente-card-description'>
-                                        Todos nuestros montacargas 
-                                        están fabricados para ser 99% 
+                                        Todos nuestros montacargas
+                                        están fabricados para ser 99%
                                         reciclables.
                                     </p>
                                 </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
                             </SwiperSlide>
                         </Swiper>
                     </div>

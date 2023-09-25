@@ -7,6 +7,7 @@
 
 .empresa-banner-text {
     font-size: 16px;
+    font-family: gothic-regular;
     line-height: 47px;
     color: #Fff;
     letter-spacing: 12px;
@@ -14,12 +15,14 @@
 
 .empresa-banner-title {
     font-size: 45px;
+    font-family: gothic-regular;
     color: #Fff;
     font-weight: bold;
 }
 
 .empresa-banner-description {
     font-size: 18px;
+    font-family: gothic-regular;
     color: #Fff;
 }
 
@@ -27,11 +30,13 @@
     color: #292B32;
     font-weight: bold;
     font-size: 34px;
+    font-family: gothic-regular;
     line-height: 40px;
 }
 
 .thirty-description {
     font-size: 16px;
+    font-family: gothic-regular;
     line-height: 28px;
     color: #292B32;
 }
@@ -39,12 +44,14 @@
 .valores-title {
     color: #FFF;
     font-size: 20px;
+    font-family: gothic-regular;
     font-weight: bold;
 }
 
 .valores-description {
     color: #FFF;
     font-size: 16px;
+    font-family: gothic-regular;
     line-height: 28px;
 }
 
@@ -55,8 +62,14 @@
 
 .filosofia-title {
     font-size: 40px;
+    font-family: gothic-bold;
     line-height: 50px;
-    font-weight: bold;
+}
+
+.filosofia-subtitle {
+    font-size: 16px;
+    font-family: gothic-regular;
+    line-height: 28px;
 }
 
 .filosofia-card {
@@ -67,6 +80,7 @@
 
 .filosofia-card-description {
     font-size: 14px;
+    font-family: gothic-regular;
     line-height: 22px;
     color: #292B32;
 }
@@ -96,6 +110,7 @@
 
 .medio-ambiente-text {
     font-size: 20px;
+    font-family: gothic-regular;
     font-weight: bold;
     color: #FFF;
     line-height: 30px;
@@ -103,12 +118,14 @@
 
 .medio-ambiente-title {
     font-size: 100px;
+    font-family: gothic-regular;
     font-weight: bold;
     color: #FFF;
 }
 
 .medio-ambiente-description {
     font-size: 16px;
+    font-family: gothic-regular;
     color: #FFF;
     line-height: 28px;
 }
@@ -124,7 +141,24 @@
 
 .medio-ambiente-card-description {
     font-size: 14px;
+    font-family: gothic-regular;
     color: #FFF;
     line-height: 28px;
     margin-top: 10px;
+}
+
+.custom-tab {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #292B32;
+    font-family: gothic-bold;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #E50020;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+    height: 8px;
+    background-color: #E50020;
 }
