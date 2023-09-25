@@ -1,6 +1,6 @@
 import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField } from '@mui/material'
 import '../globals.css'
-import montacargas from '../src/img/montacargas-banner.png'
+import montacargas from '../src/img/montacargas_banner.svg'
 import montacargas_vehicle from '../src/img/montacargas.png'
 import SearchIcon from '@mui/icons-material/Search';
 
@@ -49,19 +49,21 @@ export default function Montacargas() {
                             </button>
                         </div>
                         <div className="row">
-                            <div className="col-4"><div className='montacargas-card'>
-                                <img src={montacargas_vehicle.src} className='w-100' alt="" />
-                                <strong>Equipo</strong>
-                                <p>Combustión Cushion</p>
-                                <strong>Modelo</strong>
-                                <p>8FGCU20</p>
-                                <strong>Capacidad de carga lb/kg </strong>
-                                <p>4,000/2,000</p>
-                                <div className='d-flex flex-column'>
-                                    <button className='red-button-border mb-2'>Cotizar equipo</button>
-                                    <button className='white-button-border'>Ver características</button>
+                            <div className="col-4">
+                                <div className='montacargas-card'>
+                                    <img src={montacargas_vehicle.src} className='w-100' alt="" />
+                                    <strong>Equipo</strong>
+                                    <p>Combustión Cushion</p>
+                                    <strong>Modelo</strong>
+                                    <p>8FGCU20</p>
+                                    <strong>Capacidad de carga lb/kg </strong>
+                                    <p>4,000/2,000</p>
+                                    <div className='d-flex flex-column'>
+                                        <button className='red-button-border mb-2'>Cotizar equipo</button>
+                                        <button className='white-button-border'>Ver características</button>
+                                    </div>
                                 </div>
-                            </div></div>
+                            </div>
                             <div className="col-4"><div className='montacargas-card'>
                                 <img src={montacargas_vehicle.src} className='w-100' alt="" />
                                 <strong>Equipo</strong>

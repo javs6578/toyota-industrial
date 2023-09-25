@@ -1,9 +1,20 @@
+@font-face {
+    font-family: gothic-bold;
+    src: url(../app/src/fonts/gothic-bold.ttf);
+}
+
+@font-face {
+    font-family: gothic-regular;
+    src: url(../app/src/fonts/gothic-bold.ttf);
+}
+
 .nav-contact-background {
     background-color: #292B32;
 }
 
 .nav-contact-link {
     font-size: 15px;
+    font-family: gothic-regular;
     font-weight: 700;
     text-align: center;
     color: #FFF;
@@ -15,6 +26,7 @@
 
 .nav-router-link {
     font-size: 15px;
+    font-family: gothic-regular;
     font-weight: 700;
     text-align: center;
     color: #55565A;
@@ -26,6 +38,7 @@
 
 .footer-header {
     font-size: 20px;
+    font-family: gothic-regular;
     font-weight: 700;
     line-height: 28px;
     text-align: left;
@@ -34,6 +47,7 @@
 
 .footer-link {
     font-size: 16px;
+    font-family: gothic-regular;
     font-weight: 700;
     line-height: 28px;
     text-align: left;
@@ -44,6 +58,7 @@
 
 .footer-description {
     font-size: 16px;
+    font-family: gothic-regular;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
@@ -61,12 +76,14 @@
 .branches-header {
     color: #FFF;
     font-size: 40px;
+    font-family: gothic-regular;
     font-weight: 600;
     line-height: 50px;
 }
 
 .branches-description {
     font-size: 16px;
+    font-family: gothic-regular;
     font-weight: 600;
     line-height: 24px;
     text-align: center;
@@ -79,6 +96,7 @@
     height: 58px;
     border: none;
     font-size: 18px;
+    font-family: gothic-regular;
     font-weight: 600;
     line-height: 22px;
 }
@@ -90,6 +108,7 @@
     height: 38px;
     border: none;
     font-size: 18px;
+    font-family: gothic-regular;
     font-weight: 600;
     line-height: 22px;
 }
@@ -101,6 +120,7 @@
     height: 58px;
     border: none;
     font-size: 18px;
+    font-family: gothic-regular;
     font-weight: 600;
     line-height: 22px;
 }
@@ -112,6 +132,7 @@
     height: 38px;
     border: none;
     font-size: 18px;
+    font-family: gothic-regular;
     font-weight: 600;
     line-height: 22px;
     border: 1px solid #CD1332;
@@ -126,6 +147,7 @@
 
 .offer-text {
     font-size: 18px;
+    font-family: gothic-regular;
     line-height: 25px;
     font-weight: 300;
     color: #FFF;
@@ -133,6 +155,7 @@
 
 .perks-text {
     font-size: 16px;
+    font-family: gothic-regular;
     font-weight: 700;
     line-height: 47px;
     letter-spacing: 0.65em;
@@ -142,6 +165,7 @@
 
 .perks-title {
     font-size: 40px;
+    font-family: gothic-regular;
     font-weight: 700;
     line-height: 50px;
     letter-spacing: 0em;
@@ -151,6 +175,7 @@
 
 .perks-description {
     font-size: 16px;
+    font-family: gothic-regular;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0em;
@@ -178,6 +203,7 @@
 
 .collage-title {
     font-size: 40px;
+    font-family: gothic-regular;
     line-height: 50px;
     font-weight: bold;
     color: #FFF;
@@ -185,12 +211,14 @@
 
 .collage-text {
     font-size: 16px;
+    font-family: gothic-regular;
     line-height: 28px;
     color: #FFF;
 }
 
 .collage-link {
     font-size: 16px;
+    font-family: gothic-regular;
     line-height: 50px;
     font-weight: bold;
     color: #FFF;
@@ -215,6 +243,7 @@
 
 .montacargas-slider-title {
     font-size: 18px;
+    font-family: gothic-regular;
     font-weight: bold;
     line-height: 50px;
     color: #FFF;
@@ -222,12 +251,14 @@
 
 .montacargas-slider-description {
     font-size: 16px;
+    font-family: gothic-regular;
     line-height: 25px;
     color: #FFF
 }
 
 .form-field-text {
     font-size: 14px;
+    font-family: gothic-regular;
     font-weight: bold;
 }
 
@@ -243,6 +274,7 @@
 .data-send-title {
     color: #E50020;
     font-size: 40px;
+    font-family: gothic-regular;
     font-weight: bold;
     text-align: center;
     line-height: 50px;
@@ -252,6 +284,7 @@
 .data-send-description {
     color: #292B32;
     font-size: 18px;
+    font-family: gothic-regular;
     font-weight: bold;
 }
 

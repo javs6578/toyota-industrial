@@ -7,6 +7,7 @@ import servicios from './src/img/servicios-ilustracion.png'
 import red_rectangle from './src/img/little-red-rectangle.svg'
 import red_arrow from './src/img/red-arrow.svg'
 import white_arrow from './src/img/white-arrow.svg'
+import play_button from './src/img/play-button.svg'
 import montacargas1 from './src/img/montacargas-ilustracion-1.png'
 import montacargas2 from './src/img/montacargas-ilustracion-2.png'
 import montacargas_slider1 from './src/img/montacargas-female.png'
@@ -15,10 +16,33 @@ import orange_rectangle from './src/img/orange-rectangle.png'
 import colegas from './src/img/dos-colegas-fabrica.png'
 import { Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+import Dialog from '@mui/material/Dialog';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 
+const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+  '& .MuiDialogContent-root': {
+    padding: theme.spacing(2),
+  },
+  '& .MuiDialogActions-root': {
+    padding: theme.spacing(1),
+  },
+}));
+
 export default function HomePage() {
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
       {/* OFRECEMOS */}
@@ -38,9 +62,23 @@ export default function HomePage() {
               <button className='red-button'>
                 Ver equipos
               </button>
+
             </div>
           </div>
-          <div className="col-7"></div>
+          <div className="col-7 d-flex justify-content-center m-auto">
+            <Button onClick={handleClickOpen}>
+              <img src={play_button.src} alt="" />
+            </Button>
+          </div>
+          <BootstrapDialog
+            onClose={handleClose}
+            aria-labelledby="customized-dialog-title"
+            open={open}
+          >
+            <iframe width="600" height="400"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+          </BootstrapDialog>
         </div>
       </section>
       {/* VENTAJAS */}
@@ -114,7 +152,7 @@ export default function HomePage() {
             </Link>
             <img src={red_arrow.src} alt="" className='mx-2' />
           </div>
-          <div className="col-8 pe-0 ps-5 d-flex justify-content-end" style={{ position: 'relative' }}>
+          <div className="col-8 p-0 ps-5 d-flex justify-content-end" style={{ position: 'relative' }}>
             <img src={orange_rectangle.src} alt="" style={{ position: 'absolute', bottom: '-60px' }} />
             <Swiper style={{ color: 'white' }}
               modules={[A11y, Scrollbar]}
@@ -124,6 +162,48 @@ export default function HomePage() {
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log('slide change')}
             >
+              <SwiperSlide>
+                <div className="card montacargas-slider-card">
+                  <img src={montacargas_slider1.src} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <p className="card-text montacargas-slider-description">
+                      Si va a arrastrar directamente o
+                      realizará múltiples paradas en su
+                      ruta estos tractores cumplen su
+                      objetivo
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="card montacargas-slider-card">
+                  <img src={montacargas_slider2.src} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <p className="card-text montacargas-slider-description">
+                      Si va a arrastrar directamente o
+                      realizará múltiples paradas en su
+                      ruta estos tractores cumplen su
+                      objetivo
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="card montacargas-slider-card">
+                  <img src={montacargas_slider1.src} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <p className="card-text montacargas-slider-description">
+                      Si va a arrastrar directamente o
+                      realizará múltiples paradas en su
+                      ruta estos tractores cumplen su
+                      objetivo
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
               <SwiperSlide>
                 <div className="card montacargas-slider-card">
                   <img src={montacargas_slider1.src} className="card-img-top" alt="..." />
