@@ -209,7 +209,7 @@ export default function Empresa() {
                         </Tabs>
                     </div>
                     <CustomTabPanel value={value} index={0}>
-                        <div className="row mt-5">
+                        <div className="row">
                             <div className="col-5 px-4 my-auto">
                                 <h3 className='filosofia-title'>
                                     <span className='red-text'>Vivir y prosperar conjuntamente </span>con
@@ -269,8 +269,8 @@ export default function Empresa() {
                                 <Link href="/" className='footer-link' style={{ textDecoration: 'none' }}>Conoce nuestra historia</Link>
                                 <img className='ms-2' src={red_arrow.src} alt="" />
                             </div>
-                            <div className="col-1"></div>
-                            <div className="col-5">
+                            <div className="col-2"></div>
+                            <div className="col-4">
                                 <img className='w-100' src={nuestra_historia.src} alt="" />
                             </div>
                         </div>
