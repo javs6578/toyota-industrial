@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: gothic-regular;
-    src: url(../app/src/fonts/gothic-bold.ttf);
+    src: url(../app/src/fonts/gothic-regular.ttf);
 }
 
 .nav-contact-background {
@@ -47,8 +47,7 @@
 
 .footer-link {
     font-size: 16px;
-    font-family: gothic-regular;
-    font-weight: 700;
+    font-family: gothic-bold;
     line-height: 28px;
     text-align: left;
     color: #CD1332 !important;
@@ -75,10 +74,8 @@
 
 .branches-header {
     color: #FFF;
-    font-size: 40px;
-    font-family: gothic-regular;
-    font-weight: 600;
-    line-height: 50px;
+    font-size: 45px;
+    font-family: gothic-bold;
 }
 
 .branches-description {
@@ -96,9 +93,7 @@
     height: 58px;
     border: none;
     font-size: 18px;
-    font-family: gothic-regular;
-    font-weight: 600;
-    line-height: 22px;
+    font-family: gothic-bold;
 }
 
 .red-button-border {
@@ -120,9 +115,7 @@
     height: 58px;
     border: none;
     font-size: 18px;
-    font-family: gothic-regular;
-    font-weight: 600;
-    line-height: 22px;
+    font-family: gothic-bold;
 }
 
 .white-button-border {
@@ -149,12 +142,12 @@
     font-size: 18px;
     font-family: gothic-regular;
     line-height: 25px;
-    font-weight: 300;
+    font-weight: normal;
     color: #FFF;
 }
 
 .perks-text {
-    font-size: 16px;
+    font-size: 12px;
     font-family: gothic-regular;
     font-weight: 700;
     line-height: 47px;
@@ -165,8 +158,7 @@
 
 .perks-title {
     font-size: 40px;
-    font-family: gothic-regular;
-    font-weight: 700;
+    font-family: gothic-bold;
     line-height: 50px;
     letter-spacing: 0em;
     text-align: left;
@@ -243,8 +235,7 @@
 
 .montacargas-slider-title {
     font-size: 18px;
-    font-family: gothic-regular;
-    font-weight: bold;
+    font-family: gothic-bold;
     line-height: 50px;
     color: #FFF;
 }
@@ -297,4 +288,32 @@
     padding: 3em 6em;
     background-color: #E1E3EA;
     border-radius: 8px;
+}
+
+.swiper-button-next {
+    bottom: 0 !important;
+    top: unset !important;
+    left: 60px !important;
+    background-color: #E50020;
+    color: #FFF !important;
+    width: 43px !important;
+    height: 43px !important;
+    
+}
+
+.swiper-button-prev {
+    bottom: 0 !important;
+    top: unset !important;
+    background-color: #E50020;
+    color: #FFF !important;
+    width: 43px !important;
+    height: 43px !important;
+}
+
+.swiper-button-next:after {
+    font-size: 20px !important;
+}
+
+.swiper-button-prev:after {
+    font-size: 20px !important;
 }

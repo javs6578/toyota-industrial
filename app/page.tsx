@@ -10,11 +10,16 @@ import white_arrow from './src/img/white-arrow.svg'
 import play_button from './src/img/play-button.svg'
 import montacargas1 from './src/img/montacargas-ilustracion-1.png'
 import montacargas2 from './src/img/montacargas-ilustracion-2.png'
-import montacargas_slider1 from './src/img/montacargas-female.png'
-import montacargas_slider2 from './src/img/montacargas-male.png'
+import montacargas_slider1 from './src/img/montacargas_slider1.png'
+import montacargas_slider2 from './src/img/montacargas_slider2.png'
+import montacargas_slider3 from './src/img/montacargas_slider3.png'
+import montacargas_slider4 from './src/img/montacargas_slider4.png'
+import montacargas_slider5 from './src/img/montacargas_slider5.png'
+import montacargas_slider6 from './src/img/montacargas_slider6.png'
 import orange_rectangle from './src/img/orange-rectangle.png'
 import colegas from './src/img/dos-colegas-fabrica.png'
-import { Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, A11y } from 'swiper/modules';
+import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import * as React from 'react';
 import Button from '@mui/material/Button';
@@ -48,7 +53,7 @@ export default function HomePage() {
       {/* OFRECEMOS */}
       <section>
         <div className="row offer-section g-0 mb-5">
-          <div className="col-5 p-5 my-auto">
+          <div className="col-6 p-5 my-auto">
             <h2 className='branches-header'>Ofrecemos soluciones integrales en equipos industriales</h2>
             <p className='offer-text my-5'>
               Facilitamos la movilidad de tus materiales a través de
@@ -62,10 +67,9 @@ export default function HomePage() {
               <button className='red-button'>
                 Ver equipos
               </button>
-
             </div>
           </div>
-          <div className="col-7 d-flex justify-content-center m-auto">
+          <div className="col-6 d-flex justify-content-center m-auto">
             <Button onClick={handleClickOpen}>
               <img src={play_button.src} alt="" />
             </Button>
@@ -154,13 +158,12 @@ export default function HomePage() {
           </div>
           <div className="col-8 p-0 ps-5 d-flex justify-content-end" style={{ position: 'relative' }}>
             <img src={orange_rectangle.src} alt="" style={{ position: 'absolute', bottom: '-60px' }} />
-            <Swiper style={{ color: 'white' }}
-              modules={[A11y, Scrollbar]}
+            <Swiper style={{ minHeight: '500px' }}
+              modules={[A11y, Navigation]}
+              navigation
               spaceBetween={130}
               slidesPerView={3}
-              scrollbar={{ draggable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log('slide change')}
+              className='w-100'
             >
               <SwiperSlide>
                 <div className="card montacargas-slider-card">
@@ -180,7 +183,7 @@ export default function HomePage() {
                 <div className="card montacargas-slider-card">
                   <img src={montacargas_slider2.src} className="card-img-top" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <h5 className="card-title montacargas-slider-title">Interiores y exteriores</h5>
                     <p className="card-text montacargas-slider-description">
                       Si va a arrastrar directamente o
                       realizará múltiples paradas en su
@@ -192,59 +195,60 @@ export default function HomePage() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="card montacargas-slider-card">
-                  <img src={montacargas_slider1.src} className="card-img-top" alt="..." />
+                  <img src={montacargas_slider3.src} className="card-img-top" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <h5 className="card-title montacargas-slider-title">Patines hidráulicos y eléctricos</h5>
                     <p className="card-text montacargas-slider-description">
-                      Si va a arrastrar directamente o
-                      realizará múltiples paradas en su
-                      ruta estos tractores cumplen su
-                      objetivo
+                      Estos modelos facilitan el trabajo
+                      de transportar cargas en
+                      almacenes, incluso son ideales
+                      para pasillos estrechos.
                     </p>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="card montacargas-slider-card">
-                  <img src={montacargas_slider1.src} className="card-img-top" alt="..." />
+                  <img src={montacargas_slider4.src} className="card-img-top" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <h5 className="card-title montacargas-slider-title">Automatización</h5>
                     <p className="card-text montacargas-slider-description">
-                      Si va a arrastrar directamente o
-                      realizará múltiples paradas en su
-                      ruta estos tractores cumplen su
-                      objetivo
+                      Software innovador e ingeniería
+                      de automatización personalizada
+                      para obtener soluciones
+                      completas y únicas.
                     </p>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="card montacargas-slider-card">
-                  <img src={montacargas_slider2.src} className="card-img-top" alt="..." />
+                  <img src={montacargas_slider5.src} className="card-img-top" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <h5 className="card-title montacargas-slider-title">Apiladores Reach</h5>
                     <p className="card-text montacargas-slider-description">
-                      Si va a arrastrar directamente o
-                      realizará múltiples paradas en su
-                      ruta estos tractores cumplen su
-                      objetivo
+                      Diseñados para cumplir con las
+                      tareas cotidianas ligeras.
                     </p>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="card montacargas-slider-card">
-                  <img src={montacargas_slider1.src} className="card-img-top" alt="..." />
+                  <img src={montacargas_slider6.src} className="card-img-top" alt="..." />
                   <div className="card-body">
-                    <h5 className="card-title montacargas-slider-title">Tractor de arrastre</h5>
+                    <h5 className="card-title montacargas-slider-title">Pasillos angostos</h5>
                     <p className="card-text montacargas-slider-description">
-                      Si va a arrastrar directamente o
-                      realizará múltiples paradas en su
-                      ruta estos tractores cumplen su
-                      objetivo
+                      Ideal para desempeño en
+                      bodegas, centros de distribución
+                      y plantas de manufactura donde
+                      el espacio es un problema
                     </p>
                   </div>
                 </div>
+              </SwiperSlide>
+              <SwiperSlide>
+
               </SwiperSlide>
             </Swiper>
           </div>
