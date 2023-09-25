@@ -10,6 +10,7 @@ import { Link, TextField } from '@mui/material';
 import { useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import upload_icon from '../src/img/upload_icon.svg'
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -77,13 +78,22 @@ export default function Refacciones() {
                 <Box sx={{ width: '100%' }}>
                     <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                            <Tab label="Item One" {...a11yProps(0)} />
-                            <Tab label="Item Two" {...a11yProps(1)} />
-                            <Tab label="Item Three" {...a11yProps(2)} />
+                            <Tab label="Datos de la refacción" {...a11yProps(0)} />
+                            <Tab label="Datos de la empresa" {...a11yProps(1)} />
+                            <Tab label="Enviar cotización" {...a11yProps(2)} />
                         </Tabs>
                     </Box>
                     <CustomTabPanel value={value} index={0}>
-                        Item One
+                        <div className="d-flex flex-column align-items-center">
+                            <span className="h3">Envíenos una o varias imágenes como referencia</span>
+                            <div className="file-container d-flex flex-column bg-grey my-5 align-items-center">
+                                <img src={upload_icon.src} alt="" />
+                                <span>Arrastra el o los archivos </span>
+                                <span className='my-3'>----- o -----</span>
+                                <button className="red-button">Adjunta tus archivos</button>
+                            </div>
+                            <button className="red-button">Continuar</button>
+                        </div>
                     </CustomTabPanel>
                     <CustomTabPanel value={value} index={1}>
                         <div className='px-5'>

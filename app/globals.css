@@ -258,3 +258,10 @@
 .border-counter {
     border: 1px solid #A1AECE;
 }
+
+.file-container {
+    border: 1px dotted #000;
+    padding: 3em 6em;
+    background-color: #E1E3EA;
+    border-radius: 8px;
+}
