@@ -42,7 +42,7 @@
     font-weight: 700;
     line-height: 28px;
     text-align: left;
-    color: #CD1332;
+    color: #E50020;
 }
 
 .footer-link {
@@ -87,7 +87,7 @@
 }
 
 .red-button {
-    background-color: #CD1332;
+    background-color: #E50020;
     color: #FFF;
     width: 204px;
     height: 58px;
@@ -97,13 +97,13 @@
 }
 
 .red-button-border {
-    background-color: #CD1332;
+    background-color: #E50020;
     color: #FFF;
     width: 100%;
-    height: 38px;
+    height: 44px;
     border: none;
     font-size: 18px;
-    font-family: gothic-regular;
+    font-family: gothic-bold;
     font-weight: 600;
     line-height: 22px;
 }
@@ -120,15 +120,14 @@
 
 .white-button-border {
     background-color: #FFF;
-    color: #CD1332;
+    color: #E50020;
     width: 100%;
-    height: 38px;
-    border: none;
+    height: 44px;
     font-size: 18px;
-    font-family: gothic-regular;
+    font-family: gothic-bold;
     font-weight: 600;
     line-height: 22px;
-    border: 1px solid #CD1332;
+    border: 1px solid #E50020;
 }
 
 .offer-section {
@@ -153,7 +152,7 @@
     line-height: 47px;
     letter-spacing: 0.65em;
     text-align: left;
-    color: #CD1332;
+    color: #E50020;
 }
 
 .perks-title {
@@ -173,8 +172,12 @@
     letter-spacing: 0em;
 }
 
-.red-text {
+.dark-red-text {
     color: #CD1332;
+}
+
+.light-red-text {
+    color: #E50020;
 }
 
 .black-text {
@@ -182,7 +185,7 @@
 }
 
 .bg-red {
-    background-color: #CD1332;
+    background-color: #E50020;
 }
 
 .bg-dark {

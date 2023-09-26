@@ -62,7 +62,7 @@ export default function HomePage() {
             </p>
             <div className="d-flex justify-content-evenly">
               <button className='white-button'>
-                <Link href="#ver-equipos" className='red-text' style={{ textDecoration: 'none' }}>Conoce más</Link>
+                <Link href="#ver-equipos" className='dark-red-text' style={{ textDecoration: 'none' }}>Conoce más</Link>
               </button>
               <button className='red-button'>
                 <Link href="/montacargas" className='text-light' style={{ textDecoration: 'none' }}>Ver equipos</Link>
@@ -92,7 +92,7 @@ export default function HomePage() {
           <div className="col-5 my-auto p-5">
             <span className='perks-text'>VENTAJAS</span>
             <img src={red_rectangle.src} alt="" />
-            <h2 className='perks-title'>Diseñamos<span className='red-text'> soluciones <br /> a la medida  </span>
+            <h2 className='perks-title'>Diseñamos<span className='light-red-text'> soluciones <br /> a la medida  </span>
               de sus necesidades
             </h2>
             <p className='perks-description'>
@@ -118,7 +118,7 @@ export default function HomePage() {
           <div className="col-6 my-auto p-5">
             <span className='perks-text'>SERVICIOS</span>
             <img src={red_rectangle.src} alt="" />
-            <h2 className='perks-title'><span className='red-text'>Mantenimieto <br /></span>
+            <h2 className='perks-title'><span className='light-red-text'>Mantenimieto <br /></span>
               correctivo y preventivo
             </h2>
             <p className='perks-description'>
@@ -143,7 +143,7 @@ export default function HomePage() {
       <section className='my-5 pb-5' id='ver-equipos'>
         <div className="row g-0 my-5">
           <div className="col-4 my-auto p-5">
-            <h2 className='perks-title'><span className='red-text'> Todo </span>
+            <h2 className='perks-title'><span className='light-red-text'> Todo </span>
               para mover sus materiales <br />
               <span className="red-text"> en un mismo lugar</span>
             </h2>

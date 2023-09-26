@@ -212,7 +212,7 @@ export default function Empresa() {
                         <div className="row">
                             <div className="col-5 px-4 my-auto">
                                 <h3 className='filosofia-title'>
-                                    <span className='red-text'>Vivir y prosperar conjuntamente </span>con
+                                    <span className='light-red-text'>Vivir y prosperar conjuntamente </span>con
                                     las personas, la
                                     sociedad y el planeta
                                 </h3>
@@ -229,23 +229,23 @@ export default function Empresa() {
                                 <div className="row" style={{ position: 'relative' }}>
                                     <img className='red-circle' src={red_circle.src} alt="" />
                                     <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
-                                        <span className='red-text fw-bold' style={{ fontSize: '30px' }}>01</span>
+                                        <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>01</span>
                                         <p className='filosofia-card-description'>Debemos luchar por actividades comerciales abiertas y equitativas</p>
                                     </div>
                                     <div className="col-1"></div>
                                     <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
-                                        <span className='red-text fw-bold' style={{ fontSize: '30px' }}>02</span>
+                                        <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>02</span>
                                         <p className='filosofia-card-description'>Debemos ser socialmente responsables y comprometidos con la conservación del medioambiente</p>
                                     </div>
                                 </div>
                                 <div className="row mt-4" style={{ position: 'relative' }}>
                                     <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
-                                        <span className='red-text fw-bold' style={{ fontSize: '30px' }}>03</span>
+                                        <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>03</span>
                                         <p className='filosofia-card-description'>Debemos ser creativos y comprometidos a ofrecer valor agregado</p>
                                     </div>
                                     <div className="col-1"></div>
                                     <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
-                                        <span className='red-text fw-bold' style={{ fontSize: '30px' }}>04</span>
+                                        <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>04</span>
                                         <p className='filosofia-card-description'>Debemos respetar a las personas y trabajar para crear un ambiente de trabajo atractivo</p>
                                     </div>
                                     <img className='orange-circle' src={orange_circle.src} alt="" />
@@ -257,7 +257,7 @@ export default function Empresa() {
                         <div className="row">
                             <div className="col-5 px-4 my-auto">
                                 <h3 className='filosofia-title'>
-                                    <span className='red-text'>Más de 30 años </span>
+                                    <span className='light-red-text'>Más de 30 años </span>
                                     de experiencia en México nos respaldan.
                                 </h3>
                                 <p className='filosofia-subtitle my-4'>
