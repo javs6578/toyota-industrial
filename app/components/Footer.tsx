@@ -16,7 +16,9 @@ export default function Footer() {
                 <div className="d-flex flex-column my-auto align-items-center" style={{ position: 'relative' }}>
                     <h3 className="branches-header">Encuentre la sucursal más cercana</h3>
                     <span className="branches-description mb-3">Contamos con distintos proveedores a lo largo de toda la <br /> república mexicana</span>
-                    <button className="red-button">Ver sucursales</button>
+                    <button className="red-button">
+                        <Link className="text-light" style={{ textDecoration: 'none' }} href="/sucursales">Ver sucursales</Link>
+                    </button>
                 </div>
             </section>
             <div className="row g-0 p-5">
@@ -26,7 +28,7 @@ export default function Footer() {
                     <Link className="footer-link my-2" href="">Código de ética</Link>
                     <Link className="footer-link" href="">Aviso de privacidad</Link>
                 </div>
-                <div className="col-4">
+                <div className="col-4 pe-5">
                     <h4 className="footer-header">Visítanos en:</h4>
                     <span className="footer-description">Miguel Allende 83, Colonia Plan de Guadalupe, CPA Logistic Center San Martin Obispo, Cuautitlán Izcalli, México, C.P. 54760</span>
                     <h4 className="footer-header my-3">Contacto</h4>

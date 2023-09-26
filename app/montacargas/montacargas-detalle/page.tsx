@@ -31,7 +31,7 @@ export default function MontacargasDetail() {
     }
 
     return (
-        <>
+        <section className='mt-7'>
             <img className='w-100' src={montacargas.src} alt="" />
             <div className="row g-0 p-5">
                 <div className="col-3 p-3">
@@ -119,6 +119,6 @@ export default function MontacargasDetail() {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }

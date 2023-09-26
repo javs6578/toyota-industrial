@@ -51,7 +51,7 @@ export default function HomePage() {
   return (
     <>
       {/* OFRECEMOS */}
-      <section>
+      <section className='mt-7'>
         <div className="row offer-section g-0 mb-5">
           <div className="col-6 p-5 my-auto">
             <h2 className='branches-header'>Ofrecemos soluciones integrales en equipos industriales</h2>
@@ -62,10 +62,10 @@ export default function HomePage() {
             </p>
             <div className="d-flex justify-content-evenly">
               <button className='white-button'>
-                Conoce más
+                <Link href="#ver-equipos" className='red-text' style={{ textDecoration: 'none' }}>Conoce más</Link>
               </button>
               <button className='red-button'>
-                Ver equipos
+                <Link href="/montacargas" className='text-light' style={{ textDecoration: 'none' }}>Ver equipos</Link>
               </button>
             </div>
           </div>
@@ -79,8 +79,9 @@ export default function HomePage() {
             aria-labelledby="customized-dialog-title"
             open={open}
           >
-            <iframe width="600" height="400"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            <iframe width="600" height="445" src="https://www.youtube.com/embed/UHXo-Kb7PO8?si=e0Zjepy7-TIZ20Ol"
+              title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            >
             </iframe>
           </BootstrapDialog>
         </div>
@@ -131,7 +132,7 @@ export default function HomePage() {
               <strong>mantenimiento correctivo y preventivo,</strong> lo que
               garantiza la vida productiva de los equipos
             </p>
-            <Link href="" className='footer-link' style={{ textDecoration: 'none' }}>
+            <Link href="/servicios" className='footer-link' style={{ textDecoration: 'none' }}>
               Conoce nuestros servicios
             </Link>
             <img src={red_arrow.src} alt="" className='mx-2' />
@@ -139,7 +140,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* VER EQUIPOS */}
-      <section className='my-5 pb-5'>
+      <section className='my-5 pb-5' id='ver-equipos'>
         <div className="row g-0 my-5">
           <div className="col-4 my-auto p-5">
             <h2 className='perks-title'><span className='red-text'> Todo </span>
@@ -151,7 +152,7 @@ export default function HomePage() {
               refacción, servicios de mantenimiento,
               hasta gestionar toda tu flotilla.
             </p>
-            <Link href="" className='footer-link' style={{ textDecoration: 'none' }}>
+            <Link href="/montacargas" className='footer-link' style={{ textDecoration: 'none' }}>
               Ver todos los equipos
             </Link>
             <img src={red_arrow.src} alt="" className='mx-2' />
@@ -271,7 +272,7 @@ export default function HomePage() {
                 ambiente ideales para movilidad en interiores
               </p>
               <div className='mt-5'>
-                <Link className='collage-link me-2' href="/">
+                <Link className='collage-link me-2' href="/montacargas">
                   Encuentra aquí tu equipo
                 </Link>
                 <img src={white_arrow.src} alt="" />
@@ -293,7 +294,7 @@ export default function HomePage() {
                 optimizar la productividad de tu operación.
               </p>
               <div className='mt-5'>
-                <Link className='collage-link me-2' href="/">
+                <Link className='collage-link me-2' href="/servicios">
                   Conoce nuestros servicios
                 </Link>
                 <img src={white_arrow.src} alt="" />
@@ -314,12 +315,30 @@ export default function HomePage() {
                 para su negocio
               </p>
               <div className='mt-5'>
-                <Link className='collage-link me-2' href="/">
+                <Link className='collage-link me-2' href="/refacciones">
                   Cotiza tu refacción
                 </Link>
                 <img src={white_arrow.src} alt="" />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* PRÁCTICAS AMBIENTALES */}
+      <section className='medio-ambiente-banner p-5'>
+        <div className="row">
+          <div className="col-9 my-auto">
+            <p className='medio-ambiente-banner-title'>
+              En Toyota Tsusho Corporation de México,
+              aplicamos buenas prácticas ambientales
+            </p>
+          </div>
+          <div className="col-3 my-auto">
+            <button className="white-button">
+              <Link className='red-text' style={{ textDecoration: 'none' }} href="/empresa">
+                Conoce más
+              </Link>
+            </button>
           </div>
         </div>
       </section>

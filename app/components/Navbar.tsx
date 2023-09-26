@@ -8,7 +8,7 @@ import whatsapp from "../src/img/whatsapp-icon.svg"
 
 export default function Navbar() {
     return (
-        <nav className="navbar pt-0">
+        <nav className="navbar pt-0 fixed-top bg-light">
             <div className="container-fluid nav-contact-background pl-3 pr-0 g-0">
                 <Link className="navbar-brand" href="/">
                 </Link>

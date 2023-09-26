@@ -2,7 +2,7 @@ import check_circle from '../../src/img/check-circle.svg'
 
 export default function DatosEnviados() {
     return (
-        <>
+        <section className='mt-7 py-1'>
             <div className="d-flex flex-column align-items-center my-5">
                 <img width={90} src={check_circle.src} alt="" />
                 <p className='data-send-title'>Los datos han sido enviados <br /> correctamente</p>
@@ -16,6 +16,6 @@ export default function DatosEnviados() {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }

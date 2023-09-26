@@ -67,7 +67,7 @@ export default function Empresa() {
     return (
         <>
             {/* EMPRESA BANNER */}
-            <section>
+            <section className='mt-7'>
                 <div className="row empresa-banner g-0 mb-5">
                     <div className="col-5 p-5 my-auto">
                         <span className='empresa-banner-text'>
@@ -102,7 +102,7 @@ export default function Empresa() {
                             que comprende 17 compañías
                         </p>
                         <Link href="" className='footer-link' style={{ textDecoration: 'none' }}>
-                            Conoce nuestros servicios
+                            Ver compañías
                         </Link>
                         <img src={red_arrow.src} alt="" className='mx-2' />
                     </div>

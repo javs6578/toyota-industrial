@@ -7,7 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 export default function Montacargas() {
     return (
         <>
-            <img className='w-100' src={montacargas.src} alt="" />
+            <img className='w-100 mt-7' src={montacargas.src} alt="" />
             <section>
                 <div className="row g-0 p-5">
                     <div className="col-lg-2 col-md-3">

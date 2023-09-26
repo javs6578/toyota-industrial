@@ -52,7 +52,7 @@ export default function Refacciones() {
         setValue(newValue);
     };
 
-    const [count, setCount] = useState(0); 
+    const [count, setCount] = useState(0);
 
     function increment() {
         //setCount(prevCount => prevCount+=1);
@@ -72,7 +72,7 @@ export default function Refacciones() {
     }
 
     return (
-        <>
+        <section className='mt -7'>
             <img src={refacciones_banner.src} className='w-100' alt="" />
             <div className='container my-5'>
                 <Box sx={{ width: '100%' }}>
@@ -161,6 +161,6 @@ export default function Refacciones() {
                     </CustomTabPanel>
                 </Box>
             </div>
-        </>
+        </section>
     )
 }

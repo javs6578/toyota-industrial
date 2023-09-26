@@ -11,7 +11,7 @@ import TextField from "@mui/material/TextField/TextField"
 
 export default function Contacto() {
     return (
-        <footer>
+        <section className="mt-7">
             <img className="w-100" src={contacto_banner.src} alt="" />
             <div className="row g-0 p-5">
                 <div className="col-4 d-flex flex-column">
@@ -81,6 +81,6 @@ export default function Contacto() {
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
     )
 }
