@@ -51,7 +51,7 @@ export default function Navbar() {
                         <Link className="nav-link nav-router-link" href="/">Automatización</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link nav-router-link" href="/">Servicios</Link>
+                        <Link className="nav-link nav-router-link" href="/servicios">Servicios</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link nav-router-link" href="/refacciones">Refacciones</Link>

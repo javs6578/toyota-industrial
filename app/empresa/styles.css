@@ -60,47 +60,6 @@
     padding-top: 22em;
 }
 
-.filosofia-title {
-    font-size: 40px;
-    font-family: gothic-bold;
-    line-height: 50px;
-}
-
-.filosofia-subtitle {
-    font-size: 16px;
-    font-family: gothic-regular;
-    line-height: 28px;
-}
-
-.filosofia-card {
-    background-color: #FFF;
-    border-radius: 12px;
-    height: 200px;
-}
-
-.filosofia-card-description {
-    font-size: 14px;
-    font-family: gothic-regular;
-    line-height: 22px;
-    color: #292B32;
-}
-
-.red-circle {
-    width: 165px;
-    position: absolute;
-    right: -50px;
-    top: -50px;
-    z-index: -1;
-}
-
-.orange-circle {
-    width: 165px;
-    position: absolute;
-    z-index: -1;
-    left: -80px;
-    bottom: -50px;
-}
-
 .medio-ambiente-section {
     background-image: url('../src/img/medio-ambiente-banner.png');
     background-repeat: no-repeat;
