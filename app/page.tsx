@@ -335,7 +335,7 @@ export default function HomePage() {
           </div>
           <div className="col-3 my-auto">
             <button className="white-button">
-              <Link className='red-text' style={{ textDecoration: 'none' }} href="/empresa">
+              <Link className='light-red-text' style={{ textDecoration: 'none' }} href="/empresa">
                 Conoce más
               </Link>
             </button>

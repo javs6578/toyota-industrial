@@ -12,7 +12,7 @@ export default function Montacargas() {
                 <div className="row g-0 p-5">
                     <div className="col-lg-2 col-md-3">
                         <FormControl>
-                            <FormLabel className='red-text mb-3' id="demo-radio-buttons-group-label"><strong>Seleccione el Montacargas</strong></FormLabel>
+                            <FormLabel className='light-red-text mb-3' id="demo-radio-buttons-group-label"><strong>Seleccione el Montacargas</strong></FormLabel>
                             <RadioGroup
                                 aria-labelledby="demo-radio-buttons-group-label"
                                 defaultValue="female"
