@@ -1,15 +1,79 @@
-import logo from "../src/img/toyota_equipos_industriales_logo_footer.png"
+"use client";
 import facebook from "../src/img/facebook-icon.svg"
 import linkedin from "../src/img/linkedin-icon.svg"
 import youtube from "../src/img/youtube-icon.svg"
 import contacto_banner from "../src/img/contacto-banner.svg"
 import '../globals.css'
 import Link from "next/link"
+import * as yup from "yup";
 import gray_mail from '../src/img/gray-mail-icon.svg'
 import gray_phone from '../src/img/gray-phone-icon.svg'
-import TextField from "@mui/material/TextField/TextField"
+import { useState } from "react"
+import { useForm } from 'react-hook-form'
+import { yupResolver } from "@hookform/resolvers/yup";
+import { FormProvider, RHFTextField } from "../hook-form";
+import { Button } from "@mui/material";
+
+type ContactValuesProps = {
+    contact_name: string,
+    contact_company: string,
+    contact_mail: string,
+    contact_city: string,
+    contact_comment: string
+}
 
 export default function Contacto() {
+
+    const [contactData, setContactData] = useState<ContactValuesProps>({
+        contact_name: '',
+        contact_company: '',
+        contact_mail: '',
+        contact_city: '',
+        contact_comment: ''
+    });
+
+    const contactSchema = yup.object().shape({
+        contact_name: yup.string().required('Nombre es requerido'),
+        contact_company: yup.string().required('Empresa es requerido'),
+        contact_mail: yup.string().required('Correo es requerido').email('El correo debe ser valido'),
+        contact_city: yup.string().required('Ciudad o estado es requerido'),
+        contact_comment: yup.string().required('Comentario requerido')
+    })
+
+    const methods = useForm<ContactValuesProps>({
+        resolver: yupResolver(contactSchema),
+        defaultValues: {
+            contact_name: contactData?.contact_name || '',
+            contact_company: contactData?.contact_company || '',
+            contact_mail: contactData?.contact_mail || '',
+            contact_city: contactData?.contact_city || '',
+            contact_comment: contactData?.contact_comment || ''
+        },
+    })
+
+    const submitContact = async (data: ContactValuesProps) => {
+        const bodyJSON = {
+            "data": {
+                "contact_name": data.contact_name,
+                "contact_company": data.contact_company,
+                "contact_mail": data.contact_mail,
+                "contact_city": data.contact_city,
+                "contact_comment": data.contact_comment,
+            }
+        }
+        await fetch('http://localhost:1337/api/contact-uses', {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(bodyJSON)
+        })
+        window.location.replace("contacto/datos-enviados");
+    };
+
+    const { handleSubmit } = methods
+
     return (
         <section className="mt-7">
             <img className="w-100" src={contacto_banner.src} alt="" />
@@ -42,43 +106,84 @@ export default function Contacto() {
                 </div>
                 <div className="col-1"></div>
                 <div className="col-6">
-                    <h5 className="text-center mb-5">
-                        Ingrese los siguientes datos y en breve un asesor
-                        se pondrá en contacto con usted
-                    </h5>
-                    <div className="row">
-                        <div className="col-6">
-                            <p className="mb-1 form-field-text">Nombre completo<span className="asterisk">*</span></p>
-                            <TextField size="small" variant="outlined" label="Ingresa tu nombre" className="w-100"></TextField>
+                    <FormProvider methods={methods} onSubmit={handleSubmit(submitContact)} >
+                        <h5 className="text-center mb-5">
+                            Ingrese los siguientes datos y en breve un asesor
+                            se pondrá en contacto con usted
+                        </h5>
+                        <div className="row">
+                            <div className="col-6">
+                                <p className="mb-1 form-field-text">Nombre completo<span className="asterisk">*</span></p>
+                                <RHFTextField
+                                    name="contact_name"
+                                    placeholder="Ingresa tu nombre"
+                                    variant="outlined"
+                                    size="small"
+                                    fullWidth
+                                    className="w-100"
+                                    autoComplete="off"
+                                    InputLabelProps={{
+                                        shrink: true,
+                                    }}
+                                />
+                            </div>
+                            <div className="col-6">
+                                <p className="mb-1 form-field-text">Nombre de la empresa<span className="asterisk">*</span></p>
+                                <RHFTextField
+                                    name="contact_company"
+                                    placeholder="Ingresa el nombre de la empresa"
+                                    variant="outlined"
+                                    size="small"
+                                    fullWidth
+                                    className="w-100"
+                                    autoComplete="off"
+                                />
+                            </div>
                         </div>
-                        <div className="col-6">
-                            <p className="mb-1 form-field-text">Nombre de la empresa<span className="asterisk">*</span></p>
-                            <TextField size="small" variant="outlined" label="Ingresa el nombre de la empresa" className="w-100"></TextField>
+                        <div className="row my-4">
+                            <div className="col-6">
+                                <p className="mb-1 form-field-text">Correo electrónico<span className="asterisk">*</span></p>
+                                <RHFTextField
+                                    name="contact_mail"
+                                    placeholder="Ingresa tu correo"
+                                    variant="outlined"
+                                    size="small"
+                                    fullWidth
+                                    className="w-100"
+                                    autoComplete="off"
+                                />
+                            </div>
+                            <div className="col-6">
+                                <p className="mb-1 form-field-text">Ciudad o Estado<span className="asterisk">*</span></p>
+                                <RHFTextField
+                                    name="contact_city"
+                                    placeholder="Ingresa la Ciudad o el Estado"
+                                    variant="outlined"
+                                    size="small"
+                                    fullWidth
+                                    className="w-100"
+                                    autoComplete="off"
+                                />
+                            </div>
                         </div>
-                    </div>
-                    <div className="row my-4">
-                        <div className="col-6">
-                            <p className="mb-1 form-field-text">Correo electrónico<span className="asterisk">*</span></p>
-                            <TextField size="small" variant="outlined" label="Ingresa tu correo" className="w-100"></TextField>
+                        <p className="mb-1 form-field-text">Agregar comentario</p>
+                        <RHFTextField
+                            name="contact_comment"
+                            placeholder="Ingresa un comentario"
+                            variant="outlined"
+                            size="small"
+                            fullWidth
+                            className="w-100"
+                            autoComplete="off"
+                            multiline
+                            rows={4}
+                        />
+                        <div className="d-flex justify-content-end mt-3">
+                            <Button className="red-button" type="submit">
+                                Enviar
+                            </Button>
                         </div>
-                        <div className="col-6">
-                            <p className="mb-1 form-field-text">Ciudad o Estado<span className="asterisk">*</span></p>
-                            <TextField size="small" variant="outlined" label="Ingresa la Ciudad o el Estado" className="w-100"></TextField>
-                        </div>
-                    </div>
-                    <p className="mb-1 form-field-text">Agregar comentario</p>
-                    <TextField
-                        className="w-100"
-                        id="outlined-multiline-static"
-                        label="Ingresa un comentario"
-                        multiline
-                        rows={4}
-                    />
-                    <div className="d-flex justify-content-end mt-3">
-                        <Link href="contacto/datos-enviados">
-                            <button className="red-button">Enviar</button>
-                        </Link>
-                    </div>
+                    </FormProvider>
                 </div>
             </div>
         </section>
