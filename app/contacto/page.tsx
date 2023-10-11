@@ -13,6 +13,7 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from "@hookform/resolvers/yup";
 import { FormProvider, RHFTextField } from "../hook-form";
 import { Button } from "@mui/material";
+import emailjs from '@emailjs/browser'
 
 type ContactValuesProps = {
     contact_name: string,
@@ -51,7 +52,7 @@ export default function Contacto() {
         },
     })
 
-    const submitContact = async (data: ContactValuesProps) => {
+    const submitContact = async (data: ContactValuesProps, e: any) => {
         const bodyJSON = {
             "data": {
                 "contact_name": data.contact_name,
@@ -69,6 +70,7 @@ export default function Contacto() {
             },
             body: JSON.stringify(bodyJSON)
         })
+        emailjs.sendForm('service_utymded', 'template_jssz6tp', e.target, 'EZFglXdwLTeNCKQ3x')
         window.location.replace("contacto/datos-enviados");
     };
 
