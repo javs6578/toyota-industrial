@@ -2,10 +2,10 @@
 import Link from "next/link";
 import red_circle from '../src/img/red-circle.svg'
 import orange_circle from '../src/img/orange-circle.svg'
-import servicios_man from '../src/img/servicios_man.svg'
-import check_circle from '../src/img/check-circle.svg'
+import servicios_workers from '../src/img/services_workers.svg'
 import polizas from '../src/img/poliza-opciones.png'
-import { Box, Button, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Step, StepLabel, Stepper, TextField } from "@mui/material";
+import orange_rectangle from '../src/img/orange_rectangle.svg'
+import { Box, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Step, StepLabel, Stepper, TextField } from "@mui/material";
 import React from "react";
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
@@ -21,14 +21,6 @@ export default function Servicios() {
     ];
 
     const [activeStep, setActiveStep] = React.useState(0);
-
-    const handleNext = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    };
-
-    const handleBack = () => {
-        setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
 
     const [alignment, setAlignment] = React.useState('web');
 
@@ -106,19 +98,18 @@ export default function Servicios() {
                 </div>
             </section>
             {/* DONT WORRY SECTION */}
-            <section className="p-5">
+            <section className="pt-5 pe-5" style={{ position: 'relative' }}>
                 <div className="row">
-                    <div className="col-5">
-                        <img className="w-100" src={servicios_man.src} alt="" />
+                    <div className="col-7">
+                        <img className="w-100" src={servicios_workers.src} alt="" />
                     </div>
-                    <div className="col-1"></div>
-                    <div className="col-5 d-flex flex-column">
+                    <div className="col-5 d-flex flex-column px-4">
                         <h3 className='filosofia-title' style={{ fontSize: '40px' }}>
                             <span className='light-red-text'>Deje de preocuparse </span>
                             por averías inesperadas
                         </h3>
                         <p className='filosofia-subtitle my-3'>
-                            <strong>Minimice los riesgos operativos</strong>
+                            <strong>Minimice los riesgos operativos </strong>
                             que su actividad requiera. Las pólizas de servicios le permitirá
                             enfocarse en el núcleo central de sus negocios.
                         </p>
@@ -129,13 +120,13 @@ export default function Servicios() {
                             desempeño de los mismos.
                         </p>
                     </div>
-                    <div className="col-1"></div>
                 </div>
+                <img className="orange-services-rectangle w-100" src={orange_rectangle.src} alt="" />
             </section>
             {/* COTIZADOR */}
-            <section>
-                <div className="rounded shadow-lg container">
-                    <div className="py-4 px-5">
+            <section style={{ marginTop: '-12em' }} className="mb-5 pb-5">
+                <div className="rounded shadow-lg container bg-light" style={{ position: 'relative' }}>
+                    <div className="py-5 px-5">
                         <h3 className='filosofia-title text-center' style={{ fontSize: '40px' }}>
                             Cotice una <span className='light-red-text'>póliza de mantenimiento </span> <br />
                             en tan solo unos minutos
@@ -280,44 +271,11 @@ export default function Servicios() {
                                     </div>
                                 </section>
                             )}
-                            {activeStep == 4 && (
-                                <section className='py-3'>
-                                    <div className="d-flex flex-column align-items-center my-5">
-                                        <img width={90} src={check_circle.src} alt="" />
-                                        <p className='data-send-title'>Los datos han sido enviados <br /> correctamente</p>
-                                        <span className='data-send-description mt-3'>En breve un asesor se pondrá en contacto contigo</span>
-                                    </div>
-                                </section>
-                            )}
-                            {activeStep < 4 && (
-                                <div className="d-flex justify-content-center mt-3">
-                                    <Button
-                                        className="white-button me-3 rounded-0"
-                                        style={{ border: "1px solid" }}
-                                        disabled={activeStep === 0}
-                                        onClick={handleBack}
-                                        sx={{ mr: 1 }}>
-                                        Regresar
-                                    </Button>
-                                    <Button onClick={handleNext} className="red-button rounded-0" sx={{ fontSize: '18px' }}>
-                                        {activeStep === steps.length - 1 ? 'Solicitar cotización' : 'Continuar'}
-                                    </Button>
-                                </div>
-                            )}
-
-                            {activeStep === 4 && (
-                                <div className="d-flex justify-content-center mt-3">
-                                    <Button
-                                        className="white-button me-3 rounded-0"
-                                        style={{ border: "1px solid" }}
-                                        sx={{ mr: 1 }}>
-                                        <Link className='light-red-text' href="/servicios" style={{ textDecoration: 'none' }}>Cotizar otra póliza</Link>
-                                    </Button>
-                                    <Button onClick={handleNext} className="red-button rounded-0" sx={{ fontSize: '18px' }}>
-                                        Ver más productos
-                                    </Button>
-                                </div>
-                            )}
+                            <div className="d-flex justify-content-center mt-3">
+                                <button className='red-button'>
+                                    <Link href="/servicios/cotizar-poliza" className='text-light' style={{ textDecoration: 'none' }}>Continuar</Link>
+                                </button>
+                            </div>
                         </Box>
                     </div>
                 </div>

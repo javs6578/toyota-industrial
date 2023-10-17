@@ -137,7 +137,7 @@
 }
 
 .offer-section {
-    background-image: url('./src/img/banner-inicio.png');
+    background-image: url('./src/img/banner-inicio.svg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 707px;
@@ -366,6 +366,12 @@
     z-index: -1;
     left: -80px;
     bottom: -50px;
+}
+
+.orange-services-rectangle {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
 }
 
 .filosofia-card {

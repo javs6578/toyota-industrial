@@ -60,7 +60,7 @@ export default function HomePage() {
               equipos de combustión y eléctricos para caminos
               simples e irregulares para interiores y exteriores
             </p>
-            <div className="d-flex justify-content-evenly">
+            <div className="d-flex justify-content-between">
               <button className='white-button'>
                 <Link href="#ver-equipos" className='dark-red-text' style={{ textDecoration: 'none' }}>Conoce más</Link>
               </button>
