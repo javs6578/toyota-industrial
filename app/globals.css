@@ -453,3 +453,71 @@
     background-color: #FFF;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
+
+.hide-desktop {
+    display: none !important;
+}
+
+.mexico-map {
+    position: absolute;
+    max-height: 370px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .offer-section {
+        background-image: url('./src/img/banner-inicio-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 707px;
+        margin-top: 12em;
+    }
+
+    .hide-desktop {
+        display: inherit !important;
+    }
+
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .branches-header {
+        font-size: 40px;
+    }
+
+    .offer-text {
+        font-size: 16px;
+    }
+
+    .white-button {
+        width: 144px;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .red-button {
+        width: 144px;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .perks-title {
+        font-size: 36px;
+    }
+
+    .branches-section {
+        height: 510px;
+        text-align: center;
+        padding: 0 4em;
+    }
+
+    .mexico-map {
+        position: absolute;
+        max-height: 234px;
+        margin: 9em 0;
+    }
+
+    .footer-link {
+        width: 160px;
+    }
+}

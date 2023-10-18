@@ -53,15 +53,15 @@ export default function HomePage() {
       {/* OFRECEMOS */}
       <section className='mt-7'>
         <div className="row offer-section g-0 mb-5">
-          <div className="col-6 p-5 my-auto">
+          <div className="col-md-6 col-sm-12 p-5 my-auto">
             <h2 className='branches-header'>Ofrecemos soluciones integrales en equipos industriales</h2>
             <p className='offer-text my-5'>
               Facilitamos la movilidad de tus materiales a través de
               equipos de combustión y eléctricos para caminos
               simples e irregulares para interiores y exteriores
             </p>
-            <div className="d-flex justify-content-between">
-              <button className='white-button'>
+            <div className="d-flex">
+              <button className='white-button me-3'>
                 <Link href="#ver-equipos" className='dark-red-text' style={{ textDecoration: 'none' }}>Conoce más</Link>
               </button>
               <button className='red-button'>
@@ -69,7 +69,7 @@ export default function HomePage() {
               </button>
             </div>
           </div>
-          <div className="col-6 d-flex justify-content-center m-auto">
+          <div className="col-6 d-flex justify-content-center m-auto hide-mobile">
             <Button onClick={handleClickOpen}>
               <img src={play_button.src} alt="" />
             </Button>
@@ -89,7 +89,7 @@ export default function HomePage() {
       {/* VENTAJAS */}
       <section>
         <div className="row g-0 my-5">
-          <div className="col-5 my-auto p-5">
+          <div className="col-md-5 col-sm-12 my-auto p-5">
             <span className='perks-text'>VENTAJAS</span>
             <img src={red_rectangle.src} alt="" />
             <h2 className='perks-title'>Diseñamos<span className='light-red-text'> soluciones <br /> a la medida  </span>
@@ -104,18 +104,18 @@ export default function HomePage() {
                 fundamental de nuestros procesos</strong>
             </p>
           </div>
-          <div className="col-7 p-0 d-flex justify-content-end">
-            <img src={ventajas.src} alt="" />
+          <div className="col-md-7 col-sm-12 p-0 d-flex justify-content-end">
+            <img src={ventajas.src} alt="" className='w-100' />
           </div>
         </div>
       </section>
       {/* SERVICIOS */}
       <section className='my-5 py-5'>
         <div className="row g-0 my-5">
-          <div className="col-6 p-0 d-flex justify-content-start">
+          <div className="col-md-6 col-sm-12 hide-mobile p-0 d-flex justify-content-start">
             <img src={servicios.src} alt="" />
           </div>
-          <div className="col-6 my-auto p-5">
+          <div className="col-md-6 col-sm-12 my-auto p-5">
             <span className='perks-text'>SERVICIOS</span>
             <img src={red_rectangle.src} alt="" />
             <h2 className='perks-title'><span className='light-red-text'>Mantenimieto <br /></span>
@@ -129,7 +129,7 @@ export default function HomePage() {
             </p>
             <p className='perks-description'>
               Nuestros expertos están capacitados para brindar
-              <strong>mantenimiento correctivo y preventivo,</strong> lo que
+              <strong> mantenimiento correctivo y preventivo,</strong> lo que
               garantiza la vida productiva de los equipos
             </p>
             <Link href="/servicios" className='footer-link' style={{ textDecoration: 'none' }}>
@@ -137,17 +137,20 @@ export default function HomePage() {
             </Link>
             <img src={red_arrow.src} alt="" className='mx-2' />
           </div>
+          <div className="col-md-6 col-sm-12 hide-desktop p-0 d-flex justify-content-start">
+            <img src={servicios.src} alt="" className='w-100' />
+          </div>
         </div>
       </section>
       {/* VER EQUIPOS */}
       <section className='my-5 pb-5' id='ver-equipos'>
         <div className="row g-0 my-5">
-          <div className="col-4 my-auto p-5">
+          <div className="col-md-4 col-sm-12 my-auto p-5">
             <h2 className='perks-title'><span className='light-red-text'> Todo </span>
               para mover sus materiales <br />
-              <span className="red-text"> en un mismo lugar</span>
+              <span className="light-red-text"> en un mismo lugar</span>
             </h2>
-            <p className='perks-description'>
+            <p className='perks-description my-3'>
               Podemos suministrar desde una
               refacción, servicios de mantenimiento,
               hasta gestionar toda tu flotilla.
@@ -157,13 +160,13 @@ export default function HomePage() {
             </Link>
             <img src={red_arrow.src} alt="" className='mx-2' />
           </div>
-          <div className="col-8 p-0 ps-5 d-flex justify-content-end" style={{ position: 'relative' }}>
-            <img src={orange_rectangle.src} alt="" style={{ position: 'absolute', bottom: '-60px' }} />
+          <div className="col-md-8 col-sm-12 p-0 ps-5 d-flex justify-content-end" style={{ position: 'relative' }}>
+            <img src={orange_rectangle.src} alt="" style={{ position: 'absolute', bottom: '-20px' }} />
             <Swiper style={{ minHeight: '500px' }}
               modules={[A11y, Navigation]}
               navigation
               spaceBetween={130}
-              slidesPerView={3}
+              slidesPerView={1}
               className='w-100'
             >
               <SwiperSlide>
@@ -258,10 +261,10 @@ export default function HomePage() {
       {/* COLLAGE */}
       <section>
         <div className="row g-0">
-          <div className="col-4">
+          <div className="col-md-4 col-sm-12">
             <img className='w-100' src={montacargas1.src} alt="" />
           </div>
-          <div className="col-4 bg-dark">
+          <div className="col-md-4 col-sm-12 bg-dark">
             <div className='my-auto p-5'>
               <h3 className='collage-title'>Montacargas</h3>
               <p className='collage-text mt-4'>
@@ -279,12 +282,12 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-sm-12">
             <img className='w-100' src={montacargas2.src} alt="" />
           </div>
         </div>
         <div className="row g-0">
-          <div className="col-4 bg-red">
+          <div className="col-md-4 col-sm-12 bg-red">
             <div className='my-auto p-5'>
               <h3 className='collage-title'>Servicios</h3>
               <p className='collage-text mt-4'>
@@ -301,10 +304,10 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-sm-12">
             <img className='w-100' src={colegas.src} alt="" />
           </div>
-          <div className="col-4 bg-orange">
+          <div className="col-md-4 col-sm-12 bg-orange">
             <div className='my-auto p-5'>
               <h3 className='collage-title'>Refacciones</h3>
               <p className='collage-text mt-4'>
@@ -325,7 +328,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* PRÁCTICAS AMBIENTALES */}
-      <section className='medio-ambiente-banner p-5'>
+      <section className='medio-ambiente-banner p-5 hide-mobile'>
         <div className="row">
           <div className="col-9 my-auto">
             <p className='medio-ambiente-banner-title'>

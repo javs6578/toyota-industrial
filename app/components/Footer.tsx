@@ -12,23 +12,23 @@ export default function Footer() {
     return (
         <footer >
             <section className="branches-section">
-                <img src={republica.src} alt="" style={{ position: 'absolute', maxHeight: '370px ' }} />
+                <img src={republica.src} alt="" className="mexico-map"/>
                 <div className="d-flex flex-column my-auto align-items-center" style={{ position: 'relative' }}>
                     <h3 className="branches-header">Encuentre la sucursal más cercana</h3>
-                    <span className="branches-description mb-3">Contamos con distintos proveedores a lo largo de toda la <br /> república mexicana</span>
+                    <span className="branches-description mb-3">Contamos con distintos proveedores a lo largo de toda la <br className="hide-mobile"/> república mexicana</span>
                     <button className="red-button">
                         <Link className="text-light" style={{ textDecoration: 'none' }} href="/sucursales">Ver sucursales</Link>
                     </button>
                 </div>
             </section>
             <div className="row g-0 p-5">
-                <div className="col-4 d-flex flex-column">
+                <div className="col-md-4 col-sm-12 d-flex flex-column">
                     <img src={logo.src} alt="" width="315" />
                     <p className="footer-description">2021 TOYOTA TSUSHO CORPORATION <br /> DE MÉXICO S.A DE C.V</p>
                     <Link className="footer-link my-2" href="">Código de ética</Link>
                     <Link className="footer-link" href="">Aviso de privacidad</Link>
                 </div>
-                <div className="col-4 pe-5">
+                <div className="col-md-4 col-sm-12 pe-5 my-4">
                     <h4 className="footer-header">Visítanos en:</h4>
                     <span className="footer-description">Miguel Allende 83, Colonia Plan de Guadalupe, CPA Logistic Center San Martin Obispo, Cuautitlán Izcalli, México, C.P. 54760</span>
                     <h4 className="footer-header my-3">Contacto</h4>
@@ -41,7 +41,7 @@ export default function Footer() {
                         <Link href="tel:800 717 5667" className="mb-0 link-contact">800 717 5667</Link>
                     </div>
                 </div>
-                <div className="col-3">
+                <div className="col-md-4 col-sm-12">
                     <h4 className="footer-header">Síguenos</h4>
                     <div className="d-flex my-3">
                         <Link href="https://www.facebook.com/toyotaindustriales" target="_blank">
