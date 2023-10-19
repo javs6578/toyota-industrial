@@ -463,6 +463,8 @@
     max-height: 370px;
 }
 
+
+
 @media only screen and (max-width: 600px) {
 
     .offer-section {
@@ -470,7 +472,6 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 707px;
-        margin-top: 12em;
     }
 
     .hide-desktop {
@@ -519,5 +520,18 @@
 
     .footer-link {
         width: 160px;
+    }
+
+    .subnavbar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .fl-column {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 10px 0;
     }
 }

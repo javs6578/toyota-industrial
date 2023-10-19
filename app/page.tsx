@@ -51,7 +51,7 @@ export default function HomePage() {
   return (
     <>
       {/* OFRECEMOS */}
-      <section className='mt-7'>
+      <section>
         <div className="row offer-section g-0 mb-5">
           <div className="col-md-6 col-sm-12 p-5 my-auto">
             <h2 className='branches-header'>Ofrecemos soluciones integrales en equipos industriales</h2>
