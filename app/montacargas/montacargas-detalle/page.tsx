@@ -31,10 +31,10 @@ export default function MontacargasDetail() {
     }
 
     return (
-        <section className='mt-7'>
+        <section>
             <img className='w-100' src={montacargas.src} alt="" />
-            <div className="row g-0 p-5">
-                <div className="col-3 p-3">
+            <div className="row g-0 p-4">
+                <div className="col-md-3 col-sm-12 p-3">
                     <div className='montacargas-card'>
                         <span className='h5 red-text'>Características del equipo</span>
                         <img src={montacargas_vehicle.src} className='w-100' alt="" />
@@ -48,37 +48,37 @@ export default function MontacargasDetail() {
                         <p>7,055/2,420</p>
                     </div>
                 </div>
-                <div className="col-9 p-5 my-auto">
+                <div className="col-md-9 col-sm-12 p-4 my-auto">
                     <img src={red_arrow.src} style={{ rotate: '180deg' }} alt="" className='me-2' />
                     <Link href="/" className='footer-link' style={{ textDecoration: 'none' }}>
                         Regresar
                     </Link>
-                    <p className="h5 text-center">
-                        Ingresa los siguientes datos para solicitar la cotización <br />
+                    <p className="h5 dark-red-text my-3" style={{ fontSize: '18px'}}>
+                        Ingresa los siguientes datos para solicitar la cotización <br className='hide-mobile' />
                         de tu producto
                     </p>
-                    <div className="row g-0 my-3">
-                        <div className="col-6">
+                    <div className="row g-0 mb-3">
+                        <div className="col-md-6 col-sm-12 mb-3">
                             <p className="mb-1 form-field-text">Nombre completo<span className="asterisk">*</span></p>
                             <TextField size="small" variant="outlined" label="Ingresa tu nombre" className="w-100 pe-3"></TextField>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-sm-12">
                             <p className="mb-1 form-field-text">Nombre de la empresa<span className="asterisk">*</span></p>
                             <TextField size="small" variant="outlined" label="Ingresa el nombre de la empresa" className="w-100 pe-3"></TextField>
                         </div>
                     </div>
-                    <div className="row g-0 my-4">
-                        <div className="col-6">
+                    <div className="row g-0 my-3">
+                        <div className="col-md-6 col-sm-12 mb-3">
                             <p className="mb-1 form-field-text">Correo electrónico<span className="asterisk">*</span></p>
                             <TextField size="small" variant="outlined" label="Ingresa tu correo" className="w-100 pe-3"></TextField>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-sm-12">
                             <p className="mb-1 form-field-text">Ciudad o Estado<span className="asterisk">*</span></p>
                             <TextField size="small" variant="outlined" label="Ingresa la Ciudad o el Estado" className="w-100 pe-3"></TextField>
                         </div>
                     </div>
                     <div className="row g-0">
-                        <div className="col-6"><FormControl className='mb-3'>
+                        <div className="col-md-6 col-sm-12"><FormControl className='mb-3'>
                             <FormLabel className='black-text' id="demo-radio-buttons-group-label"><span className='form-field-text'>Condición y tipo</span></FormLabel>
                             <RadioGroup
                                 aria-labelledby="demo-radio-buttons-group-label"
@@ -89,7 +89,7 @@ export default function MontacargasDetail() {
                                 <FormControlLabel value="Seminuevo" control={<Radio />} label="Seminuevo" />
                             </RadioGroup>
                         </FormControl></div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-sm-12">
                             <FormControl className='mb-3'>
                                 <FormLabel className='black-text' id="demo-radio-buttons-group-label"><span className='form-field-text'>Tipo</span></FormLabel>
                                 <RadioGroup
@@ -111,10 +111,10 @@ export default function MontacargasDetail() {
                     </div>
                     <div className="d-flex justify-content-center mt-3">
                         <Link href="contacto/datos-enviados" className='me-3'>
-                            <button className="white-button" style={{ border: "1px solid" }}>Regresar</button>
+                            <button className="white-button" style={{ border: "1px solid", height: '54px' }}>Regresar</button>
                         </Link>
-                        <Link href="contacto/datos-enviados">
-                            <button className="red-button">Solicitar cotización</button>
+                        <Link href="/contacto/datos-enviados">
+                            <button className="red-button" style={{ height: '54px' }}>Solicitar cotización</button>
                         </Link>
                     </div>
                 </div>

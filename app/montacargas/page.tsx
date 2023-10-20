@@ -7,10 +7,10 @@ import SearchIcon from '@mui/icons-material/Search';
 export default function Montacargas() {
     return (
         <>
-            <img className='w-100 mt-7' src={montacargas.src} alt="" />
+            <img className='w-100' src={montacargas.src} alt="" />
             <section>
                 <div className="row g-0 p-5">
-                    <div className="col-lg-2 col-md-3">
+                    <div className="col-lg-2 col-md-3 hide-mobile">
                         <FormControl>
                             <FormLabel className='light-red-text mb-3' id="demo-radio-buttons-group-label"><strong>Seleccione el Montacargas</strong></FormLabel>
                             <RadioGroup
@@ -41,15 +41,15 @@ export default function Montacargas() {
                         <button className='red-button'>Aplicar</button>
                     </div>
                     <div className="col-lg-1"></div>
-                    <div className="col-lg-9 col-md-9">
-                        <div className='mb-3 d-flex justify-content-end'>
-                            <TextField className='w-50' size='small' id="outlined-basic" label="Busca el equipo o modelo" variant="outlined" />
-                            <button className='red-button-border w-25 rounded-end'>
+                    <div className="col-lg-9 col-md-9 col-sm-12">
+                        <div className='mb-3 d-flex justify-content-center'>
+                            <TextField className='w-50 rounded-0' size='small' id="outlined-basic" label="Busca el equipo o modelo" variant="outlined" />
+                            <button className='red-button-border w-50 rounded-end' style={{ height: '40px' }}>
                                 Buscar <SearchIcon />
                             </button>
                         </div>
                         <div className="row">
-                            <div className="col-4">
+                            <div className="col-md-4 col-sm-12 my-3">
                                 <div className='montacargas-card'>
                                     <img src={montacargas_vehicle.src} className='w-100' alt="" />
                                     <strong>Equipo</strong>
@@ -64,7 +64,7 @@ export default function Montacargas() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-4"><div className='montacargas-card'>
+                            <div className="col-md-4 col-sm-12 my-3"><div className='montacargas-card'>
                                 <img src={montacargas_vehicle.src} className='w-100' alt="" />
                                 <strong>Equipo</strong>
                                 <p>Combustión Cushion</p>
@@ -77,7 +77,7 @@ export default function Montacargas() {
                                     <button className='white-button-border'>Ver características</button>
                                 </div>
                             </div></div>
-                            <div className="col-4"><div className='montacargas-card'>
+                            <div className="col-md-4 col-sm-12 my-3"><div className='montacargas-card'>
                                 <img src={montacargas_vehicle.src} className='w-100' alt="" />
                                 <strong>Equipo</strong>
                                 <p>Combustión Cushion</p>
