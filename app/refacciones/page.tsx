@@ -4,12 +4,13 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import check_circle from '../src/img/check-circle.svg'
-import { Link, StepContent, TextField } from '@mui/material';
+import { FormControl, FormControlLabel, FormLabel, Link, Radio, RadioGroup, StepContent, TextField } from '@mui/material';
 import { useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import upload_icon from '../src/img/upload_icon.svg'
 import { Stepper, Step, StepLabel, Button } from '@mui/material';
+import red from '@mui/material/colors/red';
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -39,14 +40,19 @@ export default function Refacciones() {
     }
 
     const steps = [
+        '',
         'Datos de la refacción',
         'Datos de la empresa',
         'Enviar cotización',
     ];
 
-    const [activeStep, setActiveStep] = React.useState(0);
+    const [activeStep, setActiveStep] = React.useState(-1);
 
     const handleNext = () => {
+        if (activeStep == -1) {
+            setActiveStep(0)
+            return
+        }
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
     };
 
@@ -54,25 +60,65 @@ export default function Refacciones() {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
 
+    const [selectedValue, setSelectedValue] = React.useState('a');
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setSelectedValue(event.target.value);
+    };
+
+    const controlProps = (item: string) => ({
+        checked: selectedValue === item,
+        onChange: handleChange,
+        value: item,
+        name: 'color-radio-button-demo',
+        inputProps: { 'aria-label': item },
+    });
+
     return (
-        <section className='mt-7'>
+        <section>
             <img src={refacciones_banner.src} className='w-100' alt="" />
             <Box sx={{ width: '100%', margin: '2em 0' }}>
                 <Box sx={{ width: '100%', margin: '2em 0' }}>
                     <Stepper activeStep={activeStep} alternativeLabel>
-                        <Step key={1}>
-                            <StepLabel className="stepper-label">{steps[0]}</StepLabel>
-                        </Step>
                         <Step key={steps[1]}>
                             <StepLabel className="stepper-label">{steps[1]}</StepLabel>
                         </Step>
                         <Step key={steps[2]}>
                             <StepLabel className="stepper-label">{steps[2]}</StepLabel>
                         </Step>
+                        <Step key={steps[3]}>
+                            <StepLabel className="stepper-label">{steps[3]}</StepLabel>
+                        </Step>
                     </Stepper>
+                    {activeStep == -1 && (
+                        <Box sx={{ width: '100%' }}>
+                            <FormControl className='d-flex align-items-center mt-5'>
+                                <FormLabel className='mb-3' id="demo-radio-buttons-group-label"><strong>¿Cuenta con imágenes de referencia?</strong></FormLabel>
+                                <RadioGroup
+                                    row
+                                    aria-labelledby="demo-radio-buttons-group-label"
+                                    defaultValue="female"
+                                    name="radio-buttons-group"
+                                >
+                                    <FormControlLabel className='fw-bold' value={true} control={<Radio {...controlProps('a')}
+                                        sx={{
+                                            '&.Mui-checked': {
+                                                color: red[600],
+                                            },
+                                        }} />} label="Si" />
+                                    <FormControlLabel className='fw-bold' value={false} control={<Radio {...controlProps('b')}
+                                        sx={{
+                                            '&.Mui-checked': {
+                                                color: red[600],
+                                            },
+                                        }} />} label="No" />
+                                </RadioGroup>
+                            </FormControl>
+                        </Box>
+                    )}
                     {activeStep == 0 && (
                         <Box sx={{ width: '100%' }}>
-                            <div className="d-flex flex-column align-items-center mt-5">
+                            <div className="d-flex flex-column align-items-center mt-5 px-5 ">
                                 <span className='send-picture-text'>Envíenos imágenes como referencia</span>
                                 <span className='branches-description mb-4'>Pueden ser imágenes de la refacción o del equipo</span>
                                 <div className="file-container d-flex flex-column bg-grey align-items-center">
@@ -96,35 +142,35 @@ export default function Refacciones() {
                         </Box>
                     )}
                     {activeStep == 1 && (
-                        <div className=''>
+                        <div className='px-4'>
                             <p className="text-center h5 fw-bold mt-5 mb-4">
                                 Ingresa los datos de contacto
                             </p>
                             <div className="row g-0">
                                 <div className="col-2"></div>
-                                <div className="col-4">
+                                <div className="col-md-4 col-sm-12 my-2 me-4">
                                     <p className="mb-1 form-field-text">Nombre completo<span className="asterisk">*</span></p>
-                                    <TextField size="small" variant="outlined" label="Ingresa tu nombre" style={{ width: '90%' }}></TextField>
+                                    <TextField size="small" className='w-100' variant="outlined" label="Ingresa tu nombre"></TextField>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-md-4 col-sm-12 my-2 me-4">
                                     <p className="mb-1 form-field-text">Nombre de la empresa<span className="asterisk">*</span></p>
-                                    <TextField size="small" variant="outlined" label="Ingresa el nombre de la empresa" style={{ width: '90%' }}></TextField>
+                                    <TextField size="small" className='w-100' variant="outlined" label="Ingresa el nombre de la empresa"></TextField>
                                 </div>
                             </div>
                             <div className="col-2"></div>
-                            <div className="row my-4 g-0">
+                            <div className="row g-0">
                                 <div className="col-2"></div>
-                                <div className="col-4">
+                                <div className="col-md-4 col-sm-12 my-2 me-4">
                                     <p className="mb-1 form-field-text">Correo electrónico<span className="asterisk">*</span></p>
-                                    <TextField size="small" variant="outlined" label="Ingresa tu correo" style={{ width: '90%' }}></TextField>
+                                    <TextField size="small" className='w-100' variant="outlined" label="Ingresa tu correo"></TextField>
                                 </div>
-                                <div className="col-4">
+                                <div className="col-md-4 col-sm-12 my-2 me-4">
                                     <p className="mb-1 form-field-text">Ciudad o Estado<span className="asterisk">*</span></p>
-                                    <TextField size="small" variant="outlined" label="Ingresa la Ciudad o el Estado" style={{ width: '90%' }}></TextField>
+                                    <TextField size="small" className='w-100' variant="outlined" label="Ingresa la Ciudad o el Estado"></TextField>
                                 </div>
                                 <div className="col-2"></div>
                                 <div className="col-2"></div>
-                                <div className="col-4 mt-4">
+                                <div className="col-md-4 col-sm-12 mt-4">
                                     <p className="mb-1 form-field-text">¿Cuántos equipos Toyota tienen? </p>
                                     <div className="d-flex mt-2">
                                         <button className='rounded bg-white border-counter' onClick={decrement}><RemoveIcon /></button>
@@ -136,7 +182,7 @@ export default function Refacciones() {
                         </div>
                     )}
                     {activeStep == 2 && (
-                        <div className="d-flex flex-column align-items-center my-5">
+                        <div className="d-flex flex-column align-items-center my-5 px-5">
                             <img width={90} src={check_circle.src} alt="" />
                             <p className='data-send-title my-1'>Los datos han sido enviados <br /> correctamente</p>
                             <span className='data-send-description mt-3'>En breve un asesor se pondrá en contacto contigo</span>
@@ -148,7 +194,7 @@ export default function Refacciones() {
                         <Button
                             className="white-button me-3 rounded-0"
                             style={{ border: "1px solid" }}
-                            disabled={activeStep === 0}
+                            disabled={activeStep === -1}
                             onClick={handleBack}
                             sx={{ mr: 1 }}>
                             Regresar

@@ -274,8 +274,7 @@
 .data-send-title {
     color: #E50020;
     font-size: 40px;
-    font-family: gothic-regular;
-    font-weight: bold;
+    font-family: gothic-bold;
     text-align: center;
     line-height: 50px;
     margin-bottom: 0;
@@ -286,6 +285,7 @@
     font-size: 18px;
     font-family: gothic-regular;
     font-weight: bold;
+    text-align: center;
 }
 
 .border-counter {
@@ -428,6 +428,8 @@
     font-size: 20px;
     font-family: gothic-bold;
     color: #292B32;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .drag-file-text {
@@ -492,13 +494,13 @@
 
     .white-button {
         width: 144px;
-        height: 44px;
+        height: 58px;
         font-size: 16px;
     }
 
     .red-button {
         width: 144px;
-        height: 44px;
+        height: 58px;
         font-size: 16px;
     }
 
@@ -533,5 +535,9 @@
 
     .nav-link {
         padding: 10px 0;
+    }
+
+    .file-container {
+        width: 313px;
     }
 }

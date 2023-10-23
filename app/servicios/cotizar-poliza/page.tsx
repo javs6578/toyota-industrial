@@ -36,7 +36,7 @@ export default function cotizador() {
     };
 
     return (
-        <section className="mb-5 pb-5 mt-7">
+        <section className="mb-5 pb-5">
             <div className="rounded shadow-lg container bg-light" style={{ position: 'relative' }}>
                 <div className="py-5 px-5">
                     <h3 className='filosofia-title text-center' style={{ fontSize: '40px' }}>

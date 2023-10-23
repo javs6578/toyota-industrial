@@ -77,7 +77,7 @@ export default function Contacto() {
     const { handleSubmit } = methods
 
     return (
-        <section className="mt-7">
+        <section>
             <img className="w-100" src={contacto_banner.src} alt="" />
             <div className="row g-0 p-5">
                 <div className="col-4 d-flex flex-column">

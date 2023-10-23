@@ -33,7 +33,7 @@ export default function Servicios() {
     return (
         <>
             {/* BANNER */}
-            <section className='mt-7'>
+            <section>
                 <div className="row services-banner g-0 mb-5">
                     <div className="col-6 p-5 my-auto mx-5">
                         <h2 className='branches-header'>

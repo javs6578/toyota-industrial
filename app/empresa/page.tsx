@@ -67,7 +67,7 @@ export default function Empresa() {
     return (
         <>
             {/* EMPRESA BANNER */}
-            <section className='mt-7'>
+            <section>
                 <div className="row empresa-banner g-0 mb-5">
                     <div className="col-5 p-5 my-auto">
                         <span className='empresa-banner-text'>
