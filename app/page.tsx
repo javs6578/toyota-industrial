@@ -165,8 +165,16 @@ export default function HomePage() {
             <Swiper style={{ minHeight: '500px' }}
               modules={[A11y, Navigation]}
               navigation
-              spaceBetween={130}
-              slidesPerView={1}
+              breakpoints={{
+                600: {
+                  slidesPerView: 1,
+                  spaceBetween: 20
+                },
+                1000: {
+                  slidesPerView: 3,
+                  spaceBetween: 180
+                },
+              }}
               className='w-100'
             >
               <SwiperSlide>

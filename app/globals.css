@@ -465,7 +465,13 @@
     max-height: 370px;
 }
 
+.filosifa-section {
+    margin: 0 5em;
+}
 
+.filosofia-cards-section {
+    margin-top: 2em
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -539,5 +545,20 @@
 
     .file-container {
         width: 313px;
+    }
+
+    .filosofia-card {
+        width: 212px;
+        height: 206px;
+        margin: 1em 0;
+    }
+
+    .filosofia-cards-section {
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .filosifa-section {
+        margin: 0;
     }
 }

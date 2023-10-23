@@ -12,8 +12,8 @@ export default function Navbar() {
                 <Link className="navbar-brand" href="/">
                 </Link>
                 <ul className="nav justify-content-end">
-                    <li className="nav-item px-2">
-                        <Link className="nav-link nav-contact-link hide-mobile" href="/empresa">Empresa</Link>
+                    <li className="nav-item px-2 me-2">
+                        <Link className="nav-link nav-contact-link" href="/empresa">Empresa</Link>
                     </li>
                     <li className="nav-item px-2">
                         <div className="d-flex">

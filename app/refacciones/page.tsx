@@ -100,13 +100,13 @@ export default function Refacciones() {
                                     defaultValue="female"
                                     name="radio-buttons-group"
                                 >
-                                    <FormControlLabel className='fw-bold' value={true} control={<Radio {...controlProps('a')}
+                                    <FormControlLabel value={true} control={<Radio {...controlProps('a')}
                                         sx={{
                                             '&.Mui-checked': {
                                                 color: red[600],
                                             },
                                         }} />} label="Si" />
-                                    <FormControlLabel className='fw-bold' value={false} control={<Radio {...controlProps('b')}
+                                    <FormControlLabel value={false} control={<Radio {...controlProps('b')}
                                         sx={{
                                             '&.Mui-checked': {
                                                 color: red[600],

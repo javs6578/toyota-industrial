@@ -69,7 +69,7 @@ export default function Empresa() {
             {/* EMPRESA BANNER */}
             <section>
                 <div className="row empresa-banner g-0 mb-5">
-                    <div className="col-5 p-5 my-auto">
+                    <div className="col-md-5 col-sm-12 p-5 my-auto">
                         <span className='empresa-banner-text'>
                             NUESTRA EMPRESA
                         </span>
@@ -89,7 +89,7 @@ export default function Empresa() {
             {/* 30 AÑOS */}
             <section>
                 <div className="row g-0 my-5 p-5">
-                    <div className="col-5 px-5">
+                    <div className="col-md-5 col-sm-12 px-4">
                         <h3 className='thirty-title'>Toyota Tsusho Corporation de México</h3>
                         <p className='thirty-description mt-3'>
                             Toyota Tsusho Corporation de México es el
@@ -106,18 +106,18 @@ export default function Empresa() {
                         </Link>
                         <img src={red_arrow.src} alt="" className='mx-2' />
                     </div>
-                    <div className="col-3 my-auto">
-                        <img src={thirty.src} alt="" />
+                    <div className="col-md-3 col-sm-12 my-auto mt-4">
+                        <img src={thirty.src} alt="" className='w-100' />
                     </div>
-                    <div className="col-4 my-5 ps-5">
-                        <img src={years.src} alt="" />
+                    <div className="col-md-4 col-sm-12 my-5 ps-4">
+                        <img src={years.src} alt="" className='w-100' />
                     </div>
                 </div>
             </section>
             {/* FILOSOFIA, MISION, VISION */}
-            <section className='container'>
+            <section className='filosifa-section'>
                 <div className="row g-0">
-                    <div className="col-4 bg-red p-5">
+                    <div className="col-md-4 col-sm-12 bg-red p-5">
                         <h3 className='collage-title'>Filosofía</h3>
                         <p className='collage-text my-4'>
                             Aportar servicios y soluciones que
@@ -134,7 +134,7 @@ export default function Empresa() {
                             valor a su negocio.
                         </p>
                     </div>
-                    <div className="col-4 bg-black p-5">
+                    <div className="col-md-4 col-sm-12 bg-black p-5">
                         <h3 className='collage-title'>Misión</h3>
                         <p className='collage-text my-4'>
                             Satisfacer siempre las necesidades
@@ -149,7 +149,7 @@ export default function Empresa() {
                             confianza.
                         </p>
                     </div>
-                    <div className="col-4 bg-orange p-5">
+                    <div className="col-md-4 col-sm-12 bg-orange p-5">
                         <h3 className='collage-title'>Visión</h3>
                         <p className='collage-text mt-4'>
                             Ser el socio de negocio
@@ -168,7 +168,7 @@ export default function Empresa() {
                 <div className='container'>
                     <h3 style={{ fontSize: '40px' }} className='valores-title text-center'>Nuestros valores</h3>
                     <div className="row g-0 py-5">
-                        <div className="col-4 px-4">
+                        <div className="col-md-4 col-sm-12 p-4">
                             <img className='mb-2' src={heart.src} alt="" />
                             <h4 className='valores-title'>SHOU-KON</h4>
                             <p className='valores-description'>
@@ -177,7 +177,7 @@ export default function Empresa() {
                                 pasión por el logro.
                             </p>
                         </div>
-                        <div className="col-4 px-4">
+                        <div className="col-md-4 col-sm-12 p-4">
                             <img className='mb-2' src={location.src} alt="" />
                             <h4 className='valores-title'>GENCHI / GENBUTSU / GENJITSU</h4>
                             <p className='valores-description'>
@@ -187,7 +187,7 @@ export default function Empresa() {
                                 implementar mejora.
                             </p>
                         </div>
-                        <div className="col-4 px-4">
+                        <div className="col-md-4 col-sm-12 p-4">
                             <img className='mb-2' src={team.src} alt="" />
                             <h4 className='valores-title'>TEAM POWER</h4>
                             <p className='valores-description'>
@@ -200,7 +200,7 @@ export default function Empresa() {
                 </div>
             </section>
             {/* FILOSOFIA / HISTORIA */}
-            <section className='my-5 p-5'>
+            <section className='my-5 p-4'>
                 <Box sx={{ width: '100%' }}>
                     <div className='shadow-bg w-50 px-5 rounded ' style={{ height: '84px' }}>
                         <Tabs className='shadow-lg px-4 h-100' value={value} onChange={handleChange} aria-label="basic tabs example">
@@ -210,7 +210,7 @@ export default function Empresa() {
                     </div>
                     <CustomTabPanel value={value} index={0}>
                         <div className="row">
-                            <div className="col-5 px-4 my-auto">
+                            <div className="col-md-5 col-sm-12 my-auto">
                                 <h3 className='filosofia-title'>
                                     <span className='light-red-text'>Vivir y prosperar conjuntamente </span>con
                                     las personas, la
@@ -225,26 +225,26 @@ export default function Empresa() {
                                 <img className='ms-2' src={red_arrow.src} alt="" />
                             </div>
                             <div className="col-1"></div>
-                            <div className="col-5">
-                                <div className="row" style={{ position: 'relative' }}>
+                            <div className="col-md-5 col-sm-12">
+                                <div className="row filosofia-cards-section" style={{ position: 'relative' }}>
                                     <img className='red-circle' src={red_circle.src} alt="" />
-                                    <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                                    <div className="col-md-5 col-sm-12 filosofia-card py-4 px-3 shadow-lg">
                                         <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>01</span>
                                         <p className='filosofia-card-description'>Debemos luchar por actividades comerciales abiertas y equitativas</p>
                                     </div>
-                                    <div className="col-1"></div>
-                                    <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                                    <div className="col-1 hide-mobile"></div>
+                                    <div className="col-md-5 col-sm-12 filosofia-card py-4 px-3 shadow-lg">
                                         <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>02</span>
                                         <p className='filosofia-card-description'>Debemos ser socialmente responsables y comprometidos con la conservación del medioambiente</p>
                                     </div>
                                 </div>
-                                <div className="row mt-4" style={{ position: 'relative' }}>
-                                    <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                                <div className="row filosofia-cards-section" style={{ position: 'relative' }}>
+                                    <div className="col-md-5 col-sm-12 filosofia-card py-4 px-3 shadow-lg">
                                         <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>03</span>
                                         <p className='filosofia-card-description'>Debemos ser creativos y comprometidos a ofrecer valor agregado</p>
                                     </div>
-                                    <div className="col-1"></div>
-                                    <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                                    <div className="col-1 hide-mobile"></div>
+                                    <div className="col-md-5 col-sm-12 filosofia-card py-4 px-3 shadow-lg">
                                         <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>04</span>
                                         <p className='filosofia-card-description'>Debemos respetar a las personas y trabajar para crear un ambiente de trabajo atractivo</p>
                                     </div>

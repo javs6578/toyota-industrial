@@ -120,3 +120,38 @@
     height: 8px;
     background-color: #E50020;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .empresa-banner {
+        background-image: url('../src/img/empresa-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 503px;
+    }
+
+    .empresa-banner-text {
+        font-size: 15px;
+        font-family: gothic-regular;
+        line-height: 47px;
+        color: #Fff;
+        letter-spacing: 12px;
+    }
+
+    .empresa-banner-title {
+        font-size: 36px;
+        font-family: gothic-regular;
+        color: #Fff;
+        font-weight: bold;
+        line-height: 50px;
+    }
+
+    .empresa-banner-description {
+        font-size: 16px;
+        font-family: gothic-regular;
+        color: #Fff;
+        font-weight: 500;
+        margin-top: 2em;
+    }
+
+}
