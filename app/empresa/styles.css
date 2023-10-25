@@ -121,6 +121,10 @@
     background-color: #E50020;
 }
 
+.tab-panel {
+    width: 40% !important;
+}
+
 @media only screen and (max-width: 600px) {
 
     .empresa-banner {
@@ -154,4 +158,29 @@
         margin-top: 2em;
     }
 
+    .medio-ambiente-title {
+        font-size: 64px;
+        margin: 20px 0;
+    }
+
+    .medio-ambiente-section {
+        height: 1000px;
+    }
+
+    .medio-ambiente-card {
+        width: 300px;
+    }
+
+    .custom-tab {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .filosofia-title {
+        font-size: 36px;
+    }
+
+    .tab-panel {
+        width: 100% !important;
+    }
 }

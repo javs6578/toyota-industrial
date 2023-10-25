@@ -88,7 +88,7 @@ export default function Empresa() {
             </section>
             {/* 30 AÑOS */}
             <section>
-                <div className="row g-0 my-5 p-5">
+                <div className="row g-0 my-4 px-4 py-4">
                     <div className="col-md-5 col-sm-12 px-4">
                         <h3 className='thirty-title'>Toyota Tsusho Corporation de México</h3>
                         <p className='thirty-description mt-3'>
@@ -106,10 +106,10 @@ export default function Empresa() {
                         </Link>
                         <img src={red_arrow.src} alt="" className='mx-2' />
                     </div>
-                    <div className="col-md-3 col-sm-12 my-auto mt-4">
+                    <div className="col-md-3 col-sm-12 my-auto mt-4 px-4">
                         <img src={thirty.src} alt="" className='w-100' />
                     </div>
-                    <div className="col-md-4 col-sm-12 my-5 ps-4">
+                    <div className="col-md-4 col-sm-12 my-5 px-4">
                         <img src={years.src} alt="" className='w-100' />
                     </div>
                 </div>
@@ -202,7 +202,7 @@ export default function Empresa() {
             {/* FILOSOFIA / HISTORIA */}
             <section className='my-5 p-4'>
                 <Box sx={{ width: '100%' }}>
-                    <div className='shadow-bg w-50 px-5 rounded ' style={{ height: '84px' }}>
+                    <div className='shadow-bg w-50 rounded tab-panel' style={{ height: '84px' }}>
                         <Tabs className='shadow-lg px-4 h-100' value={value} onChange={handleChange} aria-label="basic tabs example">
                             <Tab className='custom-tab pt-4' label="Filosofía empresarial" {...a11yProps(0)} />
                             <Tab className='custom-tab pt-4' label="Nuestra historia" {...a11yProps(1)} />
@@ -225,7 +225,7 @@ export default function Empresa() {
                                 <img className='ms-2' src={red_arrow.src} alt="" />
                             </div>
                             <div className="col-1"></div>
-                            <div className="col-md-5 col-sm-12">
+                            <div className="col-md-5 col-sm-12 mt-4">
                                 <div className="row filosofia-cards-section" style={{ position: 'relative' }}>
                                     <img className='red-circle' src={red_circle.src} alt="" />
                                     <div className="col-md-5 col-sm-12 filosofia-card py-4 px-3 shadow-lg">
@@ -255,7 +255,7 @@ export default function Empresa() {
                     </CustomTabPanel>
                     <CustomTabPanel value={value} index={1}>
                         <div className="row">
-                            <div className="col-5 px-4 my-auto">
+                            <div className="col-md-5 col-sm-12 px-3 my-auto">
                                 <h3 className='filosofia-title'>
                                     <span className='light-red-text'>Más de 30 años </span>
                                     de experiencia en México nos respaldan.
@@ -270,8 +270,8 @@ export default function Empresa() {
                                 <img className='ms-2' src={red_arrow.src} alt="" />
                             </div>
                             <div className="col-2"></div>
-                            <div className="col-4">
-                                <img className='w-100' src={nuestra_historia.src} alt="" />
+                            <div className="col-md-4 col-sm-12">
+                                <img className='w-100 mt-4' src={nuestra_historia.src} alt="" />
                             </div>
                         </div>
                     </CustomTabPanel>
@@ -281,7 +281,7 @@ export default function Empresa() {
             {/* MEDIO AMBIENTE */}
             <section className='medio-ambiente-section'>
                 <div className="row g-0 py-5">
-                    <div className="col-5 p-5">
+                    <div className="col-md-5 col-sm-12 p-5">
                         <span className='medio-ambiente-text'>Toyota Tsusho Corporation de México, comprometios con el</span>
                         <h3 className='medio-ambiente-title'>medio ambiente</h3>
                         <p className='medio-ambiente-description'>
@@ -291,12 +291,20 @@ export default function Empresa() {
                             aplicando buenas prácticas ambientales
                         </p>
                     </div>
-                    <div className="col-7 my-auto">
+                    <div className="col-md-7 col-sm-12 my-auto px-5">
                         <Swiper style={{ minHeight: '380px' }}
                             modules={[A11y, Navigation]}
                             navigation
-                            spaceBetween={130}
-                            slidesPerView={3}
+                            breakpoints={{
+                                600: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20
+                                },
+                                1000: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 220
+                                },
+                            }}
                             className='w-100'
                         >
                             <SwiperSlide>

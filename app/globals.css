@@ -377,6 +377,7 @@
 .filosofia-card {
     background-color: #FFF;
     border-radius: 12px;
+    width: 212px;
     height: 200px;
 }
 
@@ -560,5 +561,15 @@
 
     .filosifa-section {
         margin: 0;
+    }
+
+    .red-circle {
+        right: -10px;
+        top: -10px;
+    }
+
+    .orange-circle {
+        left: -10px;
+        bottom: -20px;
     }
 }
