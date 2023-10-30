@@ -35,7 +35,7 @@ export default function Servicios() {
             {/* BANNER */}
             <section>
                 <div className="row services-banner g-0 mb-5">
-                    <div className="col-6 p-5 my-auto mx-5">
+                    <div className="col-md-6 col-sm-12 p-5 my-auto">
                         <h2 className='branches-header'>
                             Nuestro compromiso es
                             dar soporte a todos los
@@ -50,14 +50,14 @@ export default function Servicios() {
                             <Link href="/montacargas" className='text-light' style={{ textDecoration: 'none' }}>Cotizar póliza</Link>
                         </button>
                     </div>
-                    <div className="col-6 d-flex justify-content-center m-auto">
+                    <div className="col-md-6 col-sm-12 d-flex justify-content-center m-auto">
                     </div>
                 </div>
             </section>
             {/* POLIZA STEPS */}
-            <section className="p-5 mb-5">
+            <section className="px-5 mb-5">
                 <div className="row">
-                    <div className="col-5 px-5 my-auto">
+                    <div className="col-md-5 col-sm-12 my-auto">
                         <h3 className='filosofia-title' style={{ fontSize: '40px' }}>
                             Contar con una <span className='light-red-text'>póliza de mantenimiento </span>
                             tiene muchas ventajas
@@ -68,27 +68,27 @@ export default function Servicios() {
                             productividad diaria no se dentendrá
                         </p>
                     </div>
-                    <div className="col-1"></div>
-                    <div className="col-5">
-                        <div className="row" style={{ position: 'relative' }}>
+                    <div className="col-md-1 col-sm-0"></div>
+                    <div className="col-md-5 col-sm-12">
+                        <div className="row justify-content-center" style={{ position: 'relative' }}>
                             <img className='red-circle' src={red_circle.src} alt="" />
-                            <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                            <div className="col-md-5 col-sm-12 filosofia-card my-3 py-4 px-4 shadow-lg">
                                 <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>01</span>
                                 <p className='filosofia-card-description'>Incremento en la productividad</p>
                             </div>
-                            <div className="col-1"></div>
-                            <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                            <div className="col-md-1 col-sm-0"></div>
+                            <div className="col-md-5 col-sm-12 filosofia-card my-3 py-4 px-4 shadow-lg">
                                 <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>02</span>
                                 <p className='filosofia-card-description'>Mayor vida útil de los equipos industriales</p>
                             </div>
                         </div>
-                        <div className="row mt-4" style={{ position: 'relative' }}>
-                            <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                        <div className="row justify-content-center" style={{ position: 'relative' }}>
+                            <div className="col-md-5 col-sm-12 filosofia-card my-3 py-4 px-4 shadow-lg">
                                 <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>03</span>
                                 <p className='filosofia-card-description'>Menores costos de operación y mantenimiento</p>
                             </div>
-                            <div className="col-1"></div>
-                            <div className="col-5 filosofia-card py-4 px-3 shadow-lg">
+                            <div className="col-md-1 col-sm-0"></div>
+                            <div className="col-md-5 col-sm-12 filosofia-card my-3 py-4 px-4 shadow-lg">
                                 <span className='light-red-text fw-bold' style={{ fontSize: '30px' }}>04</span>
                                 <p className='filosofia-card-description'>Reducción del tiempo invertido en  reparaciones</p>
                             </div>
@@ -98,12 +98,12 @@ export default function Servicios() {
                 </div>
             </section>
             {/* DONT WORRY SECTION */}
-            <section className="pt-5 pe-5" style={{ position: 'relative' }}>
+            <section className="pt-5 px-5" style={{ position: 'relative' }}>
                 <div className="row">
-                    <div className="col-7">
+                    <div className="col-md-7 col-sm-12 hide-mobile">
                         <img className="w-100" src={servicios_workers.src} alt="" />
                     </div>
-                    <div className="col-5 d-flex flex-column px-4">
+                    <div className="col-md-5 col-sm-12 d-flex flex-column px-4">
                         <h3 className='filosofia-title' style={{ fontSize: '40px' }}>
                             <span className='light-red-text'>Deje de preocuparse </span>
                             por averías inesperadas
@@ -124,7 +124,7 @@ export default function Servicios() {
                 <img className="orange-services-rectangle w-100" src={orange_rectangle.src} alt="" />
             </section>
             {/* COTIZADOR */}
-            <section style={{ marginTop: '-12em' }} className="mb-5 pb-5">
+            <section className="mb-5 pb-5 cotizador-section">
                 <div className="rounded shadow-lg container bg-light" style={{ position: 'relative' }}>
                     <div className="py-5 px-5">
                         <h3 className='filosofia-title text-center' style={{ fontSize: '40px' }}>
@@ -133,7 +133,7 @@ export default function Servicios() {
                         </h3>
                         <Box sx={{ width: '100%', margin: '2em 0' }}>
                             <Stepper activeStep={activeStep} alternativeLabel>
-                                <Step key={1}>
+                                <Step key={steps[0]}>
                                     <StepLabel className="stepper-label">{steps[0]}</StepLabel>
                                 </Step>
                                 <Step key={steps[1]}>
@@ -162,114 +162,6 @@ export default function Servicios() {
                                     </div>
                                 </section>
 
-                            )}
-                            {activeStep == 1 && (
-                                <section className="d-flex flex-column align-items-center p-5">
-                                    <span className='send-picture-text mb-5'>Ingrese el modelo del equipo</span>
-                                    <div className="d-flex flex-column align-items-center" style={{ position: 'relative', width: '80%' }}>
-                                        <p className="mb-1 form-field-text" style={{
-                                            position: 'absolute', bottom: '40px', left: '190px',
-                                        }}>Modelo del equipo<span className="asterisk">*</span></p>
-                                        <TextField size="small" variant="outlined" label="Ingresa el modelo del equipo" className="w-50" />
-                                    </div>
-                                </section>
-                            )}
-                            {activeStep == 2 && (
-                                <section className="p-5">
-                                    <p className="footer-link mb-0">Datos del equipo</p>
-                                    <span className="me-4 fw-bold">Equipo</span>
-                                    <span className="fw-bold">Modelo</span><br />
-                                    <span className="me-3">Eléctrico</span>
-                                    <span>8FB10</span>
-                                    <p className="footer-link mb-0 w-100 mt-5">Selecciona la póliza que tu equipo necesita</p>
-                                    <img className="w-100" src={polizas.src} alt="" />
-                                    <div className="d-flex justify-content-end">
-                                        <FormControl>
-                                            <RadioGroup
-                                                aria-labelledby="demo-radio-buttons-group-label"
-                                                defaultValue="female"
-                                                name="radio-buttons-group"
-                                                row
-                                            >
-                                                <FormControlLabel value="A" control={<Radio sx={{
-                                                    '& .MuiSvgIcon-root': {
-                                                        fontSize: 20,
-                                                    },
-                                                    '&.Mui-checked': {
-                                                        color: red[700],
-                                                    },
-                                                }} />} label="Seleccionar" />
-                                                <FormControlLabel value="B" control={<Radio sx={{
-                                                    '& .MuiSvgIcon-root': {
-                                                        fontSize: 20,
-                                                    },
-                                                    '&.Mui-checked': {
-                                                        color: red[700],
-                                                    },
-                                                }} />} label="Seleccionar" />
-                                                <FormControlLabel value="C" control={<Radio sx={{
-                                                    '& .MuiSvgIcon-root': {
-                                                        fontSize: 20,
-                                                    },
-                                                    '&.Mui-checked': {
-                                                        color: red[700],
-                                                    },
-                                                }} />} label="Seleccionar" />
-                                                <FormControlLabel value="D" control={<Radio sx={{
-                                                    '& .MuiSvgIcon-root': {
-                                                        fontSize: 20,
-                                                    },
-                                                    '&.Mui-checked': {
-                                                        color: red[700],
-                                                    },
-                                                }} />} label="Seleccionar" />
-                                            </RadioGroup>
-                                        </FormControl>
-                                    </div>
-                                </section>
-                            )}
-                            {activeStep == 3 && (
-                                <section className="p-5">
-                                    <div className="mx-5">
-                                        <div className="d-flex justify-content-evenly mb-5">
-                                            <div className="">
-                                                <p className="footer-link mb-0">Datos del equipo</p>
-                                                <span className="me-4 fw-bold">Equipo</span>
-                                                <span className="fw-bold">Modelo</span><br />
-                                                <span className="me-3">Eléctrico</span>
-                                                <span>8FB10</span></div>
-                                            <div className="">
-                                                <p className="footer-link mb-0 w-100">Póliza seleccionada</p>
-                                                <p className="fw-bold mb-0">Póliza</p>
-                                                <span>A</span>
-                                            </div>
-                                        </div>
-                                        <h5 className="text-center mb-5">
-                                            Ingresa los siguientes datos para solicitar <br />
-                                            la cotización de tu póliza
-                                        </h5>
-                                        <div className="row">
-                                            <div className="col-6">
-                                                <p className="mb-1 form-field-text">Nombre completo<span className="asterisk">*</span></p>
-                                                <TextField size="small" variant="outlined" label="Ingresa tu nombre" className="w-100"></TextField>
-                                            </div>
-                                            <div className="col-6">
-                                                <p className="mb-1 form-field-text">Nombre de la empresa<span className="asterisk">*</span></p>
-                                                <TextField size="small" variant="outlined" label="Ingresa el nombre de la empresa" className="w-100"></TextField>
-                                            </div>
-                                        </div>
-                                        <div className="row my-4">
-                                            <div className="col-6">
-                                                <p className="mb-1 form-field-text">Correo electrónico<span className="asterisk">*</span></p>
-                                                <TextField size="small" variant="outlined" label="Ingresa tu correo" className="w-100"></TextField>
-                                            </div>
-                                            <div className="col-6">
-                                                <p className="mb-1 form-field-text">Ciudad o Estado<span className="asterisk">*</span></p>
-                                                <TextField size="small" variant="outlined" label="Ingresa la Ciudad o el Estado" className="w-100"></TextField>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
                             )}
                             <div className="d-flex justify-content-center mt-3">
                                 <button className='red-button'>

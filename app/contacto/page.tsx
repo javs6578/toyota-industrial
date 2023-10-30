@@ -3,6 +3,7 @@ import facebook from "../src/img/facebook-icon.svg"
 import linkedin from "../src/img/linkedin-icon.svg"
 import youtube from "../src/img/youtube-icon.svg"
 import contacto_banner from "../src/img/contacto-banner.svg"
+import contacto_banner_mobile from "../src/img/contacto-banner-mobile.svg"
 import '../globals.css'
 import Link from "next/link"
 import * as yup from "yup";
@@ -78,9 +79,10 @@ export default function Contacto() {
 
     return (
         <section>
-            <img className="w-100" src={contacto_banner.src} alt="" />
+            <img className="w-100 hide-mobile" src={contacto_banner.src} alt="" />
+            <img className="w-100 hide-desktop" src={contacto_banner_mobile.src} alt="" />
             <div className="row g-0 p-5">
-                <div className="col-4 d-flex flex-column">
+                <div className="col-md-4 col-sm-12 hide-mobile d-flex flex-column">
                     <h4 className="footer-header">Visítanos en:</h4>
                     <span className="footer-description">Miguel Allende 83, Colonia Plan de Guadalupe, CPA Logistic Center San Martin Obispo, Cuautitlán Izcalli, México, C.P. 54760</span>
                     <h4 className="footer-header my-3">Contacto</h4>
@@ -107,14 +109,14 @@ export default function Contacto() {
 
                 </div>
                 <div className="col-1"></div>
-                <div className="col-6">
+                <div className="col-md-6 col-sm-12">
                     <FormProvider methods={methods} onSubmit={handleSubmit(submitContact)} >
-                        <h5 className="text-center mb-5">
+                        <h5 className="text-center">
                             Ingrese los siguientes datos y en breve un asesor
                             se pondrá en contacto con usted
                         </h5>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-md-6 col-sm-12 my-2">
                                 <p className="mb-1 form-field-text">Nombre completo<span className="asterisk">*</span></p>
                                 <RHFTextField
                                     name="contact_name"
@@ -129,7 +131,7 @@ export default function Contacto() {
                                     }}
                                 />
                             </div>
-                            <div className="col-6">
+                            <div className="col-md-6 col-sm-12 my-2">
                                 <p className="mb-1 form-field-text">Nombre de la empresa<span className="asterisk">*</span></p>
                                 <RHFTextField
                                     name="contact_company"
@@ -142,8 +144,8 @@ export default function Contacto() {
                                 />
                             </div>
                         </div>
-                        <div className="row my-4">
-                            <div className="col-6">
+                        <div className="row">
+                            <div className="col-md-6 col-sm-12 my-2">
                                 <p className="mb-1 form-field-text">Correo electrónico<span className="asterisk">*</span></p>
                                 <RHFTextField
                                     name="contact_mail"
@@ -155,7 +157,7 @@ export default function Contacto() {
                                     autoComplete="off"
                                 />
                             </div>
-                            <div className="col-6">
+                            <div className="col-md-6 col-sm-12 my-2">
                                 <p className="mb-1 form-field-text">Ciudad o Estado<span className="asterisk">*</span></p>
                                 <RHFTextField
                                     name="contact_city"
@@ -168,7 +170,7 @@ export default function Contacto() {
                                 />
                             </div>
                         </div>
-                        <p className="mb-1 form-field-text">Agregar comentario</p>
+                        <p className="form-field-text my-2">Agregar comentario</p>
                         <RHFTextField
                             name="contact_comment"
                             placeholder="Ingresa un comentario"

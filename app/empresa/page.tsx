@@ -82,6 +82,14 @@ export default function Empresa() {
                             Contamos con la más completa línea de
                             productos y servicios ideales para su negocio.
                         </p>
+                        <div className="d-flex hide-desktop">
+                            <button className='white-button me-3'>
+                                <Link href="#ver-equipos" className='dark-red-text' style={{ textDecoration: 'none' }}>Conoce más</Link>
+                            </button>
+                            <button className='red-button'>
+                                <Link href="/montacargas" className='text-light' style={{ textDecoration: 'none' }}>Ver equipos</Link>
+                            </button>
+                        </div>
                     </div>
                     <div className="col-7"></div>
                 </div>

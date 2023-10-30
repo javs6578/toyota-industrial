@@ -40,7 +40,7 @@ export default function Navbar() {
                         </div>
                     </li>
                     <li className="nav-item bg-red px-4 my-auto">
-                        <Link className="nav-link nav-contact-link hide-mobile" href="/contacto">Contáctanos</Link>
+                        <Link className="nav-link nav-contact-link " href="/contacto">Contáctanos</Link>
                     </li>
                 </ul>
             </div>

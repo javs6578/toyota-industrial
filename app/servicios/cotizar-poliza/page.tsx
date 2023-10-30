@@ -7,6 +7,7 @@ import React from "react";
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { red } from "@mui/material/colors";
+import { RHFTextField } from "@/app/hook-form";
 
 export default function cotizador() {
 
@@ -38,7 +39,7 @@ export default function cotizador() {
     return (
         <section className="mb-5 pb-5">
             <div className="rounded shadow-lg container bg-light" style={{ position: 'relative' }}>
-                <div className="py-5 px-5">
+                <div className="py-5 px-4">
                     <h3 className='filosofia-title text-center' style={{ fontSize: '40px' }}>
                         Cotice una <span className='light-red-text'>póliza de mantenimiento </span> <br />
                         en tan solo unos minutos
@@ -76,18 +77,27 @@ export default function cotizador() {
 
                         )}
                         {activeStep == 1 && (
-                            <section className="d-flex flex-column align-items-center p-5">
-                                <span className='send-picture-text mb-5'>Ingrese el modelo del equipo</span>
-                                <div className="d-flex flex-column align-items-center" style={{ position: 'relative', width: '80%' }}>
-                                    <p className="mb-1 form-field-text" style={{
-                                        position: 'absolute', bottom: '40px', left: '190px',
-                                    }}>Modelo del equipo<span className="asterisk">*</span></p>
-                                    <TextField size="small" variant="outlined" label="Ingresa el modelo del equipo" className="w-50" />
+                            <section className="d-flex flex-column align-items-center p-4">
+                                <span className='send-picture-text mb-4'>Ingrese el modelo del equipo</span>
+                                <div className="col-md-6 col-sm-12 my-2">
+                                    <p className="mb-1 form-field-text">Modelo del equipo<span className="asterisk">*</span></p>
+                                    <TextField
+                                        name="contact_name"
+                                        placeholder="Ingresa modelo del equipo"
+                                        variant="outlined"
+                                        size="small"
+                                        fullWidth
+                                        className="w-100"
+                                        autoComplete="off"
+                                        InputLabelProps={{
+                                            shrink: true,
+                                        }}
+                                    />
                                 </div>
                             </section>
                         )}
                         {activeStep == 2 && (
-                            <section className="p-5">
+                            <section className="p-4">
                                 <p className="footer-link mb-0">Datos del equipo</p>
                                 <span className="me-4 fw-bold">Equipo</span>
                                 <span className="fw-bold">Modelo</span><br />
@@ -141,8 +151,8 @@ export default function cotizador() {
                             </section>
                         )}
                         {activeStep == 3 && (
-                            <section className="p-5">
-                                <div className="mx-5">
+                            <section className="py-4 px-0">
+                                <div className="mx-2">
                                     <div className="d-flex justify-content-evenly mb-5">
                                         <div className="">
                                             <p className="footer-link mb-0">Datos del equipo</p>
@@ -156,28 +166,28 @@ export default function cotizador() {
                                             <span>A</span>
                                         </div>
                                     </div>
-                                    <h5 className="text-center mb-5">
-                                        Ingresa los siguientes datos para solicitar <br />
+                                    <h5 className="text-center mb-5" style={{lineHeight:'30px'}}>
+                                        Ingresa los siguientes datos para solicitar <br className="hide-mobile"/>
                                         la cotización de tu póliza
                                     </h5>
                                     <div className="row">
-                                        <div className="col-6">
+                                        <div className="col-md-6 col-sm-12">
                                             <p className="mb-1 form-field-text">Nombre completo<span className="asterisk">*</span></p>
-                                            <TextField size="small" variant="outlined" label="Ingresa tu nombre" className="w-100"></TextField>
+                                            <TextField size="small" variant="outlined" label="Ingresa tu nombre" className="w-100 my-2"></TextField>
                                         </div>
-                                        <div className="col-6">
+                                        <div className="col-md-6 col-sm-12">
                                             <p className="mb-1 form-field-text">Nombre de la empresa<span className="asterisk">*</span></p>
-                                            <TextField size="small" variant="outlined" label="Ingresa el nombre de la empresa" className="w-100"></TextField>
+                                            <TextField size="small" variant="outlined" label="Ingresa el nombre de la empresa" className="w-100 my-2"></TextField>
                                         </div>
                                     </div>
-                                    <div className="row my-4">
-                                        <div className="col-6">
+                                    <div className="row ">
+                                        <div className="col-md-6 col-sm-12">
                                             <p className="mb-1 form-field-text">Correo electrónico<span className="asterisk">*</span></p>
-                                            <TextField size="small" variant="outlined" label="Ingresa tu correo" className="w-100"></TextField>
+                                            <TextField size="small" variant="outlined" label="Ingresa tu correo" className="w-100 my-2"></TextField>
                                         </div>
-                                        <div className="col-6">
+                                        <div className="col-md-6 col-sm-12">
                                             <p className="mb-1 form-field-text">Ciudad o Estado<span className="asterisk">*</span></p>
-                                            <TextField size="small" variant="outlined" label="Ingresa la Ciudad o el Estado" className="w-100"></TextField>
+                                            <TextField size="small" variant="outlined" label="Ingresa la Ciudad o el Estado" className="w-100 my-2"></TextField>
                                         </div>
                                     </div>
                                 </div>

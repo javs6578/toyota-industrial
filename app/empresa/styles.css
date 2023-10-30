@@ -128,10 +128,10 @@
 @media only screen and (max-width: 600px) {
 
     .empresa-banner {
-        background-image: url('../src/img/empresa-banner.png');
+        background-image: url('../src/img/empresa-banner-mobile.svg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 503px;
+        height: 743px;
     }
 
     .empresa-banner-text {

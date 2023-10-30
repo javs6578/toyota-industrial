@@ -474,6 +474,10 @@
     margin-top: 2em
 }
 
+.cotizador-section {
+    margin-top: -12em;
+}
+
 @media only screen and (max-width: 600px) {
 
     .offer-section {
@@ -571,5 +575,25 @@
     .orange-circle {
         left: -10px;
         bottom: -20px;
+    }
+
+    .services-banner {
+        background-image: url('./src/img/servicios-banner-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 689px;
+    }
+
+    .cotizador-section {
+        margin-top: 0;
+    }
+
+    .toggle-buttons {
+        width: 120px;
+        height: 63px;
+    }
+
+    .stepper-label span {
+        font-size: 10px;
     }
 }
