@@ -9,7 +9,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { red } from "@mui/material/colors";
 import { RHFTextField } from "@/app/hook-form";
 
-export default function cotizador() {
+export default function Cotizador() {
 
     const steps = [
         'Seleccione el tipo de equipo que tiene',
