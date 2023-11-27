@@ -170,6 +170,15 @@
     color: #292B32;
 }
 
+.perks-title-2 {
+    font-size: 20px;
+    font-family: gothic-bold;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #292B32;
+}
+
 .perks-description {
     font-size: 16px;
     font-family: gothic-regular;
