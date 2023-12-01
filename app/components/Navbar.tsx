@@ -67,7 +67,7 @@ export default function Navbar() {
                                 <Link className="nav-link nav-router-link" href="/refacciones">Refacciones</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link nav-router-link" href="/">Sucursales</Link>
+                                <Link className="nav-link nav-router-link" href="/sucursales">Sucursales</Link>
                             </li>
                         </ul>
                     </div>

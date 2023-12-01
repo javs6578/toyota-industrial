@@ -1,0 +1,30 @@
+.btn-right-arrow {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 62px;
+    background-color: #F5F5F5;
+    width: 100%;
+    margin-top: 1em;
+    font-size: 14px;
+    font-family: gothic-regular;
+    color: #292B32;
+    border-radius: 10px;
+}
+
+.map-dialog {
+    display: flex;
+    width: 1138px;
+    height: 455px;
+    padding: 2.5em 2em;
+}
+
+.content-dialog {
+    background-color: #F5F5F5;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 375px;
+    margin-right: 1em;
+}
