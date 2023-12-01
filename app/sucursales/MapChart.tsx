@@ -68,9 +68,11 @@ const states = [
 const MapChart  = ({ setTooltipContent }) => {
     const [open, setOpen] = React.useState(false);
     const [selectChanged, setSelectChanged] = React.useState(false);
+    const [corpName, setCorpName] = React.useState('');
 
-    const handleClickOpen = () => {
-      setOpen(true);
+    const handleClickOpen = (name: string) => {
+        setCorpName(name)
+        setOpen(true);
     };
     const handleClose = () => {
       setOpen(false);
@@ -103,15 +105,15 @@ const MapChart  = ({ setTooltipContent }) => {
                     </FormControl>
                     { selectChanged && (
                         <>
-                            <Button className="btn-right-arrow" onClick={handleClickOpen}>
+                            <Button className="btn-right-arrow" onClick={() => handleClickOpen('SEIL')}>
                                 SEIL
                                 <img src={rigth_arrow.src} alt="right arrow" />
                             </Button>
-                            <Button className="btn-right-arrow" onClick={handleClickOpen}>
+                            <Button className="btn-right-arrow" onClick={() => handleClickOpen('MMH')}>
                                 MMH
                                 <img src={rigth_arrow.src} alt="right arrow" />
                             </Button>
-                            <Button className="btn-right-arrow" onClick={handleClickOpen}>
+                            <Button className="btn-right-arrow" onClick={() => handleClickOpen('MAC')}>
                                 MAC
                                 <img src={rigth_arrow.src} alt="right arrow" />
                             </Button>
@@ -127,7 +129,7 @@ const MapChart  = ({ setTooltipContent }) => {
                     <div className="map-dialog">
                         <div className="content-dialog">
                             <h2 className='perks-title-2 text-left' style={{color: '#E50020'}}>
-                                SEIL
+                                {corpName}
                             </h2>
                             <h2 className='perks-title-2' style={{fontSize: 16}}>
                                 Domicilio
