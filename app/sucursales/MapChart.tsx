@@ -67,12 +67,16 @@ const states = [
 
 const MapChart  = ({ setTooltipContent }) => {
     const [open, setOpen] = React.useState(false);
+    const [selectChanged, setSelectChanged] = React.useState(false);
 
     const handleClickOpen = () => {
       setOpen(true);
     };
     const handleClose = () => {
       setOpen(false);
+    };
+    const handleChange = () => {
+        setSelectChanged(true);
     };
 
     return (    
@@ -90,17 +94,29 @@ const MapChart  = ({ setTooltipContent }) => {
                             id="demo-simple-select"
                             // value={age}
                             label="Localiza tu estado"
-                            // onChange={handleChange}
+                            onChange={handleChange}
                         >
                             {
                                 states.map((state, index) => <MenuItem value={state.clave} key={index}>{state.nombre}</MenuItem>)
                             }
                         </Select>
                     </FormControl>
-                    <Button className="btn-right-arrow" onClick={handleClickOpen}>
-                        SEIL
-                        <img src={rigth_arrow.src} alt="right arrow" />
-                    </Button>
+                    { selectChanged && (
+                        <>
+                            <Button className="btn-right-arrow" onClick={handleClickOpen}>
+                                SEIL
+                                <img src={rigth_arrow.src} alt="right arrow" />
+                            </Button>
+                            <Button className="btn-right-arrow" onClick={handleClickOpen}>
+                                MMH
+                                <img src={rigth_arrow.src} alt="right arrow" />
+                            </Button>
+                            <Button className="btn-right-arrow" onClick={handleClickOpen}>
+                                MAC
+                                <img src={rigth_arrow.src} alt="right arrow" />
+                            </Button>
+                        </>
+                    )}
                 </div>
 
                 <BootstrapDialog
