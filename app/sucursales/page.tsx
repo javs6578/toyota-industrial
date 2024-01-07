@@ -2,7 +2,7 @@
 import MapChart from "./MapChart";
 import React from "react";
 import ReactDOM from "react-dom";
-// import * as ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip'
 import Dialog from '@mui/material/Dialog';
 import { styled } from '@mui/material/styles';
 
@@ -16,13 +16,9 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   }));  
 
 export default function Sucursales() {
-    const [content, setContent] = React.useState("");
     return (
         <div>
-            <MapChart setTooltipContent={setContent}/>
-            {/* <ReactTooltip offset={{ top: 335, left: 45 }} >
-                {content}
-            </ReactTooltip> */}
+            <MapChart/>
         </div>
     )
 }

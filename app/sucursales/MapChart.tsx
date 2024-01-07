@@ -13,6 +13,8 @@ import './styles.css'
 import Dialog from '@mui/material/Dialog';
 import { styled } from '@mui/material/styles';
 
+import { Tooltip } from 'react-tooltip'
+
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
     '& .MuiDialogContent-root': {
       padding: theme.spacing(2),
@@ -65,7 +67,7 @@ const states = [
     { "clave": "ZAC", "nombre": "Zacatecas" } 
 ]
 
-const MapChart  = ({ setTooltipContent }) => {
+const MapChart  = () => {
     const [open, setOpen] = React.useState(false);
     const [selectChanged, setSelectChanged] = React.useState(false);
     const [corpName, setCorpName] = React.useState('');
@@ -80,6 +82,8 @@ const MapChart  = ({ setTooltipContent }) => {
     const handleChange = () => {
         setSelectChanged(true);
     };
+
+    const [tooltipContent, setTooltipContent] = React.useState("");
 
     return (    
        <section>
@@ -165,7 +169,7 @@ const MapChart  = ({ setTooltipContent }) => {
                     Selecciona el estado donde te encuentras para poder conocer
                     el proveedor más cercano
                     </p>
-                    <section>
+                    <section data-tip="">
                         <ComposableMap
                         style={{ backgroundColor: "transparent", width: "100%", height: "auto", marginRight: 'auto', marginLeft: 'auto' }}
                         width={800}
@@ -184,13 +188,15 @@ const MapChart  = ({ setTooltipContent }) => {
                             // <Geography key={geo.rsmKey} geography={geo} fill="#D9D9D9" stroke="#F5F5F5"/>
 
                             <Geography
+                            data-tooltip-id="my-tooltip" data-tooltip-content={tooltipContent}
                             key={geo.rsmKey}
                             geography={geo}
                             onMouseEnter={() => {
-                                console.log('geo', geo)
+                                console.log('geo', geo.properties.state_name)
                                 setTooltipContent(`${geo.properties.state_name}`);
                             }}
                             onMouseLeave={() => {
+                                console.log('-')
                                 setTooltipContent("");
                             }}
                             fill="#D9D9D9" 
@@ -214,6 +220,7 @@ const MapChart  = ({ setTooltipContent }) => {
                         }
                         </Geographies>
                         </ComposableMap>
+                        <Tooltip id="my-tooltip" />
                     </section>
                 </div>
             </div>

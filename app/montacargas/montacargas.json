@@ -1,0 +1,615 @@
+[
+    {
+        "Modelo": "8FBE10",
+        "Capacidad de carga": "1,000",
+        "Opción de Altura": "6,000 / 2,570",
+        "Equipo": "TRICICLOS"
+    },
+    {
+        "Modelo": "8FBE15",
+        "Capacidad de carga": "1,500",
+        "Opción de Altura": "6,000 / 2,570",
+        "Equipo": "TRICICLOS"
+    },
+    {
+        "Modelo": "8FBE18",
+        "Capacidad de carga": "1,750",
+        "Opción de Altura": "6,000 / 2,570",
+        "Equipo": "TRICICLOS"
+        
+    },
+    {
+        "Modelo": "8FBE20",
+        "Capacidad de carga": "2,000",
+        "Opción de Altura": "6,000 / 2,570",
+        "Equipo": "TRICICLOS"
+    },
+    {
+        "Modelo": "8FB10",
+        "Capacidad de carga": "1,000",
+        "Opción de Altura": "6,000 / 2,570",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "8FB15",
+        "Capacidad de carga": "1,500",
+        "Opción de Altura": "6,000 / 2,570",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "8FB20",
+        "Capacidad de carga": "2,000",
+        "Opción de Altura": "6,000 / 2,575",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "8FB25",
+        "Capacidad de carga": "2,500",
+        "Opción de Altura": "6,000 / 2,575",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "8FB30",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "6,000 / 2,870",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "8FBJ35",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "6,000 / 3,120",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "9FBM20T",
+        "Capacidad de carga": "2,000",
+        "Opción de Altura": "6,500 / 3,085",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "9FBM25T",
+        "Capacidad de carga": "2,500",
+        "Opción de Altura": "6,500 / 3,085",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "9FBM30T",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "6,500 / 3,085",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "9FBM35T",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "6,500 / 3,335",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "8FBMT40",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "6,500 / 3,130",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "8FBMT45 ",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "6,500 / 3,130",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "8FBMT50",
+        "Capacidad de carga": "4,990",
+        "Opción de Altura": "6,500 / 3,380",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": " 9FBM60T",
+        "Capacidad de carga": "6,000",
+        "Opción de Altura": " 7,000 / 3,620 ",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "9FBM70T",
+        "Capacidad de carga": "7,000",
+        "Opción de Altura": " 7,000 / 3,620 ",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "9FBM80T",
+        "Capacidad de carga": "8,000",
+        "Opción de Altura": " 7,000 / 3,620 ",
+        "Equipo": "CONTRABALANCEADOS"
+    },
+    {
+        "Modelo": "8FBE15U",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "7,050 / 2,430",
+        "Equipo": "TRICICLOS"
+    },
+    {
+        "Modelo": "8FBE18U",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "7,050 / 2,430",
+        "Equipo": "TRICICLOS"
+    },
+    {
+        "Modelo": "8FBE20U",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "7,050 / 2,430",
+        "Equipo": "TRICICLOS"
+    },
+    {
+        "Modelo": "8FBC15U",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "5,535 / 2,370*",
+        "Equipo": "CUSHION"
+    },
+    {
+        "Modelo": "8FBC18U",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "5,535 / 2,370*",
+        "Equipo": "CUSHION"
+    },
+    {
+        "Modelo": "8FBCU20",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "7,000 / 2,420",
+        "Equipo": "CUSHION"
+    },
+    {
+        "Modelo": "8FBCU25",
+        "Capacidad de carga": "5,000",
+        "Opción de Altura": "7,000 / 2,420",
+        "Equipo": "CUSHION"
+    },
+    {
+        "Modelo": "8FBCU28",
+        "Capacidad de carga": "5,500",
+        "Opción de Altura": "7,000 / 2,420",
+        "Equipo": "CUSHION"
+    },
+    {
+        "Modelo": "8FBCU30 ",
+        "Capacidad de carga": "6,000",
+        "Opción de Altura": "7,000 / 2,420",
+        "Equipo": "CUSHION"
+    },
+    {
+        "Modelo": "8FBCU32",
+        "Capacidad de carga": "6,500",
+        "Opción de Altura": "7,000 / 2,420",
+        "Equipo": "CUSHION"
+    },
+    {
+        "Modelo": "8BPUE15",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "6,096 / 2,718",
+        "Equipo": "ORDER PICKER"
+    },
+    {
+        "Modelo": "8BPU15",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "9,296 / 3,886",
+        "Equipo": "ORDER PICKER"
+    },
+    {
+        "Modelo": "8BPUH15",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "9,906 / 4,089",
+        "Equipo": "ORDER PICKER"
+    },
+    {
+        "Modelo": "CR1-LP60",
+        "Capacidad de carga": "6,000",
+        "Opción de Altura": "-",
+        "Equipo": "LOW LEVEL ORDER PICKER"
+    },
+    {
+        "Modelo": "CR1-LP80",
+        "Capacidad de carga": "8,000",
+        "Opción de Altura": "-",
+        "Equipo": "LOW LEVEL ORDER PICKER"
+    },
+    {
+        "Modelo": "SR1-BEF30 ",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "3,556 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-BET30",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "5,766 / 2,515",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-BEF35 ",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "3,556 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-BET35",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "5,766 / 2,515",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-BEF40",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "3556 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-BET40",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "5,766 / 2,515",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPF30",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "3,556 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPT30",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "6,375 / 2,718",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPM30",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "6,566 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPF35",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "3,556 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPT35",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "6,375 / 2,718",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPM35",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "6,566 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPF40",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "3,356 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPT40",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "6,375 / 2,718",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPM40",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "6,566 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPF50",
+        "Capacidad de carga": "5,000",
+        "Opción de Altura": "3,454 / 2,261",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPT50",
+        "Capacidad de carga": "5,000",
+        "Opción de Altura": "6,375/ 2,718",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "SR1-HPM50",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "6,871/ 2,375",
+        "Equipo": "STAND-UP RIDER"
+    },
+    {
+        "Modelo": "RF1-BH1X35",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "6,858 / 2,921",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-BH1X40",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "6,807 / 2,997 ",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-BH1X45",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "9,449/4,064",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-BH2X25",
+        "Capacidad de carga": "2,500",
+        "Opción de Altura": "6,706 / 2,997 ",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-BH2X30",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "9,449 / 4,064",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-BE1X35",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "6,858 / 2,921",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-BEIX40",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": " 6,807 / 2,997",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-BE2X25",
+        "Capacidad de carga": "2,500",
+        "Opción de Altura": "6,706 / 2,997",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-SD1X35",
+        "Capacidad de carga": "3,500",
+        "Opción de Altura": "7,645/3,327",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-SD1X45",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "9,449 /4,064",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-HP1X45",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "11,278 / 4,674",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-HC1X45",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "13,767 / 5,842",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-SD2X32",
+        "Capacidad de carga": "3,200",
+        "Opción de Altura": "9,449 / 4,064",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-HP2X32",
+        "Capacidad de carga": "3,200",
+        "Opción de Altura": "11,278 / 4,674",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-HC2X32",
+        "Capacidad de carga": "3,200",
+        "Opción de Altura": "13,767 / 5,842",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-SD1Z45",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "9,449 / 4,064",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-HP1Z45",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "11,278 / 4,674",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-HC1Z45",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "13767 / 5,842",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1- SD2Z32",
+        "Capacidad de carga": "3,200",
+        "Opción de Altura": " 9,449 / 4,064",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-HP2Z32",
+        "Capacidad de carga": "3,200",
+        "Opción de Altura": "11,278 / 4,674",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-HC2Z32",
+        "Capacidad de carga": "3,200",
+        "Opción de Altura": "13,767 / 5,842",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RF1-MD1X45",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "2,997 / 6,807",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RRE140H",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "11000 / 4,221",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RRE160H",
+        "Capacidad de carga": "3500",
+        "Opción de Altura": "11,000 / 4,221",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RRE180H",
+        "Capacidad de carga": "3,900",
+        "Opción de Altura": "13,000 / 4,963",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RRE200H",
+        "Capacidad de carga": "4400",
+        "Opción de Altura": "13,000 / 4,963",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RRE250H",
+        "Capacidad de carga": "5,500",
+        "Opción de Altura": "13,000 / 4,963",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "RRE160HR",
+        "Capacidad de carga": "3500",
+        "Opción de Altura": "7,500 / 3,124",
+        "Equipo": "REACH"
+    },
+    {
+        "Modelo": "6BWS11",
+        "Capacidad de carga": "2,200",
+        "Opción de Altura": "3,810 /1,805",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "6BWS15",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "4,800 / 2,209",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "6BWS20",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "4,800 / 2,209",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "6BWR15",
+        "Capacidad de carga": "3,000",
+        "Opción de Altura": "4,800 / 2,209",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "6BWC10",
+        "Capacidad de carga": "2,000",
+        "Opción de Altura": "3,860 / 2,413",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "6BWC15",
+        "Capacidad de carga": "3000",
+        "Opción de Altura": "4,800 / 2,209",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "6BWC20",
+        "Capacidad de carga": "4,000",
+        "Opción de Altura": "4,800 / 2,209",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "8BWS10",
+        "Capacidad de carga": "2,000",
+        "Opción de Altura": "3,632 / 2,31",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "8BWS13",
+        "Capacidad de carga": "2500",
+        "Opción de Altura": "3,632 / 2,31",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "CR1-RS25",
+        "Capacidad de carga": "2500",
+        "Opción de Altura": "1,829/1,549",
+        "Equipo": "APILADORES"
+    },
+    {
+        "Modelo": "LHE150",
+        "Capacidad de carga": "3300",
+        "Opción de Altura": "-",
+        "Equipo": "BT Tyro"
+    },
+    {
+        "Modelo": "8HBW23",
+        "Capacidad de carga": "4,500",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    },
+    {
+        "Modelo": "8HBW30",
+        "Capacidad de carga": "6,000",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    },
+    {
+        "Modelo": "8HBW40",
+        "Capacidad de carga": "8000",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    },
+    {
+        "Modelo": "8HBE30",
+        "Capacidad de carga": "6000",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    },
+    {
+        "Modelo": "8HBE40",
+        "Capacidad de carga": "8000",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    },
+    {
+        "Modelo": "8HBC30",
+        "Capacidad de carga": "6000",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    },
+    {
+        "Modelo": "8HBC40",
+        "Capacidad de carga": "8000",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    },
+    {
+        "Modelo": "ERI-ES60",
+        "Capacidad de carga": "6000",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    },
+    {
+        "Modelo": "ERI-ES80",
+        "Capacidad de carga": "8000",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    },
+    {
+        "Modelo": "HPT48U",
+        "Capacidad de carga": "2500",
+        "Opción de Altura": "-",
+        "Equipo": "PATINES"
+    }
+]
