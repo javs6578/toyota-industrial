@@ -28,3 +28,19 @@
     max-width: 375px;
     margin-right: 1em;
 }
+
+.tooltip-red {
+    color: #E50020;
+    font-family: gothic-bold;
+    font-size: 16px;
+}
+
+.tooltip-link {
+    color: #FFF;
+    font-family: gothic-regular;
+    font-size: 14px;
+    font-style: normal;
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+}

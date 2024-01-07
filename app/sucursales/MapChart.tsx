@@ -169,7 +169,7 @@ const MapChart  = () => {
                     Selecciona el estado donde te encuentras para poder conocer
                     el proveedor más cercano
                     </p>
-                    <section data-tip="">
+                    <section data-tip="" className="hide-mobile">
                         <ComposableMap
                         style={{ backgroundColor: "transparent", width: "100%", height: "auto", marginRight: 'auto', marginLeft: 'auto' }}
                         width={800}
@@ -188,17 +188,17 @@ const MapChart  = () => {
                             // <Geography key={geo.rsmKey} geography={geo} fill="#D9D9D9" stroke="#F5F5F5"/>
 
                             <Geography
-                            data-tooltip-id="my-tooltip" data-tooltip-content={tooltipContent}
+                            data-tooltip-id="my-tooltip" data-tooltip-place="start"
                             key={geo.rsmKey}
                             geography={geo}
                             onMouseEnter={() => {
                                 console.log('geo', geo.properties.state_name)
                                 setTooltipContent(`${geo.properties.state_name}`);
                             }}
-                            onMouseLeave={() => {
-                                console.log('-')
-                                setTooltipContent("");
-                            }}
+                            // onMouseLeave={() => {
+                            //     console.log('-')
+                            //     setTooltipContent("");
+                            // }}
                             fill="#D9D9D9" 
                             stroke="#F5F5F5"
                             style={{
@@ -220,7 +220,12 @@ const MapChart  = () => {
                         }
                         </Geographies>
                         </ComposableMap>
-                        <Tooltip id="my-tooltip" />
+                        <Tooltip id="my-tooltip" clickable>
+                            <div className="tooltip-red">
+                                {tooltipContent}
+                                <a onClick={() => handleClickOpen('SEIL')} className="tooltip-link">Ver más información</a>
+                            </div>
+                        </Tooltip>
                     </section>
                 </div>
             </div>
