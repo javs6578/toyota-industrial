@@ -1,7 +1,7 @@
 "use client";
 import '../../globals.css'
 import * as React from 'react';
-import montacargas from '../../src/img/montacargas_banner.svg'
+import montacargas from '../../src/img/montacargas_banner.jpg'
 import montacargas_vehicle from '../../src/img/montacargas.png'
 import { FormControl, FormControlLabel, FormLabel, Link, Radio, RadioGroup, TextField } from '@mui/material'
 import { useState } from 'react';

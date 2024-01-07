@@ -226,8 +226,10 @@ export default function Cotizador() {
                                     sx={{ mr: 1 }}>
                                     <Link className='light-red-text' href="/servicios" style={{ textDecoration: 'none' }}>Cotizar otra póliza</Link>
                                 </Button>
-                                <Button onClick={handleNext} className="red-button rounded-0" sx={{ fontSize: '18px' }}>
-                                    Ver más productos
+                                <Button className="red-button rounded-0" sx={{ fontSize: '18px' }}>
+                                    <Link className='light-red-text' href="/servicios" style={{ textDecoration: 'none', color: '#FFF' }}>
+                                        Ver más productos
+                                    </Link>
                                 </Button>
                             </div>
                         )}

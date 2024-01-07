@@ -312,8 +312,8 @@
 
 .file-container {
     width: 440px;
-    height: 231px;
-    border: 1px dotted #000;
+    min-height: 231px;
+    border: 1px dotted #000 !important;
     background-color: #E1E3EA;
     border-radius: 8px;
     padding: 2em 0;

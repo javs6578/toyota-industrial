@@ -1,7 +1,7 @@
 "use client";
 import '../../globals.css'
 import * as React from 'react';
-import montacargas from '../../src/img/montacargas_banner.svg'
+import montacargas from '../../src/img/montacargas_banner.jpg'
 import montacargas_vehicle from '../../src/img/montacargas.png'
 import { FormControl, FormControlLabel, FormLabel, Link, Radio, RadioGroup, TextField } from '@mui/material'
 import { useState } from 'react';
@@ -36,7 +36,7 @@ export default function MontacargasDetail() {
             <div className="row g-0 p-4">
                 <div className="col-md-3 col-sm-12 p-3">
                     <div className='montacargas-card'>
-                        <span className='h5 red-text'>Características del equipo</span>
+                        <span className='h5 red-text' style={{ color: '#E50020' }}>Características del equipo</span>
                         <img src={montacargas_vehicle.src} className='w-100' alt="" />
                         <strong>Equipo</strong>
                         <p>Combustión Cushion</p>
@@ -49,11 +49,7 @@ export default function MontacargasDetail() {
                     </div>
                 </div>
                 <div className="col-md-9 col-sm-12 p-4 my-auto">
-                    <img src={red_arrow.src} style={{ rotate: '180deg' }} alt="" className='me-2' />
-                    <Link href="/" className='footer-link' style={{ textDecoration: 'none' }}>
-                        Regresar
-                    </Link>
-                    <p className="h5 dark-red-text my-3" style={{ fontSize: '18px'}}>
+                    <p className="h5 send-picture-text dark-red-text my-3" style={{ fontSize: '18px'}}>
                         Ingresa los siguientes datos para solicitar la cotización <br className='hide-mobile' />
                         de tu producto
                     </p>
@@ -110,12 +106,16 @@ export default function MontacargasDetail() {
                         </div>
                     </div>
                     <div className="d-flex justify-content-center mt-3">
-                        <Link href="contacto/datos-enviados" className='me-3'>
-                            <button className="white-button" style={{ border: "1px solid", height: '54px' }}>Regresar</button>
-                        </Link>
-                        <Link href="/contacto/datos-enviados">
-                            <button className="red-button" style={{ height: '54px' }}>Solicitar cotización</button>
-                        </Link>
+                            <button className="white-button" style={{ border: "1px solid", height: '54px' }}>
+                                <Link href="/montacargas" className='footer-link' style={{ textDecoration: 'none' }}>
+                                    Regresar
+                                </Link>
+                            </button>
+                            <button className="red-button" style={{ height: '54px', marginLeft: 10 }}>
+                                <Link href="/contacto/datos-enviados" style={{ textDecoration: 'none', color: '#FFF' }}>
+                                    Solicitar cotización
+                                </Link>
+                            </button>
                     </div>
                 </div>
             </div>

@@ -11,6 +11,9 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import upload_icon from '../src/img/upload_icon.svg'
 import { Stepper, Step, StepLabel, Button } from '@mui/material';
 import red from '@mui/material/colors/red';
+import { FileUploader } from "react-drag-drop-files";
+
+const fileTypes = ["JPG", "PNG", "GIF"];
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -74,6 +77,34 @@ export default function Refacciones() {
         inputProps: { 'aria-label': item },
     });
 
+    // Drag and Drop files
+    const [file, setFile] = React.useState(null);
+    const handleFile = (file: any) => {
+        setFile(file);
+        console.log("setFile", file)
+    };
+
+    const element = <div className="d-flex flex-column bg-grey align-items-center">
+        <img src={upload_icon.src} alt="" />
+        <span className='drag-file-text'>Arrastra el o los archivos </span>
+        <span className='my-2'>----- o -----</span>
+        <Button
+            variant="contained"
+            component="label"
+            className='red-button rounded-0 '
+            style={{ fontSize: '14px', height: '41px', width: '180px' }}
+        >
+            Adjunta tus archivos
+        </Button>
+    </div>;
+
+    const noElement = <div className="d-flex flex-column bg-grey align-items-center">
+        <img src={upload_icon.src} alt="" />
+        <span className='drag-file-text'>¡ Los archivos se cargaron exitosamente !</span>
+        </div>;
+
+
+
     return (
         <section>
             <img src={refacciones_banner.src} className='w-100' alt="" />
@@ -121,7 +152,7 @@ export default function Refacciones() {
                             <div className="d-flex flex-column align-items-center mt-5 px-5 ">
                                 <span className='send-picture-text'>Envíenos imágenes como referencia</span>
                                 <span className='branches-description mb-4'>Pueden ser imágenes de la refacción o del equipo</span>
-                                <div className="file-container d-flex flex-column bg-grey align-items-center">
+                                {/* <div className="file-container d-flex flex-column bg-grey align-items-center">
                                     <img src={upload_icon.src} alt="" />
                                     <span className='drag-file-text'>Arrastra el o los archivos </span>
                                     <span className='my-2'>----- o -----</span>
@@ -137,7 +168,10 @@ export default function Refacciones() {
                                             hidden
                                         />
                                     </Button>
-                                </div>
+                                </div> */}
+
+                                <FileUploader handleChange={handleFile} name="file" types={fileTypes} label="Arrastra el o los archivos" classes="file-container" multiple
+                                children={file ? noElement : element}/>
                             </div>
                         </Box>
                     )}
@@ -213,8 +247,8 @@ export default function Refacciones() {
                             sx={{ mr: 1 }}>
                             <Link className='light-red-text' href="/refacciones" sx={{ textDecoration: 'none' }}>Cotizar otra refacción</Link>
                         </Button>
-                        <Button onClick={handleNext} className="red-button rounded-0" sx={{ fontSize: '18px' }}>
-                            Ver más productos
+                        <Button className="red-button rounded-0" sx={{ fontSize: '18px' }}>
+                            <Link href="/refacciones" sx={{ textDecoration: 'none', color: '#FFF' }}>Ver más productos</Link>
                         </Button>
                     </div>
                 )}

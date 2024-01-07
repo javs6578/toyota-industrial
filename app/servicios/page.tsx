@@ -47,7 +47,7 @@ export default function Servicios() {
                             montacargas Toyota.
                         </p>
                         <button className='red-button'>
-                            <Link href="/montacargas" className='text-light' style={{ textDecoration: 'none' }}>Cotizar póliza</Link>
+                            <Link href="#cotizar-poliza" className='text-light' style={{ textDecoration: 'none' }}>Cotizar póliza</Link>
                         </button>
                     </div>
                     <div className="col-md-6 col-sm-12 d-flex justify-content-center m-auto">
@@ -124,7 +124,7 @@ export default function Servicios() {
                 <img className="orange-services-rectangle w-100" src={orange_rectangle.src} alt="" />
             </section>
             {/* COTIZADOR */}
-            <section className="mb-5 pb-5 cotizador-section">
+            <section className="mb-5 pb-5 cotizador-section" id="cotizar-poliza">
                 <div className="rounded shadow-lg container bg-light" style={{ position: 'relative' }}>
                     <div className="py-5 px-5">
                         <h3 className='filosofia-title text-center' style={{ fontSize: '40px' }}>

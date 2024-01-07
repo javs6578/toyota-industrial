@@ -14,6 +14,7 @@ import car_icon from '../src/img/car_icon.svg'
 import rule_icon from '../src/img/rule_icon.svg'
 import { rule } from 'postcss'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -44,6 +45,8 @@ export default function Montacargas() {
     const [search, setSearch] = React.useState("");
     const [productType, setProductType] = React.useState("");
     const [, forceUpdate] = useReducer(x => x + 1, 0);
+    const [showMore, setShowMore] = React.useState(15);
+
 
     const handleOpen = (product: any) => {
         setEquip(product.Equipo)
@@ -135,7 +138,7 @@ export default function Montacargas() {
                             </button>
                         </div>
                         <div className="row">
-                            {newProducts.map((product: any, index: any) => 
+                            {newProducts.slice(0, showMore).map((product: any, index: any) => 
                                  <div className="col-md-4 col-sm-12 my-3" key={index}>
                                  <div className='montacargas-card'>
                                      <img src={montacargas_vehicle.src} className='w-100' alt="" />
@@ -146,13 +149,20 @@ export default function Montacargas() {
                                      <strong>Capacidad de carga lb/kg </strong>
                                      <p>{product['Capacidad de carga']}</p>
                                      <div className='d-flex flex-column'>
-                                         {/* <button className='red-button-border mb-2'>Cotizar equipo</button> */}
+                                         <button className='red-button-border mb-2'>
+                                            <Link href="/montacargas/montacargas-detalle" className='text-light' style={{ textDecoration: 'none' }}>Cotizar equipo</Link>
+                                        </button>
                                          <button className='white-button-border' onClick={() => handleOpen(product)}>Ver características</button>
                                      </div>
                                  </div>
                              </div>
                             )}
                         </div>
+                        { showMore <= newProducts.length &&
+                            <div className='row' style={{ display: 'flex', justifyContent: 'center' }}>
+                                <button className='red-button' style={{marginTop: '1em'}} onClick={() => setShowMore(showMore + 15)}>Ver más equipos</button>
+                            </div>
+                        }
                     </div>
                 </div>
 
