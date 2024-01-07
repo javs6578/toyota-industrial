@@ -1,5 +1,5 @@
 "use client";
-import refacciones_banner from '../src/img/refacciones-banner.svg'
+import refacciones_banner from '../src/img/refacciones_banner.jpg'
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';

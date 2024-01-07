@@ -1,7 +1,7 @@
 "use client"
 import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField } from '@mui/material'
 import '../globals.css'
-import montacargas from '../src/img/montacargas_banner.jpg'
+import automatizacion from '../src/img/automatizacion_banner.jpg'
 import montacargas_vehicle from '../src/img/montacargas.png'
 import SearchIcon from '@mui/icons-material/Search';
 import productsJSON from "./montacargas.json";
@@ -67,15 +67,11 @@ export default function Montacargas() {
     useEffect(() => {
         const oldProducts = [...products];
         const filteredAllProducts = oldProducts.filter(product => {
-            // if (search && product.Modelo !== search) {
-            //     return false
-            // }
-
-            if (productType && product.Equipo !== productType) {
+            if (search && product.Modelo !== search) {
                 return false
             }
 
-            if (search && !product.Modelo.includes(search)) {
+            if (productType && product.Equipo !== productType) {
                 return false
             }
 
@@ -87,18 +83,17 @@ export default function Montacargas() {
 
     return (
         <>
-            <img className='w-100' src={montacargas.src} alt="" />
+            <img className='w-100' src={automatizacion.src} alt="" />
             <section>
                 <div className="row g-0 p-5">
                     <div className="col-lg-2 col-md-3 hide-mobile">
                         <FormControl>
-                            <FormLabel className='light-red-text mb-3' id="demo-radio-buttons-group-label"><strong>Seleccione el Equipo</strong></FormLabel>
+                            <FormLabel className='light-red-text mb-3' id="demo-radio-buttons-group-label"><strong>Seleccione el Montacargas</strong></FormLabel>
                             <RadioGroup
                                 aria-labelledby="demo-radio-buttons-group-label"
                                 defaultValue="female"
                                 name="radio-buttons-group"
                                 onChange={handleType}
-                                value={productType}
                             >
                                 <FormControlLabel className='fw-bold' value="" control={<Radio />} label="Ver todos los equipos"/>
                                 <FormControlLabel className='fw-bold' value="APILADORES" control={<Radio />} label="Apiladores"/>

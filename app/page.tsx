@@ -99,9 +99,9 @@ export default function HomePage() {
               Para nosotros lo más importante es ofrecerle
               productos y servicios de la más alta calidad,
               enfocándonos en las necesidades de tu negocio,
-              por lo que <strong> escuchar y entender bien los
+              por lo que <span className='fw-bold'> escuchar y entender bien los
                 retos a los que su operación se enfrenta, es pieza
-                fundamental de nuestros procesos</strong>
+                fundamental de nuestros procesos</span>
             </p>
           </div>
           <div className="col-md-7 col-sm-12 p-0 d-flex justify-content-end">
@@ -129,7 +129,7 @@ export default function HomePage() {
             </p>
             <p className='perks-description'>
               Nuestros expertos están capacitados para brindar
-              <strong> mantenimiento correctivo y preventivo,</strong> lo que
+              <span className='fw-bold'> mantenimiento correctivo y preventivo,</span> lo que
               garantiza la vida productiva de los equipos
             </p>
             <Link href="/servicios" className='footer-link' style={{ textDecoration: 'none' }}>

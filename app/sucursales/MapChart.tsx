@@ -5,7 +5,7 @@ import React, { memo, useState } from "react";
 
 export * from "@mui/material";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import sucursales from '../src/img/sucursales_banner.svg'
+import sucursales from '../src/img/sucursales_banner.jpg'
 import rigth_arrow from '../src/img/right_arrow.svg'
 import close_dialog from '../src/img/close_dialog.svg'
 

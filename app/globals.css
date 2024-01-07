@@ -26,14 +26,18 @@
 
 .nav-router-link {
     font-size: 15px;
-    font-family: gothic-regular;
+    font-family: gothic-bold;
     font-weight: 700;
     text-align: center;
     color: #55565A;
 }
 
 .nav-router-link:hover {
-    color: #CD1332
+    color: #CD1332;
+}
+
+.active .nav-router-link {
+    color: #CD1332 !important;
 }
 
 .footer-header {
@@ -185,6 +189,11 @@
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0em;
+}
+
+.perks-description .fw-bold {
+    font-weight: 500;
+    font-family: gothic-bold;
 }
 
 .dark-red-text {
@@ -555,6 +564,7 @@
 
     .nav-link {
         padding: 10px 0;
+        color: red;
     }
 
     .file-container {
