@@ -20,7 +20,33 @@ export default function Cotizador() {
 
     const [activeStep, setActiveStep] = React.useState(1);
 
-    const handleNext = () => {
+    const handlePolicy = async (event: any) => {
+        event.preventDefault()
+        const payload = {
+            data: {
+                model,
+                name,
+                company,
+                email,
+                city,
+                type,
+            }
+        }
+        await fetch('https://worthy-art-2f349fa41d.strapiapp.com/api/policies', {
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+                "Authorization": "Bearer a81ce047fc28c815ad7f15baed2ae45ffa661e27505a58eea8194186fcd4807588b5e432b806aa6281a3543655c1c4d9d57153c266afbc207b18cca5ab308cb1a8f7a8e54e0e6a5b311f8b8834d13acfba3f42ab1698d4a8aff49d0d6a141dfe4c4bcce8847daaea2a9dbe95379825e8674104a2ba89acf0687de5932f5ef82a"
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(() => {
+            setActiveStep((prevActiveStep) => prevActiveStep + 1);
+        })
+    };
+
+    const handleNext = async () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
     };
 
@@ -35,6 +61,13 @@ export default function Cotizador() {
             setAlignment(newAlignment);
         }
     };
+
+    const [model, setModel] = React.useState('');
+    const [type, setType] = React.useState('');
+    const [name, setName] = React.useState('');
+    const [company, setCompany] = React.useState('');
+    const [email, setEmail] = React.useState('');
+    const [city, setCity] = React.useState('');
 
     return (
         <section className="mb-5 pb-5">
@@ -92,6 +125,7 @@ export default function Cotizador() {
                                         InputLabelProps={{
                                             shrink: true,
                                         }}
+                                        onChange={(e) => setModel(e.target.value)}
                                     />
                                 </div>
                             </section>
@@ -173,21 +207,21 @@ export default function Cotizador() {
                                     <div className="row">
                                         <div className="col-md-6 col-sm-12">
                                             <p className="mb-1 form-field-text">Nombre completo<span className="asterisk">*</span></p>
-                                            <TextField size="small" variant="outlined" label="Ingresa tu nombre" className="w-100 my-2"></TextField>
+                                            <TextField size="small" variant="outlined" label="Ingresa tu nombre" className="w-100 my-2" onChange={(e) => setName(e.target.value)}></TextField>
                                         </div>
                                         <div className="col-md-6 col-sm-12">
                                             <p className="mb-1 form-field-text">Nombre de la empresa<span className="asterisk">*</span></p>
-                                            <TextField size="small" variant="outlined" label="Ingresa el nombre de la empresa" className="w-100 my-2"></TextField>
+                                            <TextField size="small" variant="outlined" label="Ingresa el nombre de la empresa" className="w-100 my-2" onChange={(e) => setCompany(e.target.value)}></TextField>
                                         </div>
                                     </div>
                                     <div className="row ">
                                         <div className="col-md-6 col-sm-12">
                                             <p className="mb-1 form-field-text">Correo electrónico<span className="asterisk">*</span></p>
-                                            <TextField size="small" variant="outlined" label="Ingresa tu correo" className="w-100 my-2"></TextField>
+                                            <TextField size="small" variant="outlined" label="Ingresa tu correo" className="w-100 my-2" onChange={(e) => setEmail(e.target.value)}></TextField>
                                         </div>
                                         <div className="col-md-6 col-sm-12">
                                             <p className="mb-1 form-field-text">Ciudad o Estado<span className="asterisk">*</span></p>
-                                            <TextField size="small" variant="outlined" label="Ingresa la Ciudad o el Estado" className="w-100 my-2"></TextField>
+                                            <TextField size="small" variant="outlined" label="Ingresa la Ciudad o el Estado" className="w-100 my-2" onChange={(e) => setCity(e.target.value)}></TextField>
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +246,7 @@ export default function Cotizador() {
                                     sx={{ mr: 1 }}>
                                     Regresar
                                 </Button>
-                                <Button onClick={handleNext} className="red-button rounded-0" sx={{ fontSize: '18px' }}>
+                                <Button onClick={handlePolicy} className="red-button rounded-0" sx={{ fontSize: '18px' }}>
                                     {activeStep === steps.length - 1 ? 'Solicitar cotización' : 'Continuar'}
                                 </Button>
                             </div>

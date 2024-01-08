@@ -1,7 +1,7 @@
 "use client"
 import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, TextField } from '@mui/material'
 import '../globals.css'
-import automatizacion from '../src/img/automatizacion_banner.jpg'
+import montacargas from '../src/img/automatizacion_banner.jpg'
 import montacargas_vehicle from '../src/img/montacargas.png'
 import SearchIcon from '@mui/icons-material/Search';
 import productsJSON from "./montacargas.json";
@@ -14,6 +14,8 @@ import car_icon from '../src/img/car_icon.svg'
 import rule_icon from '../src/img/rule_icon.svg'
 import { rule } from 'postcss'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -44,12 +46,16 @@ export default function Montacargas() {
     const [search, setSearch] = React.useState("");
     const [productType, setProductType] = React.useState("");
     const [, forceUpdate] = useReducer(x => x + 1, 0);
+    const [showMore, setShowMore] = React.useState(15);
+
+    const router = useRouter()
+
 
     const handleOpen = (product: any) => {
-        setEquip(product.Equipo)
-        setModel(product.Modelo)
-        setCharge(product['Capacidad de carga'])
-        setHeight(product['Opción de Altura'])
+        setEquip(product.equip)
+        setModel(product.model)
+        setCharge(product.load_capacity)
+        setHeight(product.height_capacity)
         setOpen(true);
       };
 
@@ -63,15 +69,23 @@ export default function Montacargas() {
     const handleType = (e: { target: { value: string; }; }) => {
         setProductType(e.target.value);
     };
+    const handleDetail = (product) => {
+        router.push('/automatizacion/automatizacion-detalle', { scroll: false })
+        sessionStorage.setItem('product', JSON.stringify(product))
+    }
 
     useEffect(() => {
         const oldProducts = [...products];
         const filteredAllProducts = oldProducts.filter(product => {
-            if (search && product.Modelo !== search) {
+            // if (search && product.Modelo !== search) {
+            //     return false
+            // }
+
+            if (productType && product.equip !== productType) {
                 return false
             }
 
-            if (productType && product.Equipo !== productType) {
+            if (search && !product.model.includes(search)) {
                 return false
             }
 
@@ -83,29 +97,26 @@ export default function Montacargas() {
 
     return (
         <>
-            <img className='w-100' src={automatizacion.src} alt="" />
+            <img className='w-100' src={montacargas.src} alt="" />
             <section>
                 <div className="row g-0 p-5">
                     <div className="col-lg-2 col-md-3 hide-mobile">
                         <FormControl>
-                            <FormLabel className='light-red-text mb-3' id="demo-radio-buttons-group-label"><strong>Seleccione el Montacargas</strong></FormLabel>
+                            <FormLabel className='light-red-text mb-3' id="demo-radio-buttons-group-label"><strong>Seleccione el Equipo</strong></FormLabel>
                             <RadioGroup
                                 aria-labelledby="demo-radio-buttons-group-label"
                                 defaultValue="female"
                                 name="radio-buttons-group"
                                 onChange={handleType}
+                                value={productType}
                             >
                                 <FormControlLabel className='fw-bold' value="" control={<Radio />} label="Ver todos los equipos"/>
-                                <FormControlLabel className='fw-bold' value="APILADORES" control={<Radio />} label="Apiladores"/>
-                                <FormControlLabel className='fw-bold' value="BT Tyro" control={<Radio />} label="BT Tyro" />
-                                <FormControlLabel className='fw-bold' value="CONTRABALANCEADOS" control={<Radio />} label="Contrabalanceados" />
-                                <FormControlLabel className='fw-bold' value="CUSHION" control={<Radio />} label="Cushion" />
-                                <FormControlLabel className='fw-bold' value="LOW LEVEL ORDER PICKER" control={<Radio />} label="Low Level Order Picker" />
-                                <FormControlLabel className='fw-bold' value="ORDER PICKER" control={<Radio />} label="Order Picker" />
-                                <FormControlLabel className='fw-bold' value="PATINES" control={<Radio />} label="Patines" />
-                                <FormControlLabel className='fw-bold' value="REACH" control={<Radio />} label="Reach" />
-                                <FormControlLabel className='fw-bold' value="STAND-UP RIDER" control={<Radio />} label="Stand-Up Rider" />
-                                <FormControlLabel className='fw-bold' value="TRICICLOS" control={<Radio />} label="Triciclos" />
+                                <FormControlLabel className='fw-bold' value="AGV" control={<Radio />} label="AGV"/>
+                                <FormControlLabel className='fw-bold' value="Rack Sorter ASRS" control={<Radio />} label="Rack Sorter ASRS" />
+                                <FormControlLabel className='fw-bold' value="Conveyors & Sorters" control={<Radio />} label="Conveyors & Sorters" />
+                                <FormControlLabel className='fw-bold' value="RacksCUSHION" control={<Radio />} label="Racks" />
+                                <FormControlLabel className='fw-bold' value="Radio Shuttle" control={<Radio />} label="Radio Shuttle" />
+                                <FormControlLabel className='fw-bold' value="Transportadores para manejo de Pallets" control={<Radio />} label="Transportadores para manejo de Pallets" />
                             </RadioGroup>
                         </FormControl>
                         {/* <FormControl className='mt-5 mb-3'>
@@ -130,24 +141,31 @@ export default function Montacargas() {
                             </button>
                         </div>
                         <div className="row">
-                            {newProducts.map((product: any, index: any) => 
+                            {newProducts.slice(0, showMore).map((product: any, index: any) => 
                                  <div className="col-md-4 col-sm-12 my-3" key={index}>
                                  <div className='montacargas-card'>
-                                     <img src={montacargas_vehicle.src} className='w-100' alt="" />
+                                     <img src={product.img} className='montacargas-img' alt=""/>
                                      <strong>Equipo</strong>
-                                     <p>{product.Equipo}</p>
+                                     <p>{product.equip}</p>
                                      <strong>Modelo</strong>
-                                     <p>{product.Modelo}</p>
+                                     <p>{product.model}</p>
                                      <strong>Capacidad de carga lb/kg </strong>
-                                     <p>{product['Capacidad de carga']}</p>
+                                     <p>{product.load_capacity}</p>
                                      <div className='d-flex flex-column'>
-                                         {/* <button className='red-button-border mb-2'>Cotizar equipo</button> */}
+                                        <button className='red-button-border mb-2' onClick={()=> handleDetail(product)}>
+                                            Cotizar equipo
+                                        </button>
                                          <button className='white-button-border' onClick={() => handleOpen(product)}>Ver características</button>
                                      </div>
                                  </div>
                              </div>
                             )}
                         </div>
+                        { showMore <= newProducts.length &&
+                            <div className='row' style={{ display: 'flex', justifyContent: 'center' }}>
+                                <button className='red-button' style={{marginTop: '1em'}} onClick={() => setShowMore(showMore + 15)}>Ver más equipos</button>
+                            </div>
+                        }
                     </div>
                 </div>
 
