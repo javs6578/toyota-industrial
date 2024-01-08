@@ -1,615 +1,1101 @@
 [
     {
-        "Modelo": "8FBE10",
-        "Capacidad de carga": "1,000",
-        "Opción de Altura": "6,000 / 2,570",
-        "Equipo": "TRICICLOS"
+        "model": "8FBE10",
+        "load_capacity": "1,000",
+        "height_capacity": "6,000 / 2,570",
+        "equip": "TRICICLOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_fbe8b76183.jpeg"
     },
     {
-        "Modelo": "8FBE15",
-        "Capacidad de carga": "1,500",
-        "Opción de Altura": "6,000 / 2,570",
-        "Equipo": "TRICICLOS"
+        "model": "8FBE15",
+        "load_capacity": "1,500",
+        "height_capacity": "6,000 / 2,570",
+        "equip": "TRICICLOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_fbe8b76183.jpeg"
     },
     {
-        "Modelo": "8FBE18",
-        "Capacidad de carga": "1,750",
-        "Opción de Altura": "6,000 / 2,570",
-        "Equipo": "TRICICLOS"
-        
+        "model": "8FBE18",
+        "load_capacity": "1,750",
+        "height_capacity": "6,000 / 2,570",
+        "equip": "TRICICLOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_fbe8b76183.jpeg"
     },
     {
-        "Modelo": "8FBE20",
-        "Capacidad de carga": "2,000",
-        "Opción de Altura": "6,000 / 2,570",
-        "Equipo": "TRICICLOS"
+        "model": "8FBE20",
+        "load_capacity": "2,000",
+        "height_capacity": "6,000 / 2,570",
+        "equip": "TRICICLOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_fbe8b76183.jpeg"
     },
     {
-        "Modelo": "8FB10",
-        "Capacidad de carga": "1,000",
-        "Opción de Altura": "6,000 / 2,570",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "8FB10",
+        "load_capacity": "1,000",
+        "height_capacity": "6,000 / 2,570",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_1_ee16b0b0a9.jpg"
     },
     {
-        "Modelo": "8FB15",
-        "Capacidad de carga": "1,500",
-        "Opción de Altura": "6,000 / 2,570",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "8FB15",
+        "load_capacity": "1,500",
+        "height_capacity": "6,000 / 2,570",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_1_ee16b0b0a9.jpg"
     },
     {
-        "Modelo": "8FB20",
-        "Capacidad de carga": "2,000",
-        "Opción de Altura": "6,000 / 2,575",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "8FB20",
+        "load_capacity": "2,000",
+        "height_capacity": "6,000 / 2,575",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_1_ee16b0b0a9.jpg"
     },
     {
-        "Modelo": "8FB25",
-        "Capacidad de carga": "2,500",
-        "Opción de Altura": "6,000 / 2,575",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "8FB25",
+        "load_capacity": "2,500",
+        "height_capacity": "6,000 / 2,575",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_1_ee16b0b0a9.jpg"
     },
     {
-        "Modelo": "8FB30",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "6,000 / 2,870",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "8FB30",
+        "load_capacity": "3,000",
+        "height_capacity": "6,000 / 2,870",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_1_ee16b0b0a9.jpg"
     },
     {
-        "Modelo": "8FBJ35",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "6,000 / 3,120",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "8FBJ35",
+        "load_capacity": "3,500",
+        "height_capacity": "6,000 / 3,120",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_1_ee16b0b0a9.jpg"
     },
     {
-        "Modelo": "9FBM20T",
-        "Capacidad de carga": "2,000",
-        "Opción de Altura": "6,500 / 3,085",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "9FBM20T",
+        "load_capacity": "2,000",
+        "height_capacity": "6,500 / 3,085",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_2_c2101fcedb.jpg"
     },
     {
-        "Modelo": "9FBM25T",
-        "Capacidad de carga": "2,500",
-        "Opción de Altura": "6,500 / 3,085",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "9FBM25T",
+        "load_capacity": "2,500",
+        "height_capacity": "6,500 / 3,085",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_2_c2101fcedb.jpg"
     },
     {
-        "Modelo": "9FBM30T",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "6,500 / 3,085",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "9FBM30T",
+        "load_capacity": "3,000",
+        "height_capacity": "6,500 / 3,085",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_2_c2101fcedb.jpg"
     },
     {
-        "Modelo": "9FBM35T",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "6,500 / 3,335",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "9FBM35T",
+        "load_capacity": "3,500",
+        "height_capacity": "6,500 / 3,335",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_2_c2101fcedb.jpg"
     },
     {
-        "Modelo": "8FBMT40",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "6,500 / 3,130",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "8FBMT40",
+        "load_capacity": "4,000",
+        "height_capacity": "6,500 / 3,130",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_3_38c9007211.jpg"
     },
     {
-        "Modelo": "8FBMT45 ",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "6,500 / 3,130",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "8FBMT45 ",
+        "load_capacity": "4,500",
+        "height_capacity": "6,500 / 3,130",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_3_38c9007211.jpg"
     },
     {
-        "Modelo": "8FBMT50",
-        "Capacidad de carga": "4,990",
-        "Opción de Altura": "6,500 / 3,380",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "8FBMT50",
+        "load_capacity": "4,990",
+        "height_capacity": "6,500 / 3,380",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_3_38c9007211.jpg"
     },
     {
-        "Modelo": " 9FBM60T",
-        "Capacidad de carga": "6,000",
-        "Opción de Altura": " 7,000 / 3,620 ",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": " 9FBM60T",
+        "load_capacity": "6,000",
+        "height_capacity": " 7,000 / 3,620 ",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_4_3198993ebf.png"
     },
     {
-        "Modelo": "9FBM70T",
-        "Capacidad de carga": "7,000",
-        "Opción de Altura": " 7,000 / 3,620 ",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "9FBM70T",
+        "load_capacity": "7,000",
+        "height_capacity": " 7,000 / 3,620 ",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_4_3198993ebf.png"
     },
     {
-        "Modelo": "9FBM80T",
-        "Capacidad de carga": "8,000",
-        "Opción de Altura": " 7,000 / 3,620 ",
-        "Equipo": "CONTRABALANCEADOS"
+        "model": "9FBM80T",
+        "load_capacity": "8,000",
+        "height_capacity": " 7,000 / 3,620 ",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_4_3198993ebf.png"
     },
     {
-        "Modelo": "8FBE15U",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "7,050 / 2,430",
-        "Equipo": "TRICICLOS"
+        "model": "8FBE15U",
+        "load_capacity": "3,000",
+        "height_capacity": "7,050 / 2,430",
+        "equip": "TRICICLOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
     },
     {
-        "Modelo": "8FBE18U",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "7,050 / 2,430",
-        "Equipo": "TRICICLOS"
+        "model": "8FBE18U",
+        "load_capacity": "3,500",
+        "height_capacity": "7,050 / 2,430",
+        "equip": "TRICICLOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
     },
     {
-        "Modelo": "8FBE20U",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "7,050 / 2,430",
-        "Equipo": "TRICICLOS"
+        "model": "8FBE20U",
+        "load_capacity": "4,000",
+        "height_capacity": "7,050 / 2,430",
+        "equip": "TRICICLOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
     },
     {
-        "Modelo": "8FBC15U",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "5,535 / 2,370*",
-        "Equipo": "CUSHION"
+        "model": "8FBC15U",
+        "load_capacity": "3,000",
+        "height_capacity": "5,535 / 2,370*",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
     },
     {
-        "Modelo": "8FBC18U",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "5,535 / 2,370*",
-        "Equipo": "CUSHION"
+        "model": "8FBC18U",
+        "load_capacity": "3,500",
+        "height_capacity": "5,535 / 2,370*",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
     },
     {
-        "Modelo": "8FBCU20",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "7,000 / 2,420",
-        "Equipo": "CUSHION"
+        "model": "8FBCU20",
+        "load_capacity": "4,000",
+        "height_capacity": "7,000 / 2,420",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
     },
     {
-        "Modelo": "8FBCU25",
-        "Capacidad de carga": "5,000",
-        "Opción de Altura": "7,000 / 2,420",
-        "Equipo": "CUSHION"
+        "model": "8FBCU25",
+        "load_capacity": "5,000",
+        "height_capacity": "7,000 / 2,420",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
     },
     {
-        "Modelo": "8FBCU28",
-        "Capacidad de carga": "5,500",
-        "Opción de Altura": "7,000 / 2,420",
-        "Equipo": "CUSHION"
+        "model": "8FBCU28",
+        "load_capacity": "5,500",
+        "height_capacity": "7,000 / 2,420",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
     },
     {
-        "Modelo": "8FBCU30 ",
-        "Capacidad de carga": "6,000",
-        "Opción de Altura": "7,000 / 2,420",
-        "Equipo": "CUSHION"
+        "model": "8FBCU30 ",
+        "load_capacity": "6,000",
+        "height_capacity": "7,000 / 2,420",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
     },
     {
-        "Modelo": "8FBCU32",
-        "Capacidad de carga": "6,500",
-        "Opción de Altura": "7,000 / 2,420",
-        "Equipo": "CUSHION"
+        "model": "8FBCU32",
+        "load_capacity": "6,500",
+        "height_capacity": "7,000 / 2,420",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
     },
     {
-        "Modelo": "8BPUE15",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "6,096 / 2,718",
-        "Equipo": "ORDER PICKER"
+        "model": "8BPUE15",
+        "load_capacity": "3,000",
+        "height_capacity": "6,096 / 2,718",
+        "equip": "ORDER PICKER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "8BPU15",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "9,296 / 3,886",
-        "Equipo": "ORDER PICKER"
+        "model": "8BPU15",
+        "load_capacity": "3,000",
+        "height_capacity": "9,296 / 3,886",
+        "equip": "ORDER PICKER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "8BPUH15",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "9,906 / 4,089",
-        "Equipo": "ORDER PICKER"
+        "model": "8BPUH15",
+        "load_capacity": "3,000",
+        "height_capacity": "9,906 / 4,089",
+        "equip": "ORDER PICKER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "CR1-LP60",
-        "Capacidad de carga": "6,000",
-        "Opción de Altura": "-",
-        "Equipo": "LOW LEVEL ORDER PICKER"
+        "model": "CR1-LP60",
+        "load_capacity": "6,000",
+        "height_capacity": "-",
+        "equip": "LOW LEVEL ORDER PICKER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "CR1-LP80",
-        "Capacidad de carga": "8,000",
-        "Opción de Altura": "-",
-        "Equipo": "LOW LEVEL ORDER PICKER"
+        "model": "CR1-LP80",
+        "load_capacity": "8,000",
+        "height_capacity": "-",
+        "equip": "LOW LEVEL ORDER PICKER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-BEF30 ",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "3,556 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-BEF30 ",
+        "load_capacity": "3,000",
+        "height_capacity": "3,556 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-BET30",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "5,766 / 2,515",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-BET30",
+        "load_capacity": "3,000",
+        "height_capacity": "5,766 / 2,515",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-BEF35 ",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "3,556 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-BEF35 ",
+        "load_capacity": "3,500",
+        "height_capacity": "3,556 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-BET35",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "5,766 / 2,515",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-BET35",
+        "load_capacity": "3,500",
+        "height_capacity": "5,766 / 2,515",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-BEF40",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "3556 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-BEF40",
+        "load_capacity": "4,000",
+        "height_capacity": "3556 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-BET40",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "5,766 / 2,515",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-BET40",
+        "load_capacity": "4,000",
+        "height_capacity": "5,766 / 2,515",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPF30",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "3,556 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPF30",
+        "load_capacity": "3,000",
+        "height_capacity": "3,556 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPT30",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "6,375 / 2,718",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPT30",
+        "load_capacity": "3,000",
+        "height_capacity": "6,375 / 2,718",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPM30",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "6,566 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPM30",
+        "load_capacity": "3,000",
+        "height_capacity": "6,566 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPF35",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "3,556 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPF35",
+        "load_capacity": "3,500",
+        "height_capacity": "3,556 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPT35",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "6,375 / 2,718",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPT35",
+        "load_capacity": "3,500",
+        "height_capacity": "6,375 / 2,718",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPM35",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "6,566 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPM35",
+        "load_capacity": "3,500",
+        "height_capacity": "6,566 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPF40",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "3,356 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPF40",
+        "load_capacity": "4,000",
+        "height_capacity": "3,356 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPT40",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "6,375 / 2,718",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPT40",
+        "load_capacity": "4,000",
+        "height_capacity": "6,375 / 2,718",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPM40",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "6,566 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPM40",
+        "load_capacity": "4,000",
+        "height_capacity": "6,566 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPF50",
-        "Capacidad de carga": "5,000",
-        "Opción de Altura": "3,454 / 2,261",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPF50",
+        "load_capacity": "5,000",
+        "height_capacity": "3,454 / 2,261",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPT50",
-        "Capacidad de carga": "5,000",
-        "Opción de Altura": "6,375/ 2,718",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPT50",
+        "load_capacity": "5,000",
+        "height_capacity": "6,375/ 2,718",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "SR1-HPM50",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "6,871/ 2,375",
-        "Equipo": "STAND-UP RIDER"
+        "model": "SR1-HPM50",
+        "load_capacity": "4,000",
+        "height_capacity": "6,871/ 2,375",
+        "equip": "STAND-UP RIDER",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/sr_751c343350.jpg"
     },
     {
-        "Modelo": "RF1-BH1X35",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "6,858 / 2,921",
-        "Equipo": "REACH"
+        "model": "RF1-BH1X35",
+        "load_capacity": "3,500",
+        "height_capacity": "6,858 / 2,921",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-BH1X40",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "6,807 / 2,997 ",
-        "Equipo": "REACH"
+        "model": "RF1-BH1X40",
+        "load_capacity": "4,000",
+        "height_capacity": "6,807 / 2,997 ",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-BH1X45",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "9,449/4,064",
-        "Equipo": "REACH"
+        "model": "RF1-BH1X45",
+        "load_capacity": "4,500",
+        "height_capacity": "9,449/4,064",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-BH2X25",
-        "Capacidad de carga": "2,500",
-        "Opción de Altura": "6,706 / 2,997 ",
-        "Equipo": "REACH"
+        "model": "RF1-BH2X25",
+        "load_capacity": "2,500",
+        "height_capacity": "6,706 / 2,997 ",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-BH2X30",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "9,449 / 4,064",
-        "Equipo": "REACH"
+        "model": "RF1-BH2X30",
+        "load_capacity": "3,000",
+        "height_capacity": "9,449 / 4,064",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-BE1X35",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "6,858 / 2,921",
-        "Equipo": "REACH"
+        "model": "RF1-BE1X35",
+        "load_capacity": "3,500",
+        "height_capacity": "6,858 / 2,921",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-BEIX40",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": " 6,807 / 2,997",
-        "Equipo": "REACH"
+        "model": "RF1-BEIX40",
+        "load_capacity": "4,000",
+        "height_capacity": " 6,807 / 2,997",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-BE2X25",
-        "Capacidad de carga": "2,500",
-        "Opción de Altura": "6,706 / 2,997",
-        "Equipo": "REACH"
+        "model": "RF1-BE2X25",
+        "load_capacity": "2,500",
+        "height_capacity": "6,706 / 2,997",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-SD1X35",
-        "Capacidad de carga": "3,500",
-        "Opción de Altura": "7,645/3,327",
-        "Equipo": "REACH"
+        "model": "RF1-SD1X35",
+        "load_capacity": "3,500",
+        "height_capacity": "7,645/3,327",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-SD1X45",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "9,449 /4,064",
-        "Equipo": "REACH"
+        "model": "RF1-SD1X45",
+        "load_capacity": "4,500",
+        "height_capacity": "9,449 /4,064",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-HP1X45",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "11,278 / 4,674",
-        "Equipo": "REACH"
+        "model": "RF1-HP1X45",
+        "load_capacity": "4,500",
+        "height_capacity": "11,278 / 4,674",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-HC1X45",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "13,767 / 5,842",
-        "Equipo": "REACH"
+        "model": "RF1-HC1X45",
+        "load_capacity": "4,500",
+        "height_capacity": "13,767 / 5,842",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-SD2X32",
-        "Capacidad de carga": "3,200",
-        "Opción de Altura": "9,449 / 4,064",
-        "Equipo": "REACH"
+        "model": "RF1-SD2X32",
+        "load_capacity": "3,200",
+        "height_capacity": "9,449 / 4,064",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-HP2X32",
-        "Capacidad de carga": "3,200",
-        "Opción de Altura": "11,278 / 4,674",
-        "Equipo": "REACH"
+        "model": "RF1-HP2X32",
+        "load_capacity": "3,200",
+        "height_capacity": "11,278 / 4,674",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-HC2X32",
-        "Capacidad de carga": "3,200",
-        "Opción de Altura": "13,767 / 5,842",
-        "Equipo": "REACH"
+        "model": "RF1-HC2X32",
+        "load_capacity": "3,200",
+        "height_capacity": "13,767 / 5,842",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-SD1Z45",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "9,449 / 4,064",
-        "Equipo": "REACH"
+        "model": "RF1-SD1Z45",
+        "load_capacity": "4,500",
+        "height_capacity": "9,449 / 4,064",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-HP1Z45",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "11,278 / 4,674",
-        "Equipo": "REACH"
+        "model": "RF1-HP1Z45",
+        "load_capacity": "4,500",
+        "height_capacity": "11,278 / 4,674",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-HC1Z45",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "13767 / 5,842",
-        "Equipo": "REACH"
+        "model": "RF1-HC1Z45",
+        "load_capacity": "4,500",
+        "height_capacity": "13767 / 5,842",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1- SD2Z32",
-        "Capacidad de carga": "3,200",
-        "Opción de Altura": " 9,449 / 4,064",
-        "Equipo": "REACH"
+        "model": "RF1- SD2Z32",
+        "load_capacity": "3,200",
+        "height_capacity": " 9,449 / 4,064",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-HP2Z32",
-        "Capacidad de carga": "3,200",
-        "Opción de Altura": "11,278 / 4,674",
-        "Equipo": "REACH"
+        "model": "RF1-HP2Z32",
+        "load_capacity": "3,200",
+        "height_capacity": "11,278 / 4,674",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-HC2Z32",
-        "Capacidad de carga": "3,200",
-        "Opción de Altura": "13,767 / 5,842",
-        "Equipo": "REACH"
+        "model": "RF1-HC2Z32",
+        "load_capacity": "3,200",
+        "height_capacity": "13,767 / 5,842",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RF1-MD1X45",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "2,997 / 6,807",
-        "Equipo": "REACH"
+        "model": "RF1-MD1X45",
+        "load_capacity": "4,500",
+        "height_capacity": "2,997 / 6,807",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RRE140H",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "11000 / 4,221",
-        "Equipo": "REACH"
+        "model": "RRE140H",
+        "load_capacity": "3,000",
+        "height_capacity": "11000 / 4,221",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RRE160H",
-        "Capacidad de carga": "3500",
-        "Opción de Altura": "11,000 / 4,221",
-        "Equipo": "REACH"
+        "model": "RRE160H",
+        "load_capacity": "3500",
+        "height_capacity": "11,000 / 4,221",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RRE180H",
-        "Capacidad de carga": "3,900",
-        "Opción de Altura": "13,000 / 4,963",
-        "Equipo": "REACH"
+        "model": "RRE180H",
+        "load_capacity": "3,900",
+        "height_capacity": "13,000 / 4,963",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RRE200H",
-        "Capacidad de carga": "4400",
-        "Opción de Altura": "13,000 / 4,963",
-        "Equipo": "REACH"
+        "model": "RRE200H",
+        "load_capacity": "4400",
+        "height_capacity": "13,000 / 4,963",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RRE250H",
-        "Capacidad de carga": "5,500",
-        "Opción de Altura": "13,000 / 4,963",
-        "Equipo": "REACH"
+        "model": "RRE250H",
+        "load_capacity": "5,500",
+        "height_capacity": "13,000 / 4,963",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "RRE160HR",
-        "Capacidad de carga": "3500",
-        "Opción de Altura": "7,500 / 3,124",
-        "Equipo": "REACH"
+        "model": "RRE160HR",
+        "load_capacity": "3500",
+        "height_capacity": "7,500 / 3,124",
+        "equip": "REACH",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/reach_f2e1d5be6c.png"
     },
     {
-        "Modelo": "6BWS11",
-        "Capacidad de carga": "2,200",
-        "Opción de Altura": "3,810 /1,805",
-        "Equipo": "APILADORES"
+        "model": "6BWS11",
+        "load_capacity": "2,200",
+        "height_capacity": "3,810 /1,805",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "6BWS15",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "4,800 / 2,209",
-        "Equipo": "APILADORES"
+        "model": "6BWS15",
+        "load_capacity": "3,000",
+        "height_capacity": "4,800 / 2,209",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "6BWS20",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "4,800 / 2,209",
-        "Equipo": "APILADORES"
+        "model": "6BWS20",
+        "load_capacity": "4,000",
+        "height_capacity": "4,800 / 2,209",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "6BWR15",
-        "Capacidad de carga": "3,000",
-        "Opción de Altura": "4,800 / 2,209",
-        "Equipo": "APILADORES"
+        "model": "6BWR15",
+        "load_capacity": "3,000",
+        "height_capacity": "4,800 / 2,209",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "6BWC10",
-        "Capacidad de carga": "2,000",
-        "Opción de Altura": "3,860 / 2,413",
-        "Equipo": "APILADORES"
+        "model": "6BWC10",
+        "load_capacity": "2,000",
+        "height_capacity": "3,860 / 2,413",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "6BWC15",
-        "Capacidad de carga": "3000",
-        "Opción de Altura": "4,800 / 2,209",
-        "Equipo": "APILADORES"
+        "model": "6BWC15",
+        "load_capacity": "3000",
+        "height_capacity": "4,800 / 2,209",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "6BWC20",
-        "Capacidad de carga": "4,000",
-        "Opción de Altura": "4,800 / 2,209",
-        "Equipo": "APILADORES"
+        "model": "6BWC20",
+        "load_capacity": "4,000",
+        "height_capacity": "4,800 / 2,209",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "8BWS10",
-        "Capacidad de carga": "2,000",
-        "Opción de Altura": "3,632 / 2,31",
-        "Equipo": "APILADORES"
+        "model": "8BWS10",
+        "load_capacity": "2,000",
+        "height_capacity": "3,632 / 2,31",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "8BWS13",
-        "Capacidad de carga": "2500",
-        "Opción de Altura": "3,632 / 2,31",
-        "Equipo": "APILADORES"
+        "model": "8BWS13",
+        "load_capacity": "2500",
+        "height_capacity": "3,632 / 2,31",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "CR1-RS25",
-        "Capacidad de carga": "2500",
-        "Opción de Altura": "1,829/1,549",
-        "Equipo": "APILADORES"
+        "model": "CR1-RS25",
+        "load_capacity": "2500",
+        "height_capacity": "1,829/1,549",
+        "equip": "APILADORES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "LHE150",
-        "Capacidad de carga": "3300",
-        "Opción de Altura": "-",
-        "Equipo": "BT Tyro"
+        "model": "LHE150",
+        "load_capacity": "3300",
+        "height_capacity": "-",
+        "equip": "BT Tyro",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "8HBW23",
-        "Capacidad de carga": "4,500",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "8HBW23",
+        "load_capacity": "4,500",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "8HBW30",
-        "Capacidad de carga": "6,000",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "8HBW30",
+        "load_capacity": "6,000",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "8HBW40",
-        "Capacidad de carga": "8000",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "8HBW40",
+        "load_capacity": "8000",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "8HBE30",
-        "Capacidad de carga": "6000",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "8HBE30",
+        "load_capacity": "6000",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "8HBE40",
-        "Capacidad de carga": "8000",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "8HBE40",
+        "load_capacity": "8000",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "8HBC30",
-        "Capacidad de carga": "6000",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "8HBC30",
+        "load_capacity": "6000",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "8HBC40",
-        "Capacidad de carga": "8000",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "8HBC40",
+        "load_capacity": "8000",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "ERI-ES60",
-        "Capacidad de carga": "6000",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "ERI-ES60",
+        "load_capacity": "6000",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "ERI-ES80",
-        "Capacidad de carga": "8000",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "ERI-ES80",
+        "load_capacity": "8000",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
     },
     {
-        "Modelo": "HPT48U",
-        "Capacidad de carga": "2500",
-        "Opción de Altura": "-",
-        "Equipo": "PATINES"
+        "model": "HPT48U",
+        "load_capacity": "2500",
+        "height_capacity": "-",
+        "equip": "PATINES",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/apiladores_8a0e6b3455.jpg"
+    },
+    {
+        "model": "8FG(D)15",
+        "load_capacity": "1,500",
+        "height_capacity": "7,000/3,095",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)18",
+        "load_capacity": "1,750",
+        "height_capacity": "7,000 / 3,095",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)20",
+        "load_capacity": "2,000",
+        "height_capacity": "7,000/3,095",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)25",
+        "load_capacity": "2,500",
+        "height_capacity": "7,000 / 3,095",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)30",
+        "load_capacity": "3,000",
+        "height_capacity": "7,000 / 3,365",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)J35",
+        "load_capacity": "3,500",
+        "height_capacity": "7,000/3,630",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)35",
+        "load_capacity": "3,500",
+        "height_capacity": "7,000 / 3,240",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)40",
+        "load_capacity": "4,000",
+        "height_capacity": "7,000 / 3,240",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)45",
+        "load_capacity": "4,500",
+        "height_capacity": "6,500 / 3,050",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)50",
+        "load_capacity": "5,000",
+        "height_capacity": "6,000 / 3,110",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FD60",
+        "load_capacity": "6,000",
+        "height_capacity": "6,000 / 3,110",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FD70",
+        "load_capacity": "7,000",
+        "height_capacity": "6,000 / 3,110",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FD80",
+        "load_capacity": "8,000",
+        "height_capacity": "5,500 / 4,060",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "4FD100",
+        "load_capacity": "10,000",
+        "height_capacity": "6,000 / 3,660",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "4FD115",
+        "load_capacity": "11,500",
+        "height_capacity": "6,000 / 3,935",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "4FD120",
+        "load_capacity": "12,000",
+        "height_capacity": "6,000 / 3,935",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "4FD135",
+        "load_capacity": "13,500",
+        "height_capacity": "6,000 / 3,950",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "4FDK150",
+        "load_capacity": "15,000",
+        "height_capacity": "6,000 / 4,850*",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "4FDK160",
+        "load_capacity": "16,000",
+        "height_capacity": "6,000 /4,870*",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "4FD150",
+        "load_capacity": "15,000",
+        "height_capacity": "6,000 / 4,990*",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "4FD180",
+        "load_capacity": "18,000",
+        "height_capacity": "6,000 / 5,250*",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "4FD200",
+        "load_capacity": "20,000",
+        "height_capacity": "6,000 / 5,280*",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "4FD230",
+        "load_capacity": "23,000",
+        "height_capacity": "6,000 / 5,350*",
+        "equip": "THD",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/triciclos_2_90f844478a.jpg"
+    },
+    {
+        "model": "8FG(D)U15",
+        "load_capacity": "3,000 (1,350)",
+        "height_capacity": "6,035 / 2,595",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)U18",
+        "load_capacity": "3,500 (1,600)",
+        "height_capacity": "6,035 / 2,595",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)U20",
+        "load_capacity": "4,000 (1,800)",
+        "height_capacity": "7,040 / 3,095",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)U25",
+        "load_capacity": "5,000 (2,250)",
+        "height_capacity": "6,600 / 2,305*",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)U30",
+        "load_capacity": "6,000 (2,700)",
+        "height_capacity": "6,600 / 2,305*",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)U32",
+        "load_capacity": "6,500 (3,000)",
+        "height_capacity": "6,600 / 2,305*",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)35U",
+        "load_capacity": "8,000 (3,500)",
+        "height_capacity": "6,050 / 2,740",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)40U",
+        "load_capacity": "9,000 (4,000)",
+        "height_capacity": "6,050 / 2,740",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)45U",
+        "load_capacity": "10,000 (4,500)",
+        "height_capacity": "6,050 / 2,800",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)50U",
+        "load_capacity": "11,000 (5,000)",
+        "height_capacity": "6,065 / 3,050",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)60U",
+        "load_capacity": "13,500 (6,000)",
+        "height_capacity": "6,065/3,110",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)70U",
+        "load_capacity": "15,500 (7,000)",
+        "height_capacity": "6,065/3,110",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FG(D)80U",
+        "load_capacity": "17,500 (8,000)",
+        "height_capacity": "4,570 / 3,560*",
+        "equip": "CONTRABALANCEADOS",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/contra_5_a5962d10cd.png"
+    },
+    {
+        "model": "8FGCU20",
+        "load_capacity": "4,000 (2,000)",
+        "height_capacity": "7,055 / 2,420*",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGCU25",
+        "load_capacity": "5,000 (2,250)",
+        "height_capacity": "7,055 / 2,420*",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGCU30",
+        "load_capacity": "6,000 (2,700)",
+        "height_capacity": "7,055/2,420*",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGCU32",
+        "load_capacity": "6,500 (3,000)",
+        "height_capacity": "7,055 / 2,420*",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGC35U",
+        "load_capacity": "8,000 (3,500)",
+        "height_capacity": "6,050 D/2,690",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGC35U-BCS",
+        "load_capacity": "8,000 (3,500)",
+        "height_capacity": "6,050 / 2,690",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGC45U",
+        "load_capacity": "10,000 (4,500)",
+        "height_capacity": "6,050 / 2,940",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGC45U-BCS",
+        "load_capacity": "10,000 (4,500)",
+        "height_capacity": "6,050 / 2,940",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGC55U",
+        "load_capacity": "12,000 (5,500)",
+        "height_capacity": "6,060 / 2,940",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGC55U-PRS",
+        "load_capacity": "12,000 (5,500)",
+        "height_capacity": "6,060 / 2,940",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGC55U-BCS",
+        "load_capacity": "12,000 (5,500)",
+        "height_capacity": "6,060 / 2,940",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGC60U",
+        "load_capacity": "13,500 (6,000)",
+        "height_capacity": "6,065 / 3,050",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8FGC70U",
+        "load_capacity": "15,500 (7,000)",
+        "height_capacity": "6,065 / 3,050",
+        "equip": "CUSHION",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/cushion_8b6c98e458.jpg"
+    },
+    {
+        "model": "8TB50",
+        "load_capacity": "4,540",
+        "height_capacity": "305",
+        "equip": "TRACTORES DE ARRASTRE",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/tractores_e0538d5bd5.jpg"
+    },
+    {
+        "model": "CBT4",
+        "load_capacity": "4,000",
+        "height_capacity": "305",
+        "equip": "TRACTORES DE ARRASTRE",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/tractores_e0538d5bd5.jpg"
+    },
+    {
+        "model": "CBT4Y",
+        "load_capacity": "4,000",
+        "height_capacity": "305",
+        "equip": "TRACTORES DE ARRASTRE",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/tractores_e0538d5bd5.jpg"
+    },
+    {
+        "model": "CBT6",
+        "load_capacity": "6,000",
+        "height_capacity": "305",
+        "equip": "TRACTORES DE ARRASTRE",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/tractores_e0538d5bd5.jpg"
+    },
+    {
+        "model": "2TE15",
+        "load_capacity": "20,000",
+        "height_capacity": "450",
+        "equip": "TRACTORES DE ARRASTRE",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/tractores_e0538d5bd5.jpg"
+    },
+    {
+        "model": "3TE25",
+        "load_capacity": "27,000",
+        "height_capacity": "450",
+        "equip": "TRACTORES DE ARRASTRE",
+        "img": "https://worthy-art-2f349fa41d.media.strapiapp.com/tractores_e0538d5bd5.jpg"
     }
 ]

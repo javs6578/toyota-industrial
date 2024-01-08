@@ -15,6 +15,7 @@ import rule_icon from '../src/img/rule_icon.svg'
 import { rule } from 'postcss'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -47,12 +48,14 @@ export default function Montacargas() {
     const [, forceUpdate] = useReducer(x => x + 1, 0);
     const [showMore, setShowMore] = React.useState(15);
 
+    const router = useRouter()
+
 
     const handleOpen = (product: any) => {
-        setEquip(product.Equipo)
-        setModel(product.Modelo)
-        setCharge(product['Capacidad de carga'])
-        setHeight(product['Opción de Altura'])
+        setEquip(product.equip)
+        setModel(product.model)
+        setCharge(product.load_capacity)
+        setHeight(product.height_capacity)
         setOpen(true);
       };
 
@@ -66,6 +69,10 @@ export default function Montacargas() {
     const handleType = (e: { target: { value: string; }; }) => {
         setProductType(e.target.value);
     };
+    const handleDetail = (product) => {
+        router.push('/montacargas/montacargas-detalle', { scroll: false })
+        sessionStorage.setItem('product', JSON.stringify(product))
+    }
 
     useEffect(() => {
         const oldProducts = [...products];
@@ -74,11 +81,11 @@ export default function Montacargas() {
             //     return false
             // }
 
-            if (productType && product.Equipo !== productType) {
+            if (productType && product.equip !== productType) {
                 return false
             }
 
-            if (search && !product.Modelo.includes(search)) {
+            if (search && !product.model.includes(search)) {
                 return false
             }
 
@@ -141,16 +148,16 @@ export default function Montacargas() {
                             {newProducts.slice(0, showMore).map((product: any, index: any) => 
                                  <div className="col-md-4 col-sm-12 my-3" key={index}>
                                  <div className='montacargas-card'>
-                                     <img src={montacargas_vehicle.src} className='w-100' alt="" />
+                                     <img src={product.img} className='montacargas-img' alt="" />
                                      <strong>Equipo</strong>
-                                     <p>{product.Equipo}</p>
+                                     <p>{product.equip}</p>
                                      <strong>Modelo</strong>
-                                     <p>{product.Modelo}</p>
+                                     <p>{product.model}</p>
                                      <strong>Capacidad de carga lb/kg </strong>
-                                     <p>{product['Capacidad de carga']}</p>
+                                     <p>{product.load_capacity}</p>
                                      <div className='d-flex flex-column'>
-                                         <button className='red-button-border mb-2'>
-                                            <Link href="/montacargas/montacargas-detalle" className='text-light' style={{ textDecoration: 'none' }}>Cotizar equipo</Link>
+                                        <button className='red-button-border mb-2' onClick={()=> handleDetail(product)}>
+                                            Cotizar equipo
                                         </button>
                                          <button className='white-button-border' onClick={() => handleOpen(product)}>Ver características</button>
                                      </div>

@@ -248,6 +248,13 @@
     border: 1px solid #55565A;
     padding: 1em;
     border-radius: 8px;
+    /* min-height: 537px;
+    max-height: 537px; */
+}
+
+.montacargas-img {
+    width: 285px;
+    height: 190px;
 }
 
 .card-body {
