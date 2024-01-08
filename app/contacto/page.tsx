@@ -2,8 +2,8 @@
 import facebook from "../src/img/facebook-icon.svg"
 import linkedin from "../src/img/linkedin-icon.svg"
 import youtube from "../src/img/youtube-icon.svg"
-import contacto_banner from "../src/img/contáctanos_banner.jpg"
-import contacto_banner_mobile from "../src/img/contáctanos_banner.jpg"
+import contacto_banner from "../src/img/contactanos_banner.jpg"
+import contacto_banner_mobile from "../src/img/contactanos_banner.jpg"
 import '../globals.css'
 import Link from "next/link"
 import * as yup from "yup";
