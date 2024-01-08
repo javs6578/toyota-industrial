@@ -199,6 +199,7 @@ export default function Refacciones() {
                                 </div> */}
 
                                 <FileUploader handleChange={handleFile} name="file" types={fileTypes} label="Arrastra el o los archivos" classes="file-container" multiple
+                                // eslint-disable-next-line react/no-children-prop
                                 children={file ? noElement : element}/>
                             </div>
                         </Box>

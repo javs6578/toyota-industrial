@@ -156,7 +156,7 @@ const MapChart  = () => {
                                 Lunes a viernes de 8:00 a 17:00hrs
                             </p>
                         </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.9461536155295!2d-101.44130085069189!3d20.954677438113162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b9b1a263104f3%3A0x70e37fc517e8e6e4!2sSeil%20Rigging%20%26%20Millwright%20-%20Silao!5e0!3m2!1sen!2smx!4v1701443613098!5m2!1sen!2smx" width="680" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.9461536155295!2d-101.44130085069189!3d20.954677438113162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b9b1a263104f3%3A0x70e37fc517e8e6e4!2sSeil%20Rigging%20%26%20Millwright%20-%20Silao!5e0!3m2!1sen!2smx!4v1701443613098!5m2!1sen!2smx" width="680" height="100%" loading="lazy"></iframe>
                     </div>
                 </BootstrapDialog>
 

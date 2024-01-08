@@ -69,7 +69,7 @@ export default function Montacargas() {
     const handleType = (e: { target: { value: string; }; }) => {
         setProductType(e.target.value);
     };
-    const handleDetail = (product) => {
+    const handleDetail = (product: any) => {
         router.push('/automatizacion/automatizacion-detalle', { scroll: false })
         sessionStorage.setItem('product', JSON.stringify(product))
     }

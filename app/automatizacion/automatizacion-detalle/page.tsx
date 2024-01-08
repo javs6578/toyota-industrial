@@ -4,7 +4,7 @@ import * as React from 'react';
 import montacargas from '../../src/img/automatizacion_banner.jpg'
 import montacargas_vehicle from '../../src/img/montacargas.png'
 import { FormControl, FormControlLabel, FormLabel, Link, Radio, RadioGroup, TextField } from '@mui/material'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import red_arrow from '../../src/img/red-arrow.svg'
@@ -13,7 +13,14 @@ import { useRouter } from 'next/navigation'
 export default function MontacargasDetail() {
 
     const [count, setCount] = useState(0);
-    const [product, setProduct] = useState(JSON.parse(sessionStorage.getItem('product')) || null)
+    
+    const [product, setProduct]: any = useState({
+        "model": "",
+        "load_capacity": "",
+        "height_capacity": "",
+        "equip": "",
+        "img": ""
+    })
 
     const [name, setName] = useState('');
     const [company, setCompany] = useState('');
@@ -65,6 +72,11 @@ export default function MontacargasDetail() {
             }
         });
     }
+
+    useEffect(() => {
+        const sessionProduct: any = sessionStorage.getItem('product')
+        setProduct(JSON.parse(sessionProduct) || null)
+      }, []);
 
     return (
         <section>
